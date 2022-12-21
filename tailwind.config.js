@@ -22,41 +22,34 @@ module.exports = {
       },
     },
     fontFamily: {
-      primary: ['Roboto', 'sans-serif'],
       pop: ['Poppins', 'sans-serif'] 
     },
     fontSize: {
-      'xs': ['.75rem', '1.1rem'],
-      'sm': ['.875rem', '1.356rem'],
-      'base': ['1rem', '1.45rem'],
+      'xs': ['.75rem', '1rem'],
+      'sm': ['.875rem', '1.25rem'],
+      'base': ['1rem', '1.625rem'],
       'lg': ['1.125rem', '1.75rem'],
       'xl': ['1.25rem', '1.875rem'],
-      '22': ['1.375rem', '2.063rem'],
-      '28': ['1.75rem', '2.375rem'],
-      '2xl': ['1.5rem', '2.25rem'],
-      '26': ['1.625rem', '2.25rem'],
+      '2xl': ['1.5rem', '2rem'],
+      '32': ['2rem', '2.625rem'],
       '3xl': ['1.875rem', '2.5rem'],
       '4xl': ['2.25rem', '2.75rem'],
-      '5xl': ['3rem', '3.75rem'],
-      '6xl': ['3.75rem', '5rem'],
-      '7xl': ['4.375rem', '5.625rem'],
+      '5xl': ['3rem', '3.5rem'],
     },
     extend: {
       colors: {
-        ev: {
-          dark: {
-            DEFAULT: '#25364F',
-          },
-          red: {
-            DEFAULT: '#FE4D5F',
-          },
-          gray: '#A6A6A6',
-          sky: '#5AC8D2',
-          lightgray:'#aaaaaa',
-        },
+        dark: '#1F2937',
+        greenishYellow: '#ECFCCB',
+        leafGreen:'#65A30D',
+        davyGrey:'#4B5563',
+        carminePink:'#EF4444',
+        grey:'#9CA3AF',
+        ghostWhite:'#F9FAFB',
       },
       dropShadow: {
-        'one':'0px 0px 30px rgba(0, 0, 0, 0.14)',
+        'form':'0px 7px 29px rgba(100, 100, 111, 0.2)',
+        'active':'-1px 4px 15px rgba(208, 210, 218, 0.63)',
+        'one':'4px 4px 14px rgba(0, 0, 0, 0.16), 0px 18px 32px rgba(208, 210, 218, 0.15)',
       }
     },
   },
