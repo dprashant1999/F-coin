@@ -514,11 +514,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: auto;
 }
 
-.-mx-6 {
-  margin-left: -1.5rem;
-  margin-right: -1.5rem;
-}
-
 .-mx-3 {
   margin-left: -0.75rem;
   margin-right: -0.75rem;
@@ -727,11 +722,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
-}
-
-.px-6 {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
 }
 
 .px-3 {
@@ -1081,10 +1071,6 @@ nav a.active svg, nav a:hover svg {
 @media (min-width: 1536px) {
   .\32xl\:mr-8 {
     margin-right: 2rem;
-  }
-
-  .\32xl\:w-1\/4 {
-    width: 25%;
   }
 
   .\32xl\:max-w-\[355px\] {
