@@ -17,3 +17,6 @@ nav a.active, nav a:hover{@apply text-leafGreen font-semibold bg-greenishYellow;
 nav a.active svg, nav a:hover svg{@apply fill-black;}
 
 .right_bar{@apply w-full lg:w-[calc(100%-348px)];}
+
+
+.dcardTitel{@apply py-0.5 px-2 pl-7 inline-block w-10/12 -ml-7 rounded-lg bg-gradient-to-r from-gray-200 text-lg font-semibold text-darkGrey;}

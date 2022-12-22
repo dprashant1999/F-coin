@@ -5,16 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>F-coin</title>
-    <link rel="stylesheet" href="assest/css/fonts.css" />
-    <link rel="stylesheet" href="assest/css/iconmoon.css" />
-    <link rel="stylesheet" href="assest/css/style.css" />
+    <link rel="stylesheet" href="../assest/css/fonts.css" />
+    <link rel="stylesheet" href="../assest/css/iconmoon.css" />
+    <link rel="stylesheet" href="../assest/css/style.css" />
   </head>
   <body>
     <div class="main flex min-h-screen relative">
       <!-- left-bar -->
       <div class="left_bar absolute inset-y-0 left-0 h-screen -translate-x-[320px] z-10 lg:translate-x-0 md:px-8 py-7 xl:px-10 xl:py-9 w-full max-w-[320px] lg:max-w-[348px] bg-white">
         <a href="javascript:void(0)" class="inline-block w-full text-center">
-          <img src="assest/images/svg/logo.svg" alt="logo" class="mx-auto"/>
+          <img src="../assest/images/svg/logo.svg" alt="logo" class="mx-auto"/>
         </a>
         <nav aria-label="Main Nav" class="flex flex-col mt-[91px] space-y-2">
           <a href="#" class="active">
@@ -118,6 +118,7 @@
       </div>
       <!-- right-bar -->
       <div class="right_bar w-full relative ml-auto">
+        <!-- header -->
         <div class="w-full bg-white p-5 lg:px-6 xl:px-12 lg:py-6 flex items-center">
           <h3>Dashboard</h3>
           <div class="flex items-center ml-auto">
@@ -166,13 +167,26 @@
             </button>
           </div>          
         </div>
-        <div class="content-area h-[calc(100vh-72px)] sm:h-[calc(100vh-80px)] lg:h-[calc(100vh-96px)]">
-            
+        <!-- main-content  -->
+        <div class="content-area h-[calc(100vh-72px)] sm:h-[calc(100vh-80px)] lg:h-[calc(100vh-96px)] p-12 pb-0">
+            <div class="flex flex-wrap items-center -mx-3">
+              <div class="w-full sm:w-1/2 md:w-1/3 xl:w-[349px] px-3">
+                <div class="rounded-lg p-7 pt-0 bg-white drop-shadow-one">
+                  <span class="dcardTitel">Total Balance</span>
+                    <div class="flex items-center">
+                    <div class="inline-block mr-4">
+                      <img src="../assest/images/svg/" alt="totalBalance"/>
+                    </div>
+                    <h3 class="font-semibold inline-block">3,65,000</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
         </div>
       </div>
     </div>
-    <script src="assest/js/jquery.min.js"></script>
+    <script src="../assest/js/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-    <script src="assest/js/script.js"></script>
+    <script src="../assest/js/script.js"></script>
   </body>
 </html>
