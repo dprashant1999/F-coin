@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>F-coin || Login</title>
+    <title>F-coin || Sign Up</title>
     <link rel="stylesheet" href="../assest/css/fonts.css" />
     <link rel="stylesheet" href="../assest/css/iconmoon.css" />
     <link rel="stylesheet" href="../assest/css/style.css" />
@@ -16,14 +16,22 @@
         <div class="w-full flex items-center justify-between pt-4 px-4 md:px-8 md:pt-8">
           <a href="#" class="block w-[100px] sm:w-auto"><img src="../assest/images/svg/f-coin_logo.svg" alt="f-coin_logo" /></a>
           <div class="flex items-center">
-            <span class="block pr-2 md:pr-4 text-xs sm:text-sm text-dark font-normal">Don’t have an account?</span>
-            <a href="#" class="primaryBtn block">Sign up</a>
+            <span class="block pr-2 md:pr-4 text-xs sm:text-sm text-dark font-normal">Already have an account?</span>
+            <a href="#" class="primaryBtn block">Login</a>
           </div>
         </div>
-        <div class="relative w-full max-w-[480px] px-4 py-9 md:p-0">
+        <div class="relative w-full max-w-[480px] px-4 py-9 lg:p-0">
             <div class="p-[30px] md:px-[60px] bg-white drop-shadow-form rounded-xl md:rounded-3xl">
-              <h3 class="text-center">Welcome back!</h3>
+              <h3 class="text-center">Create Account</h3>
               <form action="" class="mt-2.5 sm:mt-5 mb-0 rounded-lg">
+                <div class="mb-2 sm:mb-4">
+                  <label for="fullname" class="loginLabel">Full Name</label>
+                  <div class="loginInputdata">
+                    <span class="loginInputicon icon-user text-gray-400">
+                    </span>
+                    <input type="text" id="fullname" class="loginInput" placeholder="Enter full name" />
+                  </div>
+                </div>
                 <div class="mb-2 sm:mb-4">
                   <label for="email" class="loginLabel">Email or Phone</label>
                   <div class="loginInputdata">
@@ -33,21 +41,37 @@
                     <input type="email" id="email" class="loginInput" placeholder="Enter your email or phone" />
                   </div>
                 </div>
-                <div>
+                <div class="mb-2 sm:mb-4">
+                  <label for="phone" class="loginLabel">Phone Number</label>
+                  <div class="loginInputdata">
+                    <span class="loginInputicon icon-phone text-gray-400">
+                    </span>
+                    <input type="number" id="phone" class="loginInput" placeholder="Enter your phone number" />
+                  </div>
+                </div>
+                <div class="mb-2 sm:mb-4">
                   <label for="password" class="loginLabel">Password</label>
                   <div class="relative mt-1 border border-gray-300 rounded-xl overflow-hidden">
                     <span class="loginInputicon">
                       <svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M11.1667 8.16667H2.83332C1.91285 8.16667 1.16666 8.91286 1.16666 9.83334V14.8333C1.16666 15.7538 1.91285 16.5 2.83332 16.5H11.1667C12.0871 16.5 12.8333 15.7538 12.8333 14.8333V9.83334C12.8333 8.91286 12.0871 8.16667 11.1667 8.16667Z" stroke="#9CA3AF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> <path d="M6.99999 13.1667C7.46023 13.1667 7.83332 12.7936 7.83332 12.3333C7.83332 11.8731 7.46023 11.5 6.99999 11.5C6.53975 11.5 6.16666 11.8731 6.16666 12.3333C6.16666 12.7936 6.53975 13.1667 6.99999 13.1667Z" stroke="#9CA3AF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> <path d="M3.66666 8.16667V4.83333C3.66666 3.94928 4.01785 3.10143 4.64297 2.47631C5.26809 1.85119 6.11593 1.5 6.99999 1.5C7.88404 1.5 8.73189 1.85119 9.35701 2.47631C9.98213 3.10143 10.3333 3.94928 10.3333 4.83333V8.16667" stroke="#9CA3AF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> </svg>
                     </span>
                     <input type="password" id="password" class="loginInput" placeholder="Password" />
-                    <a href="#" class="absolute inset-y-0 right-4 inline-flex items-center text-xs text-leafGreen font-semibold">Forgot password?</a>
                   </div>
                 </div>
-                <button type="submit" class="primaryBtn block w-full mt-5 py-3">Login</button>
+                <div>
+                  <label for="Confirmpassword" class="loginLabel">Confirm Password</label>
+                  <div class="relative mt-1 border border-gray-300 rounded-xl overflow-hidden">
+                    <span class="loginInputicon">
+                      <svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M11.1667 8.16667H2.83332C1.91285 8.16667 1.16666 8.91286 1.16666 9.83334V14.8333C1.16666 15.7538 1.91285 16.5 2.83332 16.5H11.1667C12.0871 16.5 12.8333 15.7538 12.8333 14.8333V9.83334C12.8333 8.91286 12.0871 8.16667 11.1667 8.16667Z" stroke="#9CA3AF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> <path d="M6.99999 13.1667C7.46023 13.1667 7.83332 12.7936 7.83332 12.3333C7.83332 11.8731 7.46023 11.5 6.99999 11.5C6.53975 11.5 6.16666 11.8731 6.16666 12.3333C6.16666 12.7936 6.53975 13.1667 6.99999 13.1667Z" stroke="#9CA3AF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> <path d="M3.66666 8.16667V4.83333C3.66666 3.94928 4.01785 3.10143 4.64297 2.47631C5.26809 1.85119 6.11593 1.5 6.99999 1.5C7.88404 1.5 8.73189 1.85119 9.35701 2.47631C9.98213 3.10143 10.3333 3.94928 10.3333 4.83333V8.16667" stroke="#9CA3AF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> </svg>
+                    </span>
+                    <input type="password" id="Confirmpassword" class="loginInput" placeholder="Password" />
+                  </div>
+                </div>
+                <button type="submit" class="primaryBtn block w-full mt-5 py-3">Sign up</button>
                 <button type="submit" class="primaryBtn w-full bg-white text-dark flex justify-center drop-shadow-form mt-2 py-2.5"><img src="../assest/images/svg/google.svg" alt="google" class="mr-3" />With Google</button>
               </form>
             </div>
-            <p class="text-center text-xs sm:text-sm text-white pt-6 font-normal"> Don’t have an account? <a class="underline" href="#">Sign up</a> </p>
+            <p class="text-center text-xs sm:text-sm text-white pt-6 font-normal"> Already have an account? <a class="underline" href="#">Login</a> </p>
         </div>
         <p class="text-center text-xs sm:text-sm text-white pb-5 font-normal"> <a class="underline" href="#">Privacy Policy</a> and <a class="underline" href="#">Terms of Service</a> apply. </p>
       </div>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F-coin || Otp email</title>
+    <link rel="stylesheet" href="../assest/css/fonts.css" />
+    <link rel="stylesheet" href="../assest/css/iconmoon.css" />
+    <link rel="stylesheet" href="../assest/css/style.css" />
+  </head>
+  <body class="bg-white">
+    <div class="h-screen w-full relative">
+      <img src="../assest/images/login_form_bg.png" alt="form-background" class="loginBg" />    
+      <div class="relative h-full overflow-y-auto flex flex-col items-center justify-between z-10">        
+        <div class="w-full flex items-center justify-between pt-4 px-4 md:px-8 md:pt-8">
+          <a href="#" class="block w-[100px] sm:w-auto"><img src="../assest/images/svg/f-coin_logo.svg" alt="f-coin_logo" /></a>
+          <div class="flex items-center">
+            <span class="block pr-2 md:pr-4 text-xs sm:text-sm text-dark font-normal">Don’t have an account?</span>
+            <a href="#" class="primaryBtn block">Sign up</a>
+          </div>
+        </div>
+        <div class="relative w-full max-w-[480px] px-4 py-9 md:p-0">
+            <div class="p-[30px] md:px-[60px] bg-white drop-shadow-form rounded-xl md:rounded-3xl">
+              <h3 class="text-center">Please Check Mail</h3>
+              <form action="" class="mt-2.5 sm:mt-5 mb-0 rounded-lg">
+                <div>
+                  <label for="" class="loginLabel">Enter OTP</label>
+                  <div class="flex justify-between space-x-3">
+                    <input class="otpInput" placeholder="0" type="text" id='ist' maxlength="1" onkeyup="clickEvent(this,'sec')" />
+                    <input class="otpInput" placeholder="0" type="text" id="sec" maxlength="1" onkeyup="clickEvent(this,'third')" />
+                    <input class="otpInput" placeholder="0" type="text" id="third" maxlength="1" onkeyup="clickEvent(this,'fourth')" />
+                    <input class="otpInput" placeholder="0" type="text" id="fourth" maxlength="1" />
+                  </div>
+                </div>
+                <button type="submit" class="primaryBtn block w-full mt-5 py-3">Verify</button>
+                <p class="text-center text-xs sm:text-sm text-dark pt-6 font-semibold">Didn’t get code? <a href="#" class="text-leafGreen">resend</a> </p>
+              </form>
+            </div>
+        </div>
+        <p class="text-center text-xs sm:text-sm text-white pb-5 font-normal"> <a class="underline" href="#">Privacy Policy</a> and <a class="underline" href="#">Terms of Service</a> apply. </p>
+      </div>
+    </div>
+
+    <script src="assest/js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="assest/js/script.js"></script>
+    <script>
+      function clickEvent(first,last){
+			if(first.value.length){
+				document.getElementById(last).focus();
+			}
+		}
+    </script>
+  </body>
+</html>
