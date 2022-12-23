@@ -11,4 +11,3 @@ function removeActive(Id, db) {
   var element = document.querySelector(Id);
   element.classList.remove(db);
 }
-
