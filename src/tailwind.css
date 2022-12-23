@@ -31,6 +31,20 @@ nav a.active svg, nav a:hover svg{@apply fill-black;}
 .dbCard .dcardTitel{@apply py-0.5 px-2 pl-7 inline-block w-full xl:w-10/12 -ml-5 xl:-ml-7 rounded-lg bg-gradient-to-r from-gray-200 text-sm sm:text-base xl:text-lg font-semibold text-darkGrey;}
 .dbCard.active .dcardTitel, .dbCard:hover .dcardTitel{@apply from-leafGreen text-white;}
 
+.dcardTitel{@apply py-0.5 px-2 pl-7 inline-block w-10/12 -ml-7 rounded-lg bg-gradient-to-r from-gray-200 text-lg font-semibold text-darkGrey;}
+
+/* login flow start */
+
+.primaryBtn{@apply bg-leafGreen text-xs sm:text-sm font-semibold py-2 md:py-3 px-3 md:px-6 text-white rounded-md md:rounded-lg;}
+.loginBg{@apply absolute w-full bottom-0 h-4/6 xl:h-auto object-cover;}
+.loginLabel{@apply text-xs sm:text-sm font-medium;}
+.loginInputdata{@apply relative mt-1 border border-gray-300 rounded-xl overflow-hidden;}
+.loginInput{@apply w-full p-2 pl-11 text-xs sm:text-base leading-6 sm:leading-7 outline-0;}
+.loginInputicon{@apply absolute inset-y-0 left-4 inline-flex items-center;}
+.otpInput{@apply w-full max-w-[81px] border border-gray-300 text-center text-base leading-7 rounded-xl py-2 sm:py-2.5 px-[14px] outline-0;}
+
+
+/* login flow end */
 .datepicker input::-webkit-calendar-picker-indicator {
   width: 100%;
   height: 100%;

@@ -692,6 +692,148 @@ nav a.active svg, nav a:hover svg {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.dcardTitel {
+  margin-left: -1.75rem;
+  display: inline-block;
+  width: 83.333333%;
+  border-radius: 0.5rem;
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+  --tw-gradient-from: #e5e7eb;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(229 231 235 / 0));
+  padding-top: 0.125rem;
+  padding-bottom: 0.125rem;
+  padding-right: 0.5rem;
+  padding-left: 1.75rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+
+/* login flow start */
+
+.primaryBtn {
+  border-radius: 0.375rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(101 163 13 / var(--tw-bg-opacity));
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  font-size: .75rem;
+  line-height: 1rem;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 640px) {
+  .primaryBtn {
+    font-size: .875rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .primaryBtn {
+    border-radius: 0.5rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+.loginBg {
+  position: absolute;
+  bottom: 0px;
+  height: 66.666667%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (min-width: 1280px) {
+  .loginBg {
+    height: auto;
+  }
+}
+
+.loginLabel {
+  font-size: .75rem;
+  line-height: 1rem;
+  font-weight: 500;
+}
+
+@media (min-width: 640px) {
+  .loginLabel {
+    font-size: .875rem;
+    line-height: 1.25rem;
+  }
+}
+
+.loginInputdata {
+  position: relative;
+  margin-top: 0.25rem;
+  overflow: hidden;
+  border-radius: 0.75rem;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(209 213 219 / var(--tw-border-opacity));
+}
+
+.loginInput {
+  width: 100%;
+  padding: 0.5rem;
+  padding-left: 2.75rem;
+  font-size: .75rem;
+  line-height: 1.5rem;
+  outline-width: 0px;
+}
+
+@media (min-width: 640px) {
+  .loginInput {
+    font-size: 1rem;
+    line-height: 1.75rem;
+  }
+}
+
+.loginInputicon {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 1rem;
+  display: inline-flex;
+  align-items: center;
+}
+
+.otpInput {
+  width: 100%;
+  max-width: 81px;
+  border-radius: 0.75rem;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(209 213 219 / var(--tw-border-opacity));
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 14px;
+  padding-right: 14px;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.75rem;
+  outline-width: 0px;
+}
+
+@media (min-width: 640px) {
+  .otpInput {
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+  }
+}
+
+/* login flow end */
+
 .datepicker input::-webkit-calendar-picker-indicator {
   width: 100%;
   height: 100%;
