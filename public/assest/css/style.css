@@ -1562,36 +1562,8 @@ tr td {
   padding-bottom: 1.25rem;
 }
 
-.pr-14 {
-  padding-right: 3.5rem;
-}
-
-.pr-44 {
-  padding-right: 11rem;
-}
-
-.pr-40 {
-  padding-right: 10rem;
-}
-
-.pr-36 {
-  padding-right: 9rem;
-}
-
 .pr-32 {
   padding-right: 8rem;
-}
-
-.pr-28 {
-  padding-right: 7rem;
-}
-
-.pr-24 {
-  padding-right: 6rem;
-}
-
-.pr-20 {
-  padding-right: 5rem;
 }
 
 .text-left {
@@ -1761,10 +1733,6 @@ tr td {
     --tw-space-x-reverse: 0;
     margin-right: calc(1.25rem * var(--tw-space-x-reverse));
     margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-
-  .sm\:pr-32 {
-    padding-right: 8rem;
   }
 
   .sm\:text-sm {
