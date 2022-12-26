@@ -641,6 +641,14 @@ nav a.active svg, nav a:hover svg {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   padding: 1.25rem;
   padding-top: 0px;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+.dbCard:hover {
+  --tw-drop-shadow: drop-shadow(-1px 4px 15px rgba(208, 210, 218, 0.63));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 @media (min-width: 1280px) {
