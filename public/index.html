@@ -118,22 +118,24 @@
       </div>
       <!-- right-bar -->
       <div class="right_bar w-full relative ml-auto">
-        <div class="w-full bg-white p-5 lg:px-6 xl:px-12 lg:py-6 flex items-center">
+        <div class="w-full bg-white p-5 lg:px-6 xl:px-12 lg:py-6 flex items-center relative">
           <h3>Dashboard</h3>
           <div class="flex items-center ml-auto">
-            <div class="relative hidden sm:block w-full max-w-[250px] 2xl:max-w-[355px] mr-5 2xl:mr-8">
-              <button type="button" class="absolute top-1/2 left-4 -translate-y-1/2 rounded-md text-gray-600 transition hover:text-gray-700">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 lg:w-7 lg:h-7 stroke-grey" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <div id="searchBar">
+              <div class="searchHolder">
+                <button type="button" class="absolute top-1/2 left-6 sm:left-4 -translate-y-1/2 rounded-md text-gray-600 transition hover:text-gray-700">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 lg:w-7 lg:h-7 stroke-grey" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                  </svg>
+                </button>  
+                <input class="h-10 lg:h-12 w-full rounded-lg border-none sm:bg-ghostWhite pl-12 lg:pl-14 pr-4 outline-none" id="search" type="search" placeholder="Search">    
+              </div>
+              <button type="button" class="block sm:hidden px-2 xl:px-4" id="searchbtn">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 lg:w-7 lg:h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
                 </svg>
-              </button>  
-              <input class="h-10 lg:h-12 w-full rounded-lg border-none bg-ghostWhite pl-12 lg:pl-14 pr-4 outline-none" id="search" type="search" placeholder="Search">    
+              </button>    
             </div>
-            <button type="button" class="block sm:hidden px-2 xl:px-4">
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 lg:w-7 lg:h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
-              </svg>
-            </button>    
             <a href="#" class="block px-2 xl:px-4">
               <svg width="25" height="28" class="w-5 h-5 lg:w-7 lg:h-7" viewBox="0 0 25 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M22.7923 9.72328L20.0477 8.72431C21.04 7.90433 21.4637 6.6037 21.16 5.36777C20.5629 2.93949 17.6022 2.01768 15.7317 3.67126L13.8367 5.34644L13.4618 2.83411C13.0911 0.360653 10.2275 -0.829344 8.21301 0.64448C7.20572 1.38139 6.6699 2.65172 6.90751 3.94158L4.31982 2.99975C3.0467 2.53628 1.63363 3.19515 1.17016 4.46844L0.0496135 7.54717C-0.105097 7.97225 0.11409 8.44234 0.539229 8.597C0.711658 8.65973 13.1579 13.1898 13.3407 13.2563C12.8227 13.2563 1.47881 13.2563 0.979735 13.2563C0.527362 13.2563 0.160629 13.623 0.160629 14.0754V25.5427C0.160629 26.8976 1.26296 28 2.61789 28H9.17064H12.447H18.9998C20.3547 28 21.457 26.8976 21.457 25.5427V16.2105L22.0907 16.4411C22.5138 16.5952 22.9851 16.3784 23.1405 15.9516L24.2611 12.8728C24.7244 11.5996 24.0656 10.1867 22.7923 9.72328ZM8.35148 26.3618H2.61784C2.16618 26.3618 1.79873 25.9943 1.79873 25.5427V14.8945H8.35148V26.3618ZM11.6278 26.3618H9.98969V14.8945H11.6278V26.3618ZM16.8166 4.89866C17.7668 4.05861 19.2669 4.52985 19.5691 5.75895C19.8914 7.06942 18.6247 8.20571 17.3569 7.74503C16.2786 7.35254 15.7733 7.16862 14.6935 6.77558L16.8166 4.89866ZM9.18021 1.96671C10.204 1.21782 11.6541 1.82551 11.8417 3.07703L12.2617 5.89042C11.9594 5.78038 9.89585 5.02925 9.59851 4.92108C8.33064 4.45936 8.09117 2.76329 9.18021 1.96671ZM9.56608 10.1392L1.86917 7.33772L2.7096 5.02871C2.8641 4.60428 3.33512 4.38476 3.75949 4.53915C4.62082 4.85261 10.421 6.96371 10.6866 7.0604L9.56608 10.1392ZM12.6449 11.2598L11.1055 10.6995L12.2261 7.62078L13.7655 8.1811L12.6449 11.2598ZM19.8188 25.5427C19.8188 25.9943 19.4513 26.3618 18.9996 26.3618H13.2661V14.8945H17.8415L19.8188 15.6142V25.5427H19.8188ZM22.7216 12.3125L21.8812 14.6215L14.1843 11.8201L15.3049 8.74132L22.232 11.2626C22.6565 11.4171 22.876 11.8881 22.7216 12.3125Z" fill="#1F2937"/>
@@ -159,12 +161,26 @@
                 <path d="M6.91119 23.0001L7.44453 23.9144C9.84453 28.0287 14.6445 28.0287 17.0445 23.9144L17.5779 23.0001M1.82163 19.7329L1.95943 20.017C2.84446 21.8415 4.69409 23.0001 6.72196 23.0001H17.683C19.4208 23.0001 21.0381 22.1123 21.9711 20.6463C23.2882 18.5769 22.9393 15.862 21.1419 14.1928L21.0834 14.1384C19.863 13.0051 19.2622 11.354 19.4688 9.70139L19.5549 9.01215C20.0425 5.1118 17.0012 1.66675 13.0705 1.66675H10.8C6.87406 1.66675 3.83654 5.1076 4.32349 9.0032L4.4293 9.84966C4.62415 11.4085 4.05474 12.9655 2.90023 14.0309C1.32327 15.4861 0.885143 17.8022 1.82163 19.7329Z" stroke="#1F2937" stroke-width="2" stroke-linecap="round"/>
               </svg>
             </a>
-            <button type="button" class="ml-2 xl:ml-4">
+            <button type="button" id="userProfile" class="ml-2 xl:ml-4">
               <div class="w-8 h-8 md:h-10 md:w-10 rounded-full overflow-hidden">
                 <img alt="Man" class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1600486913747-55e5470d6f40?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1770&amp;q=80">
               </div>
             </button>
-          </div>          
+          </div>
+          <div class="homeProfile">
+            <a href="javascript:void(0)" class="flex items-center text-dark group hover:text-leafGreen">
+              <span class="icon-true mr-3 text-white group-hover:text-leafGreen text-sm"></span>
+              Account Settings
+            </a>
+            <a href="javascript:void(0)" class="flex items-center text-leafGreen">
+              <span class="icon-true mr-3 text-leafGreen text-sm"></span>
+              Account SYNC
+            </a>
+            <a href="javascript:void(0)" class="flex items-center text-dark group hover:text-leafGreen">
+              <span class="icon-true mr-3 text-white group-hover:text-leafGreen text-sm"></span>
+              Logout
+            </a>
+          </div>        
         </div>
         <div class="content-area h-[calc(100vh-72px)] sm:h-[calc(100vh-80px)] lg:h-[calc(100vh-96px)]">
             
