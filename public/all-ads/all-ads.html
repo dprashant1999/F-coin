@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>F-coin || Dashboard</title>
+    <title>All Ads</title>
     <link rel="stylesheet" href="../assest/css/fonts.css" />
     <link rel="stylesheet" href="../assest/css/iconmoon.css" />
     <link rel="stylesheet" href="../assest/css/style.css" />
@@ -68,7 +68,7 @@
       <div class="right_bar relative ml-auto">
         <!-- header -->
         <div class="w-full bg-white p-5 lg:px-6 xl:px-12 lg:py-6 flex items-center">
-          <h3>Dashboard</h3>
+          <h3>All Advertisments</h3>
           <div class="flex items-center ml-auto">
             <div class="relative hidden sm:block w-full max-w-[250px] 2xl:max-w-[355px] mr-5 2xl:mr-8">
               <button type="button" class="absolute top-1/2 left-4 -translate-y-1/2 rounded-md text-gray-600 transition hover:text-gray-700">
@@ -118,134 +118,26 @@
         <!-- main-content  -->
         <div class="content-area h-[calc(100vh-73px)] sm:h-[calc(100vh-82px)] lg:h-[calc(100vh-96px)] p-6 lg:p-8 xl:p-10 pb-0 overflow-y-auto">
           <div class="flex flex-wrap items-center -mx-3">
-            <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/2 xl:w-1/3 2xl:max-w-[349px] p-3">
+            <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/2 xl:w-1/3 p-3">
               <a href="javascript:void(0)">
-                <div class="dbCard">
-                  <span class="dcardTitel anim">Total Balance</span>
-                  <div class="flex items-center pt-7">
-                    <div class="inline-block mr-4 xl:mr-6 w-10 h-10 xl:w-14 xl:h-14 rounded">
-                      <img src="../assest/images/svg/coin.svg" alt="totalBalance"/>
-                    </div>
-                    <h3 class="font-semibold inline-block">3,65,000</h3>
-                  </div>
+                <div class="drop-shadow-one p-5 pt-0 bg-white rounded-2xl">
+                  <span class="block -mx-5 bg-gradient-to-r from-leafGreen/80 p-6 rounded-2xl"></span>
                 </div>
               </a>
             </div>
-            <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/2 xl:w-1/3 2xl:max-w-[349px] p-3">
+            <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/2 xl:w-1/3 p-3">
               <a href="javascript:void(0)">
-                <div class="dbCard">
-                  <span class="dcardTitel anim">Total Earnings</span>
-                  <div class="flex items-center pt-7">
-                    <div class="mr-4 xl:mr-6 w-10 h-10 xl:w-14 xl:h-14 rounded bg-greenishYellow p-2 flex items-center justify-center">
-                      <span class="icon-up text-xl xl:text-2xl text-leafGreen"></span>
-                    </div>
-                    <h3 class="font-semibold inline-block">11,02,000</h3>
-                  </div>
+                <div class="drop-shadow-one p-5 pt-0 bg-white rounded-2xl">
+                  <span class="block -mx-5 bg-gradient-to-r from-leafGreen/80 p-6 rounded-2xl"></span>
                 </div>
               </a>
             </div>
-            <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/2 xl:w-1/3 2xl:max-w-[349px] p-3">
+            <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/2 xl:w-1/3 p-3">
               <a href="javascript:void(0)">
-                <div class="dbCard">
-                  <span class="dcardTitel anim">Total Spending</span>
-                  <div class="flex items-center pt-7">
-                    <div class="mr-4 xl:mr-6 w-10 h-10 xl:w-14 xl:h-14 rounded bg-greenishYellow p-2 flex items-center justify-center">
-                      <span class="icon-down text-[26px] xl:text-32 text-leafGreen"></span>
-                    </div>
-                    <h3 class="font-semibold inline-block">2,000</h3>
-                  </div>
+                <div class="drop-shadow-one p-5 pt-0 bg-white rounded-2xl">
+                  <span class="block -mx-5 bg-gradient-to-r from-leafGreen/80 p-6 rounded-2xl"></span>
                 </div>
               </a>
-            </div>
-          </div>
-          <div class="w-full relative p-10 bg-white max-h-[500px] rounded-3xl mt-3">
-            <div class="flex items-center p-2 px-4 bg-white border border-gray-200 rounded-md absolute right-10 top-10 datepicker text-grey">
-              <span class="icon-filter-calender text-sm"></span>
-              <input type="date" class="outline-none px-2 text-sm" value="2017-01"/>
-              <span class="icon-arrow-down-2 text-[10px]"></span>
-            </div>
-            <canvas id="myChart"></canvas>
-          </div>
-          <div class="w-full mt-8">
-            <div class="relative flex flex-col min-w-0 break-words w-full mb-6">
-              <div class="flex flex-wrap md:flex-nowrap justify-between space-y-3 sm:space-y-0">
-                <h3>Recent Activity</h3>
-                <div class="flex flex-wrap space-y-3 sm:space-y-0 sm:flex-nowrap sm:space-x-5 w-full sm:w-auto">
-                  <select name="product" class="w-full sm:w-auto outline-none px-4 py-2 rounded-lg text-sm border border-gray-200 text-darkGrey font-normal appearance-none cursor-pointer" id="product">
-                    <option value="eventoPackage">Evento Package</option>
-                    <option value="festumEvento">Festum Evento</option>
-                    <option value="friendsFields">Friends Fields</option>
-                  </select>
-                  <labal class="toDatepiker">
-                    <span class="icon-filter-calender text-sm pr-1"></span>
-                    <input type="date" name="date" id="fromDate"/>
-                    <span>-</span>
-                    <input type="date" name="date" id="toDate">
-                  </labal>
-                </div>
-              </div>
-              <div class="block w-full overflow-x-auto">
-                <table class="items-center w-full bg-transparent border-collapse">
-                  <tbody>
-                    <tr class="drop-shadow-table">
-                      <td class="text-left flex items-center rounded-tl-xl rounded-bl-xl bg-white">
-                        <div class="tProfile">
-                          <span class="icon-d-mart-shop tprofileIcon"></span>
-                        </div>
-                        <div class="pl-4">
-                          <span class="tTitel">D-Mart Shopping</span>
-                          <span class="tSubTitel">September 1, 2022 at 4:44 PM</span>
-                        </div>
-                      </td>
-                      <td class="bg-white">
-                        <span class="tTitel">From: Olivia Smith</span>
-                        <span class="tSubTitel">Evento Package</span>
-                      </td>
-                      <td class="bg-white">
-                        <span class="tTitel">Transaction ID</span>
-                        <span class="tSubTitel">4567364789765</span>
-                      </td>
-                      <td class="text-center bg-white">
-                        <span class="rpCircle"></span>
-                        <span class="rpTitel">Redeemed</span>
-                      </td>
-                      <td class="text-right rounded-br-xl rounded-tr-xl bg-white">
-                        <span class="tcTitel">- 3000
-                          <img src="../assest/images/svg/twemoji_coin.svg" alt="coin" class="block pl-3"/>
-                        </span>
-                      </td>
-                    </tr>
-                    <tr class="drop-shadow-table">
-                      <td class="text-left flex items-center rounded-tl-xl rounded-bl-xl bg-white">
-                        <div class="tProfile">
-                          <span class="tprofileName">JD</span>
-                        </div>
-                        <div class="pl-4">
-                          <span class="tTitel">D-Mart Shopping</span>
-                          <span class="tSubTitel">September 1, 2022 at 4:44 PM</span>
-                        </div>
-                      </td>
-                      <td class="bg-white">
-                        <span class="tTitel">From: Olivia Smith</span>
-                        <span class="tSubTitel">Evento Package</span>
-                      </td>
-                      <td class="bg-white">
-                        <span class="tTitel">Transaction ID</span>
-                        <span class="tSubTitel">4567364789765</span>
-                      </td>
-                      <td class="text-center bg-white">
-                        <span class="rpCircle"></span>
-                        <span class="rpTitel">Redeemed</span>
-                      </td>
-                      <td class="text-right rounded-br-xl rounded-tr-xl bg-white">
-                        <span class="tcTitel text-leafGreen">- 3000
-                          <img src="../assest/images/svg/twemoji_coin.svg" alt="coin" class="block pl-3"/>
-                        </span>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
             </div>
           </div>
         </div>
@@ -253,91 +145,5 @@
     </div>
     <script src="../assest/js/jquery.min.js"></script>
     <script src="../assest/js/script.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script>
-        const ctx = document.getElementById('myChart');        
-        new Chart(ctx, {          
-          type: 'line',
-          data: {
-            labels: ['10:30 AM', '11:30 AM', '12:30 PM', '01:30 PM', '02:30 PM', '03:30 PM', '04:30 PM', '05:30 PM', '06:30 PM'],          
-            datasets: [{
-              label: 'EP',
-              data: [3000, 5000, 3000, 7000, 6000, 2000, 4000, 1000, 3000],
-              borderWidth: 1,
-              tension: 0.3              
-            }, {
-              label: 'FE',
-              data: [1000, 3000, 8000, 5000, 2000, 7000, 3000, 2000, 5000],
-              borderWidth: 1,
-              tension: 0.3              
-           },
-           {
-              label: 'FF',
-              data: [5000, 8000, 4000, 3000, 6000, 7000, 2000, 5000, 2000],
-              borderWidth: 1,
-              tension: 0.3               
-           }]
-          }, 
-          options: {
-            scales: {  
-              x: {
-                grid: {
-                  display: false
-                }
-              },            
-              y: {
-                min: 0,
-                max: 9000,
-                ticks: {
-                  stepSize: 2500
-                },
-                grid: {
-                  display: false
-                }
-              }
-            },
-            plugins: {
-              title: {
-                  display: true,
-                  text: 'Custom Chart Title',
-                  align:'start',
-                  color:'#1F2937',
-                  padding: {
-                      top: 10,
-                      bottom: 8
-                  },
-                  font: {
-                    size: 32,
-                  }
-              },
-              subtitle: {
-                display: true,
-                text: 'September 1,2022',
-                align:'start',
-                color:'#6B7280',
-                padding: {
-                    bottom: 0
-                },
-                font: {
-                    size: 14,
-                },
-                
-              },
-                legend: {
-                    labels: {
-                      fontColor: "white",
-                      fontSize: 12
-                    }
-                }
-            },
-            elements: {
-              point:{
-                radius: 0
-              }
-            }
-          }
-        });
-    </script>
   </body>
 </html>
