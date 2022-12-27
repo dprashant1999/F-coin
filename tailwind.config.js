@@ -22,7 +22,7 @@ module.exports = {
       },
     },
     fontFamily: {
-      pop: ['Poppins', 'sans-serif'] 
+      pop: ['Poppins', 'sans-serif']
     },
     fontSize: {
       'xs': ['.75rem', '1rem'],
@@ -50,7 +50,9 @@ module.exports = {
       dropShadow: {
         'form':'0px 7px 29px rgba(100, 100, 111, 0.2)',
         'active':'-1px 4px 15px rgba(208, 210, 218, 0.63)',
-        'one':'4px 4px 14px rgba(0, 0, 0, 0.16), 0px 18px 32px rgba(208, 210, 218, 0.15)',
+        'one': ['4px 4px 14px rgba(0, 0, 0, 0.16)',
+              '0px 18px 32px rgba(208, 210, 218, 0.15)'],
+        'table' : '0px 18px 32px rgba(208, 210, 218, 0.15)',
       }
     },
   },
