@@ -25,6 +25,12 @@ p {@apply font-semibold md:font-bold text-xs md:text-base lg:text-lg;}
 .balancesubTitle{@apply block text-grey text-sm md:text-base;}
 .productTitle{@apply text-xl xl:text-2xl text-dark font-semibold;}
 .productsubTitle{@apply block text-grey text-xs sm:text-sm whitespace-nowrap;}
+.acName{@apply text-sm sm:text-base lg:text-lg lg:leading-8 text-dark font-normal pr-2 w-full text-ellipsis whitespace-nowrap overflow-hidden;}
+.acAmount{@apply text-sm sm:mt-0 sm:text-base lg:text-lg lg:leading-8 text-dark font-normal;}
+.acInput{@apply w-full bg-gray-50 p-3 lg:p-6 mt-3 rounded-xl lg:rounded-2xl text-base lg:text-lg lg:leading-8 text-dark font-normal outline-0;}
+.qtId{@apply text-center py-3 px-1 max-w-[75px] min-w-[75px] sm:max-w-[85px] sm:min-w-[85px] inline-block;}
+.qtProfile{@apply mx-auto bg-greenishYellow w-10 lg:w-12 h-10 lg:h-12 flex items-center justify-center text-sm lg:text-base text-leafGreen font-bold rounded-full;}
+.qtName{@apply text-xs text-dark font-medium pt-2 whitespace-nowrap;}
 
 
 nav a{@apply flex items-center px-6 xl:px-8 py-5 w-full xl:rounded-xl text-grey font-normal anim;}
