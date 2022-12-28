@@ -15,11 +15,17 @@ body{@apply text-dark bg-ghostWhite font-pop;}
  ::-webkit-scrollbar-thumb {border-radius: 0.25rem!important;}
  ::-webkit-scrollbar-track {--tw-bg-opacity: 1!important;background-color: rgb(241 245 249/var(--tw-bg-opacity))!important;}
  ::-webkit-scrollbar-track {border-radius: 0.25rem!important;}
+ /* scroll end  */
 
 h1 {@apply font-bold text-3xl md:text-4xl xl:text-5xl;}
 h2 {@apply font-bold text-2xl md:text-3xl xl:text-4xl;}
 h3 {@apply font-bold text-[16px] md:text-[24px] xl:text-32;}
 p {@apply font-semibold md:font-bold text-xs md:text-base lg:text-lg;}
+.balanceTitle{@apply text-2xl md:text-4xl text-leafGreen font-bold tracking-[1px];}
+.balancesubTitle{@apply block text-grey text-sm md:text-base;}
+.productTitle{@apply text-xl md:text-2xl text-dark font-semibold;}
+.productsubTitle{@apply block text-grey text-xs sm:text-sm whitespace-nowrap;}
+
 
 nav a{@apply flex items-center px-6 xl:px-8 py-5 w-full md:rounded-xl text-grey font-normal anim;}
 nav a.active, nav a:hover{@apply text-leafGreen font-semibold bg-greenishYellow;}
@@ -86,8 +92,5 @@ tr td{@apply border-0 px-6 p-4 align-middle whitespace-nowrap;}
   opacity: 0;
 }
 .toDatepiker input{@apply outline-none text-center relative w-[100px];}
-
-
-
 
 @tailwind utilities;
