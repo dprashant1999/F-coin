@@ -21,9 +21,9 @@ h1 {@apply font-bold text-3xl md:text-4xl xl:text-5xl;}
 h2 {@apply font-bold text-2xl md:text-3xl xl:text-4xl;}
 h3 {@apply font-bold text-[16px] md:text-[24px] xl:text-32;}
 p {@apply font-semibold md:font-bold text-xs md:text-base lg:text-lg;}
-.balanceTitle{@apply text-2xl md:text-4xl text-leafGreen font-bold tracking-[1px];}
+.balanceTitle{@apply text-2xl md:text-3xl 2xl:text-4xl text-leafGreen font-bold tracking-[1px];}
 .balancesubTitle{@apply block text-grey text-sm md:text-base;}
-.productTitle{@apply text-xl md:text-2xl text-dark font-semibold;}
+.productTitle{@apply text-xl xl:text-2xl text-dark font-semibold;}
 .productsubTitle{@apply block text-grey text-xs sm:text-sm whitespace-nowrap;}
 
 
