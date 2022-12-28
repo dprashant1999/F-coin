@@ -601,7 +601,7 @@ p {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1536px) {
   .balanceTitle {
     font-size: 2.25rem;
     line-height: 2.75rem;
@@ -631,7 +631,7 @@ p {
   color: rgb(31 41 55 / var(--tw-text-opacity));
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1280px) {
   .productTitle {
     font-size: 1.5rem;
     line-height: 2rem;
@@ -1287,8 +1287,8 @@ tr td {
   margin-right: 1.25rem;
 }
 
-.mb-6 {
-  margin-bottom: 1.5rem;
+.mb-2 {
+  margin-bottom: 0.5rem;
 }
 
 .-mt-5 {
@@ -1307,12 +1307,12 @@ tr td {
   margin-right: 0.5rem;
 }
 
-.mb-2 {
-  margin-bottom: 0.5rem;
-}
-
 .mt-4 {
   margin-top: 1rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
 }
 
 .mb-3 {
@@ -1511,6 +1511,10 @@ tr td {
   max-width: 250px;
 }
 
+.max-w-\[200px\] {
+  max-width: 200px;
+}
+
 .max-w-\[75px\] {
   max-width: 75px;
 }
@@ -1529,10 +1533,6 @@ tr td {
 
 .max-w-xl {
   max-width: 36rem;
-}
-
-.max-w-full {
-  max-width: 100%;
 }
 
 .border-collapse {
@@ -1603,6 +1603,18 @@ tr td {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
   margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-y-0\.5 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.125rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.125rem * var(--tw-space-y-reverse));
+}
+
+.space-y-0 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0px * var(--tw-space-y-reverse));
 }
 
 .space-x-1 > :not([hidden]) ~ :not([hidden]) {
@@ -1806,6 +1818,10 @@ tr td {
   padding: 0.5rem;
 }
 
+.p-7 {
+  padding: 1.75rem;
+}
+
 .p-6 {
   padding: 1.5rem;
 }
@@ -1847,6 +1863,11 @@ tr td {
   padding-bottom: 0.5rem;
 }
 
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
 .py-1\.5 {
   padding-top: 0.375rem;
   padding-bottom: 0.375rem;
@@ -1862,19 +1883,14 @@ tr td {
   padding-bottom: 15px;
 }
 
-.px-8 {
-  padding-left: 2rem;
-  padding-right: 2rem;
+.px-7 {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
 }
 
 .py-\[14px\] {
   padding-top: 14px;
   padding-bottom: 14px;
-}
-
-.px-5 {
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
 }
 
 .py-3 {
@@ -1892,29 +1908,9 @@ tr td {
   padding-right: 0.25rem;
 }
 
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-}
-
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-
-.px-7 {
-  padding-left: 1.75rem;
-  padding-right: 1.75rem;
-}
-
-.py-9 {
-  padding-top: 2.25rem;
-  padding-bottom: 2.25rem;
-}
-
-.py-\[7\.5px\] {
-  padding-top: 7.5px;
-  padding-bottom: 7.5px;
 }
 
 .py-0 {
@@ -1922,9 +1918,9 @@ tr td {
   padding-bottom: 0px;
 }
 
-.px-3 {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
+.py-9 {
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
 }
 
 .pl-12 {
@@ -2019,30 +2015,6 @@ tr td {
   padding-right: 8rem;
 }
 
-.pb-\[7\.5\] {
-  padding-bottom: 7.5;
-}
-
-.pt-\[7\.5\] {
-  padding-top: 7.5;
-}
-
-.pb-\[7\.5px\] {
-  padding-bottom: 7.5px;
-}
-
-.pt-\[7\.5px\] {
-  padding-top: 7.5px;
-}
-
-.pb-8 {
-  padding-bottom: 2rem;
-}
-
-.pb-7 {
-  padding-bottom: 1.75rem;
-}
-
 .text-left {
   text-align: left;
 }
@@ -2074,14 +2046,14 @@ tr td {
   font-size: 8px;
 }
 
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .text-base {
@@ -2121,10 +2093,6 @@ tr td {
   line-height: 1.25rem;
 }
 
-.tracking-\[1px\] {
-  letter-spacing: 1px;
-}
-
 .text-gray-600 {
   --tw-text-opacity: 1;
   color: rgb(75 85 99 / var(--tw-text-opacity));
@@ -2153,6 +2121,11 @@ tr td {
 .text-grey {
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
+.text-gray-200 {
+  --tw-text-opacity: 1;
+  color: rgb(229 231 235 / var(--tw-text-opacity));
 }
 
 .text-davyGrey {
@@ -2276,6 +2249,10 @@ tr td {
     width: auto;
   }
 
+  .sm\:w-full {
+    width: 100%;
+  }
+
   .sm\:w-1\/2 {
     width: 50%;
   }
@@ -2294,6 +2271,10 @@ tr td {
 
   .sm\:min-w-\[85px\] {
     min-width: 85px;
+  }
+
+  .sm\:max-w-\[200px\] {
+    max-width: 200px;
   }
 
   .sm\:max-w-\[85px\] {
@@ -2325,14 +2306,23 @@ tr td {
     padding: 1.5rem;
   }
 
-  .sm\:py-6 {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+  .sm\:p-7 {
+    padding: 1.75rem;
+  }
+
+  .sm\:py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 
   .sm\:py-3 {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
+  }
+
+  .sm\:py-6 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
   }
 
   .sm\:pb-2 {
@@ -2431,6 +2421,11 @@ tr td {
     padding-right: 0.75rem;
   }
 
+  .md\:py-6 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
   .md\:py-4 {
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -2441,11 +2436,6 @@ tr td {
     padding-right: 60px;
   }
 
-  .md\:py-6 {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-  }
-
   .md\:pb-4 {
     padding-bottom: 1rem;
   }
@@ -2454,12 +2444,20 @@ tr td {
     padding-right: 1.5rem;
   }
 
-  .md\:pl-8 {
-    padding-left: 2rem;
+  .md\:pr-8 {
+    padding-right: 2rem;
   }
 
   .md\:pb-7 {
     padding-bottom: 1.75rem;
+  }
+
+  .md\:pb-6 {
+    padding-bottom: 1.5rem;
+  }
+
+  .md\:pt-6 {
+    padding-top: 1.5rem;
   }
 
   .md\:pl-6 {
@@ -2474,18 +2472,6 @@ tr td {
     padding-right: 1rem;
   }
 
-  .md\:pb-6 {
-    padding-bottom: 1.5rem;
-  }
-
-  .md\:pt-6 {
-    padding-top: 1.5rem;
-  }
-
-  .md\:pr-8 {
-    padding-right: 2rem;
-  }
-
   .md\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
@@ -2494,11 +2480,6 @@ tr td {
   .md\:text-base {
     font-size: 1rem;
     line-height: 1.625rem;
-  }
-
-  .md\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.75rem;
   }
 
   .md\:text-sm {
@@ -2641,6 +2622,14 @@ tr td {
     height: 3.5rem;
   }
 
+  .xl\:w-7\/12 {
+    width: 58.333333%;
+  }
+
+  .xl\:w-5\/12 {
+    width: 41.666667%;
+  }
+
   .xl\:w-1\/3 {
     width: 33.333333%;
   }
@@ -2655,6 +2644,10 @@ tr td {
 
   .xl\:w-14 {
     width: 3.5rem;
+  }
+
+  .xl\:max-w-\[300px\] {
+    max-width: 300px;
   }
 
   .xl\:p-10 {
@@ -2681,19 +2674,23 @@ tr td {
     padding-right: 1rem;
   }
 
+  .xl\:pl-0 {
+    padding-left: 0px;
+  }
+
   .xl\:text-xl {
     font-size: 1.25rem;
     line-height: 1.875rem;
   }
 
-  .xl\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-
   .xl\:text-32 {
     font-size: 2rem;
     line-height: 2.625rem;
+  }
+
+  .xl\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 
@@ -2709,6 +2706,14 @@ tr td {
 
   .\32xl\:mr-8 {
     margin-right: 2rem;
+  }
+
+  .\32xl\:w-8\/12 {
+    width: 66.666667%;
+  }
+
+  .\32xl\:w-4\/12 {
+    width: 33.333333%;
   }
 
   .\32xl\:w-7\/12 {
@@ -2743,14 +2748,6 @@ tr td {
     width: 60%;
   }
 
-  .\32xl\:w-4\/12 {
-    width: 33.333333%;
-  }
-
-  .\32xl\:w-8\/12 {
-    width: 66.666667%;
-  }
-
   .\32xl\:min-w-\[159px\] {
     min-width: 159px;
   }
@@ -2765,18 +2762,6 @@ tr td {
 
   .\32xl\:max-w-\[349px\] {
     max-width: 349px;
-  }
-
-  .\32xl\:max-w-\[22\%\] {
-    max-width: 22%;
-  }
-
-  .\32xl\:max-w-\[46\%\] {
-    max-width: 46%;
-  }
-
-  .\32xl\:max-w-\[32\%\] {
-    max-width: 32%;
   }
 
   .\32xl\:px-3\.5 {
