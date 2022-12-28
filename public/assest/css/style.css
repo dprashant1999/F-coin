@@ -2650,6 +2650,10 @@ tr td {
     max-width: 300px;
   }
 
+  .xl\:flex-nowrap {
+    flex-wrap: nowrap;
+  }
+
   .xl\:p-10 {
     padding: 2.5rem;
   }
