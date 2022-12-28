@@ -46,6 +46,7 @@ module.exports = {
         grey:'#9CA3AF',
         ghostWhite:'#F9FAFB',
         darkGrey:'#6B7280',
+        lightGrey:'#F4F4F5',
       },
       dropShadow: {
         'form':'0px 7px 29px rgba(100, 100, 111, 0.2)',

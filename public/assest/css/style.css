@@ -670,14 +670,9 @@ nav a {
   transition-duration: 300ms;
 }
 
-@media (min-width: 768px) {
-  nav a {
-    border-radius: 0.75rem;
-  }
-}
-
 @media (min-width: 1280px) {
   nav a {
+    border-radius: 0.75rem;
     padding-left: 2rem;
     padding-right: 2rem;
   }
@@ -700,6 +695,12 @@ nav a.active svg, nav a:hover svg {
 }
 
 @media (min-width: 1024px) {
+  .right_bar {
+    width: calc(100% - 300px);
+  }
+}
+
+@media (min-width: 1280px) {
   .right_bar {
     width: calc(100% - 348px);
   }
@@ -1210,12 +1211,12 @@ tr td {
   left: 1.5rem;
 }
 
-.left-4 {
-  left: 1rem;
-}
-
 .right-3 {
   right: 0.75rem;
+}
+
+.left-4 {
+  left: 1rem;
 }
 
 .right-10 {
@@ -1263,8 +1264,8 @@ tr td {
   margin-right: -0.5rem;
 }
 
-.mt-\[91px\] {
-  margin-top: 91px;
+.mt-8 {
+  margin-top: 2rem;
 }
 
 .ml-4 {
@@ -1283,12 +1284,16 @@ tr td {
   margin-right: 0.75rem;
 }
 
-.mr-5 {
-  margin-right: 1.25rem;
-}
-
 .mb-2 {
   margin-bottom: 0.5rem;
+}
+
+.mt-\[91px\] {
+  margin-top: 91px;
+}
+
+.mr-5 {
+  margin-right: 1.25rem;
 }
 
 .-mt-5 {
@@ -1329,10 +1334,6 @@ tr td {
 
 .mr-4 {
   margin-right: 1rem;
-}
-
-.mt-8 {
-  margin-top: 2rem;
 }
 
 .mt-2\.5 {
@@ -1503,16 +1504,20 @@ tr td {
   min-width: 75px;
 }
 
+.max-w-\[300px\] {
+  max-width: 300px;
+}
+
+.max-w-\[200px\] {
+  max-width: 200px;
+}
+
 .max-w-\[320px\] {
   max-width: 320px;
 }
 
 .max-w-\[250px\] {
   max-width: 250px;
-}
-
-.max-w-\[200px\] {
-  max-width: 200px;
 }
 
 .max-w-\[75px\] {
@@ -1736,6 +1741,15 @@ tr td {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-transparent {
+  background-color: transparent;
+}
+
+.bg-lightGrey {
+  --tw-bg-opacity: 1;
+  background-color: rgb(244 244 245 / var(--tw-bg-opacity));
+}
+
 .bg-ghostWhite {
   --tw-bg-opacity: 1;
   background-color: rgb(249 250 251 / var(--tw-bg-opacity));
@@ -1753,10 +1767,6 @@ tr td {
 .bg-greenishYellow {
   --tw-bg-opacity: 1;
   background-color: rgb(236 252 203 / var(--tw-bg-opacity));
-}
-
-.bg-transparent {
-  background-color: transparent;
 }
 
 .bg-leafGreen {
@@ -1943,6 +1953,14 @@ tr td {
   padding-right: 2rem;
 }
 
+.pl-4 {
+  padding-left: 1rem;
+}
+
+.pl-3 {
+  padding-left: 0.75rem;
+}
+
 .pt-0 {
   padding-top: 0px;
 }
@@ -1961,14 +1979,6 @@ tr td {
 
 .pr-1 {
   padding-right: 0.25rem;
-}
-
-.pl-4 {
-  padding-left: 1rem;
-}
-
-.pl-3 {
-  padding-left: 0.75rem;
 }
 
 .pb-4 {
@@ -2162,13 +2172,13 @@ tr td {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
-.drop-shadow-one {
-  --tw-drop-shadow: drop-shadow(4px 4px 14px rgba(0, 0, 0, 0.16)) drop-shadow(0px 18px 32px rgba(208, 210, 218, 0.15));
+.drop-shadow-table {
+  --tw-drop-shadow: drop-shadow(0px 18px 32px rgba(208, 210, 218, 0.15));
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
-.drop-shadow-table {
-  --tw-drop-shadow: drop-shadow(0px 18px 32px rgba(208, 210, 218, 0.15));
+.drop-shadow-one {
+  --tw-drop-shadow: drop-shadow(4px 4px 14px rgba(0, 0, 0, 0.16)) drop-shadow(0px 18px 32px rgba(208, 210, 218, 0.15));
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
@@ -2233,8 +2243,8 @@ tr td {
     display: none;
   }
 
-  .sm\:h-\[calc\(100vh-80px\)\] {
-    height: calc(100vh - 80px);
+  .sm\:h-\[calc\(100vh-84px\)\] {
+    height: calc(100vh - 84px);
   }
 
   .sm\:h-\[calc\(100vh-82px\)\] {
@@ -2494,6 +2504,10 @@ tr td {
 }
 
 @media (min-width: 1024px) {
+  .lg\:mt-\[91px\] {
+    margin-top: 91px;
+  }
+
   .lg\:mt-8 {
     margin-top: 2rem;
   }
@@ -2504,6 +2518,10 @@ tr td {
 
   .lg\:h-12 {
     height: 3rem;
+  }
+
+  .lg\:h-\[calc\(100vh-100px\)\] {
+    height: calc(100vh - 100px);
   }
 
   .lg\:h-\[calc\(100vh-96px\)\] {
@@ -2644,6 +2662,10 @@ tr td {
 
   .xl\:w-14 {
     width: 3.5rem;
+  }
+
+  .xl\:max-w-\[348px\] {
+    max-width: 348px;
   }
 
   .xl\:max-w-\[300px\] {
