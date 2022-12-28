@@ -1584,13 +1584,8 @@ tr td {
   height: 66px;
 }
 
-<<<<<<< HEAD
 .h-4 {
   height: 1rem;
-=======
-.h-screen {
-  height: 100vh;
->>>>>>> 8a66c33d2f78aef18e2f764180b625d523e511cd
 }
 
 .max-h-\[500px\] {
@@ -1665,7 +1660,6 @@ tr td {
   min-width: 75px;
 }
 
-<<<<<<< HEAD
 .min-w-\[100px\] {
   min-width: 100px;
 }
@@ -1708,8 +1702,6 @@ tr td {
   min-width: 12px;
 }
 
-=======
->>>>>>> 8a66c33d2f78aef18e2f764180b625d523e511cd
 .max-w-\[200px\] {
   max-width: 200px;
 }
