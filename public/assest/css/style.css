@@ -596,6 +596,13 @@ p {
 
 @media (min-width: 768px) {
   .balanceTitle {
+    font-size: 1.875rem;
+    line-height: 2.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .balanceTitle {
     font-size: 2.25rem;
     line-height: 2.75rem;
   }
@@ -1524,6 +1531,10 @@ tr td {
   max-width: 36rem;
 }
 
+.max-w-full {
+  max-width: 100%;
+}
+
 .border-collapse {
   border-collapse: collapse;
 }
@@ -1901,6 +1912,21 @@ tr td {
   padding-bottom: 2.25rem;
 }
 
+.py-\[7\.5px\] {
+  padding-top: 7.5px;
+  padding-bottom: 7.5px;
+}
+
+.py-0 {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
 .pl-12 {
   padding-left: 3rem;
 }
@@ -1991,6 +2017,30 @@ tr td {
 
 .pr-32 {
   padding-right: 8rem;
+}
+
+.pb-\[7\.5\] {
+  padding-bottom: 7.5;
+}
+
+.pt-\[7\.5\] {
+  padding-top: 7.5;
+}
+
+.pb-\[7\.5px\] {
+  padding-bottom: 7.5px;
+}
+
+.pt-\[7\.5px\] {
+  padding-top: 7.5px;
+}
+
+.pb-8 {
+  padding-bottom: 2rem;
+}
+
+.pb-7 {
+  padding-bottom: 1.75rem;
 }
 
 .text-left {
@@ -2280,6 +2330,11 @@ tr td {
     padding-bottom: 1.5rem;
   }
 
+  .sm\:py-3 {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
   .sm\:pb-2 {
     padding-bottom: 0.5rem;
   }
@@ -2386,6 +2441,11 @@ tr td {
     padding-right: 60px;
   }
 
+  .md\:py-6 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
   .md\:pb-4 {
     padding-bottom: 1rem;
   }
@@ -2412,6 +2472,18 @@ tr td {
 
   .md\:pr-4 {
     padding-right: 1rem;
+  }
+
+  .md\:pb-6 {
+    padding-bottom: 1.5rem;
+  }
+
+  .md\:pt-6 {
+    padding-top: 1.5rem;
+  }
+
+  .md\:pr-8 {
+    padding-right: 2rem;
   }
 
   .md\:text-2xl {
@@ -2480,6 +2552,10 @@ tr td {
   .lg\:translate-x-0 {
     --tw-translate-x: 0px;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .lg\:flex-nowrap {
+    flex-wrap: nowrap;
   }
 
   .lg\:rounded-2xl {
@@ -2689,6 +2765,18 @@ tr td {
 
   .\32xl\:max-w-\[349px\] {
     max-width: 349px;
+  }
+
+  .\32xl\:max-w-\[22\%\] {
+    max-width: 22%;
+  }
+
+  .\32xl\:max-w-\[46\%\] {
+    max-width: 46%;
+  }
+
+  .\32xl\:max-w-\[32\%\] {
+    max-width: 32%;
   }
 
   .\32xl\:px-3\.5 {
