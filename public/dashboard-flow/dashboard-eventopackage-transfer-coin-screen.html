@@ -118,6 +118,7 @@
       </div>
       <!-- right-bar -->
       <div class="right_bar relative ml-auto">
+        <!-- header -->
         <div class="w-full bg-white p-5 lg:px-6 xl:px-12 lg:py-6 flex items-center relative">
           <h3>Dashboard</h3>
           <div class="flex items-center ml-auto">
@@ -182,9 +183,11 @@
             </a>
           </div>        
         </div>
+        <!-- main-content -->
         <div class="content-area h-[calc(100vh-72px)] sm:h-[calc(100vh-84px)] lg:h-[calc(100vh-100px)] p-4 sm:p-6 lg:p-8 xl:p-10 pb-0 overflow-y-auto">
+           <!-- Pagination -->
           <div class="sm:flex items-center justify-between pb-4 md:pb-7 lg:pb-11">
-            <!-- back arrow -->
+            <!-- Pagination -->
             <a href="#" class="text-xl md:text-2xl font-semibold flex items-center">
               <span class="pr-3 md:pr-6">
                 <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -209,10 +212,10 @@
               <span class="text-xs md:text-sm text-[#0041D1]">As per the guidelines of bank all users need to complete KYC to get free from transaction limits </span>
             </div>
           </div>
-          <!-- Transfer To -->
+          <!-- transfer from / Transfer To -->
           <div class="flex flex-wrap -mx-3">
+            <!-- transfer from -->
             <div class="w-full 2xl:w-1/2 md:px-3">
-              <!-- transfer from -->
               <form method="" action="" class="bg-white p-4 py-6 md:p-8 rounded-2xl h-full">
                 <h3 class="text-xl md:text-2xl font-semibold pb-5">Transfer From</h3>
                 <!-- Total Coin / transferable Coin -->
@@ -239,8 +242,8 @@
                 </div>
               </form>
             </div>
+            <!-- Transfer To -->
             <div class="w-full pt-7 2xl:w-1/2 2xl:pt-0 md:px-3">
-              <!-- Transfer To -->
               <form method="" action="" class="bg-white p-4 md:p-8 rounded-2xl">
                 <h3 class="text-xl md:text-2xl font-semibold pb-5">Transfer To</h3>
                 <!-- Enter ID -->
@@ -310,15 +313,15 @@
               </form>
             </div>
           </div>
-          <!--  successfully Transferred -->
-          <div class="absolute top-20 md:top-24 2xl:top-8 px-4 w-full max-w-xl lg:max-w-3xl">
-            <div class="flex items-center bg-[#ECFCCB] p-4 rounded-xl">
-              <span>
-                <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg"> <g clip-path="url(#clip0_587_23732)"> <path fill-rule="evenodd" clip-rule="evenodd" d="M8 16.5C12.4183 16.5 16 12.9183 16 8.5C16 4.08172 12.4183 0.5 8 0.5C3.58172 0.5 0 4.08172 0 8.5C0 12.9183 3.58172 16.5 8 16.5ZM11.7071 7.20711C12.0976 6.81658 12.0976 6.18342 11.7071 5.79289C11.3166 5.40237 10.6834 5.40237 10.2929 5.79289L7 9.08579L5.70711 7.79289C5.31658 7.40237 4.68342 7.40237 4.29289 7.79289C3.90237 8.18342 3.90237 8.81658 4.29289 9.20711L6.29289 11.2071C6.68342 11.5976 7.31658 11.5976 7.70711 11.2071L11.7071 7.20711Z" fill="#65A30D"/> </g> <defs> <clipPath id="clip0_587_23732"> <rect width="16" height="16" fill="white" transform="translate(0 0.5)"/> </clipPath> </defs> </svg>
-              </span>
-              <span class="text-xs sm:text-sm md:text-base text-leafGreen font-semibold ml-4">Your Coin are successfully Transferred</span>
-            </div>
-          </div>
+        </div>
+      </div>
+      <!-- successfully Transferred -->
+      <div class="absolute top-20 2xl:top-32 px-4 w-full flex flex-col items-center justify-between">
+        <div class="w-full max-w-xl lg:max-w-3xl flex items-center bg-[#ECFCCB] p-4 rounded-xl">
+          <span>
+            <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg"> <g clip-path="url(#clip0_587_23732)"> <path fill-rule="evenodd" clip-rule="evenodd" d="M8 16.5C12.4183 16.5 16 12.9183 16 8.5C16 4.08172 12.4183 0.5 8 0.5C3.58172 0.5 0 4.08172 0 8.5C0 12.9183 3.58172 16.5 8 16.5ZM11.7071 7.20711C12.0976 6.81658 12.0976 6.18342 11.7071 5.79289C11.3166 5.40237 10.6834 5.40237 10.2929 5.79289L7 9.08579L5.70711 7.79289C5.31658 7.40237 4.68342 7.40237 4.29289 7.79289C3.90237 8.18342 3.90237 8.81658 4.29289 9.20711L6.29289 11.2071C6.68342 11.5976 7.31658 11.5976 7.70711 11.2071L11.7071 7.20711Z" fill="#65A30D"/> </g> <defs> <clipPath id="clip0_587_23732"> <rect width="16" height="16" fill="white" transform="translate(0 0.5)"/> </clipPath> </defs> </svg>
+          </span>
+          <span class="text-xs sm:text-sm md:text-base text-leafGreen font-semibold ml-4">Your Coin are successfully Transferred</span>
         </div>
       </div>
     </div>

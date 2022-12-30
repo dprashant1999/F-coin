@@ -11,8 +11,8 @@
   </head>
   <body>
     <div class="main flex min-h-screen relative">
-       <!-- left-bar -->
-       <div class="left_bar">
+      <!-- left-bar -->
+      <div class="left_bar">
         <a href="javascript:void(0)" class="inline-block w-full text-center">
           <img src="../assest/images/svg/logo.svg" alt="logo" class="mx-auto"/>
         </a>
@@ -118,6 +118,7 @@
       </div>
       <!-- right-bar -->
       <div class="right_bar relative ml-auto">
+        <!-- header -->
         <div class="w-full bg-white p-5 lg:px-6 xl:px-12 lg:py-6 flex items-center relative">
           <h3>Dashboard</h3>
           <div class="flex items-center ml-auto">
@@ -182,8 +183,9 @@
             </a>
           </div>        
         </div>
+        <!-- main content -->
         <div class="content-area h-[calc(100vh-72px)] sm:h-[calc(100vh-84px)] lg:h-[calc(100vh-100px)] p-4 sm:p-6 lg:p-8 xl:p-10 pb-0 overflow-y-auto">
-          <!-- back arrow -->
+          <!-- Pagination -->
           <a href="#" class="text-xl md:text-2xl font-semibold flex items-center pb-2 md:pb-4">
             <span class="pr-3 md:pr-6">
               <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -192,7 +194,7 @@
             </span>
             Total Balance
           </a>
-            
+          <!-- Total Balance coin -->
           <div class="flex flex-wrap items-center -mx-2">
             <!-- total balance -->
             <div class="w-full xl:w-[30%] 2xl:w-[22%] p-2">
@@ -204,7 +206,7 @@
             <!-- coin -->
             <div class="w-full xl:w-[70%] 2xl:w-[46%] p-2">
               <div class="bg-white rounded-2xl md:rounded-3xl flex flex-wrap w-full md:max-w-[646px] 2xl:max-w-full">
-                <div class="w-full sm:w-1/3 balanceTab rounded-3xl px-7 py-4 pb-4 md:pb-6 md:py-6 active">
+                <div class="w-full sm:w-1/3 balanceTab active rounded-3xl px-7 py-4 pb-4 md:pb-6 md:py-6">
                   <span class="productsubTitle">EventoPackage Coin</span>
                   <h3 class="productTitle">20,000</h3>
                 </div>
@@ -246,13 +248,13 @@
               </div>
             </div>
           </div>
-
+          <!-- Transaction History -->
           <div class="w-full mt-4">
             <div class="relative flex flex-col min-w-0 break-words w-full mb-6">
               <div class="flex flex-wrap md:flex-nowrap justify-between space-y-3 sm:space-y-0 pb-3">
-                <h3 class="font-semibold">Transaction History</h3>
+                <h4 class="font-semibold text-lg sm:text-xl lg:text-2xl">Transaction History</h4>
                 <div class="flex flex-wrap space-y-3 sm:space-y-0 sm:flex-nowrap sm:space-x-5 w-full sm:w-auto">
-                  <select name="product" class="w-full sm:w-auto outline-none px-4 py-2 rounded-lg text-sm border border-gray-200 text-darkGrey font-normal appearance-none cursor-pointer" id="product">
+                  <select name="product" class="selectFilter" id="product">
                     <option value="eventoPackage">Evento Package</option>
                     <option value="festumEvento">Festum Evento</option>
                     <option value="friendsFields">Friends Fields</option>
