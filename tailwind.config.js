@@ -55,6 +55,7 @@ module.exports = {
               '0px 18px 32px rgba(208, 210, 218, 0.15)'],
         'table' : '0px 18px 32px rgba(208, 210, 218, 0.15)',
         'two':'0px 0px 8px rgba(0, 0, 0, 0.15);',
+        'three':'0px 18px 32px rgba(208, 210, 218, 0.15);',
       }
     },
   },
