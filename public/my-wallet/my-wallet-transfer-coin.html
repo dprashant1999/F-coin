@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>All Ads</title>
+    <title>F-coin || Transfer Coin screen</title>
     <link rel="stylesheet" href="../assest/css/fonts.css" />
     <link rel="stylesheet" href="../assest/css/iconmoon.css" />
     <link rel="stylesheet" href="../assest/css/style.css" />
   </head>
   <body>
     <div class="main flex min-h-screen relative">
-      <!-- left-bar -->
-      <div class="left_bar">
+       <!-- left-bar -->
+       <div class="left_bar">
         <a href="javascript:void(0)" class="inline-block w-full text-center">
           <img src="../assest/images/svg/logo.svg" alt="logo" class="mx-auto"/>
         </a>
@@ -183,271 +183,166 @@
           </div>        
         </div>
         <div class="content-area h-[calc(100vh-72px)] sm:h-[calc(100vh-84px)] lg:h-[calc(100vh-100px)] p-4 sm:p-6 lg:p-8 xl:p-10 pb-0 overflow-y-auto">
-          <!-- titel and date filters -->
-          <div class="relative w-full mb-2">
-            <div class="flex flex-wrap md:flex-nowrap justify-between space-y-3 sm:space-y-0">
-              <a href="#" class="text-xl md:text-2xl font-semibold flex items-center sm:pb-2 md:pb-4">
-                <span class="pr-3 md:pr-6">
-                  <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.3937 16.8625C9.9174 17.4089 9.08831 17.4657 8.54192 16.9893L0.51251 9.98935C0.226598 9.74009 0.0625 9.37933 0.0625 9.00002C0.0625 8.62071 0.226597 8.25995 0.51251 8.01069L8.54192 1.01069C9.08831 0.534353 9.9174 0.591138 10.3937 1.13753C10.8701 1.68392 10.8133 2.51301 10.2669 2.98935L4.87782 7.68752L20.625 7.68752C21.3499 7.68752 21.9375 8.27514 21.9375 9.00002C21.9375 9.72489 21.3499 10.3125 20.625 10.3125L4.87782 10.3125L10.2669 15.0107C10.8133 15.487 10.8701 16.3161 10.3937 16.8625Z" fill="#1F2937"></path>
-                  </svg>                
-                </span>
-                Total Balance
-              </a>
-              <div class="flex flex-wrap items-center sm:flex-nowrap space-x-2 sm:space-x-5 w-full sm:w-auto">
-                <div class="w-[48%] sm:w-auto border border-gray-200 text-darkGrey cursor-pointer bg-white overflow-hidden rounded-lg relative">
-                  <select name="product" id="product" class="appearance-none px-4 pr-8 font-normal py-2.5 w-full sm:w-auto outline-none text-xs sm:text-sm">
-                    <option value="eventoPackage">Evento Package</option>
-                    <option value="festumEvento">Festum Evento</option>
-                    <option value="friendsFields">Friends Fields</option>
-                  </select>
-                  <span class="icon-arrow-down-2 text-[8px] absolute right-3 top-1/2 -translate-y-1/2"></span>
-                </div>
-                <div class="w-[48%] sm:w-auto flex items-center p-2 px-4 bg-white border border-gray-200 rounded-md datepicker text-grey relative">
-                  <span class="icon-filter-calender text-sm"></span>
-                  <input type="date" class="outline-none px-2 text-xs sm:text-sm" value="2017-01">
-                  <span class="icon-arrow-down-2 text-[8px] absolute right-3 top-1/2 -translate-y-1/2"></span>
-                </div>
-              </div>
+          <div class="sm:flex items-center justify-between pb-4 md:pb-7 lg:pb-11">
+            <!-- back arrow -->
+            <a href="#" class="text-xl md:text-2xl font-semibold flex items-center">
+              <span class="pr-3 md:pr-6">
+                <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M10.3937 16.8625C9.9174 17.4089 9.08831 17.4657 8.54192 16.9893L0.51251 9.98935C0.226598 9.74009 0.0625 9.37933 0.0625 9.00002C0.0625 8.62071 0.226597 8.25995 0.51251 8.01069L8.54192 1.01069C9.08831 0.534353 9.9174 0.591138 10.3937 1.13753C10.8701 1.68392 10.8133 2.51301 10.2669 2.98935L4.87782 7.68752L20.625 7.68752C21.3499 7.68752 21.9375 8.27514 21.9375 9.00002C21.9375 9.72489 21.3499 10.3125 20.625 10.3125L4.87782 10.3125L10.2669 15.0107C10.8133 15.487 10.8701 16.3161 10.3937 16.8625Z" fill="#1F2937"/>
+                </svg>                
+              </span>
+              Transfer Coin
+            </a>
+            <!-- btn -->
+            <div class="flex space-x-4 pt-4 sm:pt-0">
+              <!-- Cancel btn  -->
+              <a href="#" class="block min-w-[108px] text-xs text-davyGrey font-semibold border rounded-lg py-3 text-center">Cancel</a>
+              <!-- transfer btn  -->
+              <a href="#" class="block min-w-[108px] text-xs text-white font-semibold bg-leafGreen rounded-lg py-3 text-center">Transfer</a>
             </div>
           </div>
-          <!-- balace ditails  -->
-          <div class="flex flex-wrap -mx-4">
-            <div class="w-full xl:w-7/12 2xl:w-8/12 py-2 p-4 sm:py-4">
-              <div class="p-5 sm:p-7 bg-white rounded-2xl flex items-center">
-                <div class="w-full max-w-[200px] mx-auto space-y-0.5">
-                  <span class="balancesubTitle">Total coin you earned</span>
-                  <h3 class="balanceTitle">10,000</h3>
-                </div>
-                <div class="sm:w-full pr-8 sm:max-w-[200px] text-center">
-                  <i class="icon-right-arrow text-2xl xl:text-32 text-gray-200"></i>
-                </div>
-                <div class="w-full max-w-[200px] mx-auto space-y-0.5">
-                  <span class="balancesubTitle">Total coin you earned</span>
-                  <h3 class="balanceTitle">10,000</h3>
-                </div>
-              </div>
-            </div>
-            <div class="w-full xl:w-5/12 2xl:w-4/12 py-2 p-4 sm:py-4">
-              <div class="p-7 px-5 bg-white rounded-2xl">
-                <div class="w-full xl:pl-0 xl:max-w-[300px] mx-auto space-y-0.5">
-                  <span class="balancesubTitle">Total coin you earned</span>
-                  <h3 class="balanceTitle">10,000</h3>
-                </div>
-              </div>
+          <!-- kyc -->
+          <div class="bg-[#E9F1FF] p-4 rounded-2xl inline-flex w-full mb-3 md:mb-6">
+            <span><svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg"> <g clip-path="url(#clip0_519_5150)"> <path fill-rule="evenodd" clip-rule="evenodd" d="M24 13C24 19.6274 18.6274 25 12 25C5.37258 25 0 19.6274 0 13C0 6.37258 5.37258 1 12 1C18.6274 1 24 6.37258 24 13ZM13.5 7C13.5 7.82843 12.8284 8.5 12 8.5C11.1716 8.5 10.5 7.82843 10.5 7C10.5 6.17157 11.1716 5.5 12 5.5C12.8284 5.5 13.5 6.17157 13.5 7ZM10.5 11.5C9.67157 11.5 9 12.1716 9 13C9 13.8284 9.67157 14.5 10.5 14.5V19C10.5 19.8284 11.1716 20.5 12 20.5H13.5C14.3284 20.5 15 19.8284 15 19C15 18.1716 14.3284 17.5 13.5 17.5V13C13.5 12.1716 12.8284 11.5 12 11.5H10.5Z" fill="#0041D1"/> </g> <defs> <clipPath id="clip0_519_5150"> <rect width="24" height="24" fill="white" transform="translate(0 1)"/> </clipPath> </defs> </svg></span>
+            <div class="pl-4">
+              <p class="text-base leading-7 font-semibold text-[#0041D1]">KYC</p>
+              <span class="text-xs md:text-sm text-[#0041D1]">As per the guidelines of bank all users need to complete KYC to get free from transaction limits </span>
             </div>
           </div>
-          <!-- table  -->
-          <div class="block w-full overflow-x-auto">
-            <table class="items-center w-full bg-transparent border-collapse">
-              <tbody>
-                <tr class="drop-shadow-table">
-                  <td class="text-left rounded-tl-xl rounded-bl-xl bg-white">
-                    <div class="flex items-center ">
-                      <div class="tProfile bg-lightGrey p-1.5">
-                        <img src="../assest/images/svg/festum-evento-logo-1.svg" alt="logo"/>
-                      </div>
-                      <div class="pl-4">
-                        <span class="tTitel">FestumEvento</span>
-                        <span class="tSubTitel">Dashboard screen</span>
-                      </div>
-                    </div>
-                  </td>
-                  <td class="bg-white">
-                    <div class="w-full min-w-[90px] border-2 border-gray-200 rounded-xl overflow-hidden">
-                      <img src="../assest/images/ads-banner.jpg" class="w-full h-full object-cover" alt="banner"/>
-                    </div>
-                  </td>
-                  <td class="bg-white">
-                    <span class="tSubTitel">Ads Link</span>
-                    <a href="javascript:void(0)" class="text-sm xl:text-base text-leafGreen">example.com./ladipage12345</a>
-                  </td>
-                  <td class="bg-white">
-                    <span class="tSubTitel">Start Date/End Date</span>
-                    <span class="text-sm xl:text-base text-dark">June 1, 2022 to June 10, 2022</span>
-                  </td>
-                  <td class="text-center bg-white">
-                    <span class="p-2 bg-greenishYellow rounded-lg px-3 text-xs font-semibold text-leafGreen">Running</span>
-                  </td>
-                  <td class="text-right rounded-br-xl rounded-tr-xl bg-white">
-                    <span class="tSubTitel text-left pt-0">Earn</span>
-                    <div class="flex items-center">
-                      <span class="tcTitel min-w-max text-dark justify-start">
-                        <div class="flex items-center w-10 pr-2"> 
-                          <img src="../assest/images/svg/logo.svg" class="max-w-full" alt="single-coin"/>
-                        </div>
-                        - 3000
-                      </span>
-                    </div>
-                  </td>
-                </tr>
-                <tr class="drop-shadow-table">
-                  <td class="text-left rounded-tl-xl rounded-bl-xl bg-white">
-                    <div class="flex items-center ">
-                      <div class="tProfile bg-lightGrey p-1.5">
-                        <img src="../assest/images/svg/festum-evento-logo-1.svg" alt="logo"/>
-                      </div>
-                      <div class="pl-4">
-                        <span class="tTitel">FestumEvento</span>
-                        <span class="tSubTitel">Dashboard screen</span>
+          <!-- Transfer To -->
+          <div class="flex flex-wrap -mx-3">
+            <div class="w-full 2xl:w-1/2 md:px-3">
+              <!-- transfer from -->
+              <form method="" action="" class="bg-white p-4 py-6 md:p-8 rounded-2xl">
+                <h3 class="text-xl md:text-2xl font-semibold pb-5">Transfer From</h3>
+                <!-- Total Balance -->
+                <div class="bg-gray-100 p-4 lg:p-7 rounded-2xl flex items-center">
+                  <span class="icon-my-wallet text-leafGreen text-xl"></span>
+                  <div class="w-full sm:flex items-centers justify-between pl-5">
+                    <h4 class="text-lg md:text-xl text-dark font-semibold">Total Balance</h4>
+                    <h4 class="text-lg md:text-xl text-dark font-semibold">3,45,0000</h4>
+                  </div>
+                </div>
+                <!-- Total Coin / transferable Coin -->
+                <div class="flex pt-3 lg:pt-6">
+                  <!-- Total Coin  -->
+                  <div class="w-7/12 sm:w-8/12 pr-3">
+                    <p class="text-sm font-semibold text-dark">Total Coin</p>
+                    <div class="flex items-center border p-3 lg:p-6 mt-3 rounded-xl lg:rounded-2xl">
+                      <img src="../assest/images/svg/EventoPackage.svg" alt="EventoPackage" class="w-6 h-6" />
+                      <div class="w-full sm:flex items-center justify-between pl-2 sm:pl-4">
+                        <p class="acName" title="EventoPackage">EventoPackage</p>
+                        <p class="acAmount">1,20,000</p>
                       </div>
                     </div>
-                  </td>
-                  <td class="bg-white">
-                    <div class="w-full min-w-[90px] border-2 border-gray-200 rounded-xl overflow-hidden">
-                      <img src="../assest/images/ads-banner.jpg" class="w-full h-full object-cover" alt="banner"/>
-                    </div>
-                  </td>
-                  <td class="bg-white">
-                    <span class="tSubTitel">Ads Link</span>
-                    <a href="javascript:void(0)" class="text-sm xl:text-base text-leafGreen">example.com./ladipage12345</a>
-                  </td>
-                  <td class="bg-white">
-                    <span class="tSubTitel">Start Date/End Date</span>
-                    <span class="text-sm xl:text-base text-dark">June 1, 2022 to June 10, 2022</span>
-                  </td>
-                  <td class="text-center bg-white">
-                    <span class="p-2 bg-greenishYellow rounded-lg px-3 text-xs font-semibold text-leafGreen">Running</span>
-                  </td>
-                  <td class="text-right rounded-br-xl rounded-tr-xl bg-white">
-                    <span class="tSubTitel text-left pt-0">Earn</span>
-                    <div class="flex items-center">
-                      <span class="tcTitel min-w-max text-dark justify-start">
-                        <div class="flex items-center w-10 pr-2"> 
-                          <img src="../assest/images/svg/logo.svg" class="max-w-full" alt="single-coin"/>
-                        </div>
-                        - 3000
-                      </span>
-                    </div>
-                  </td>
-                </tr>
-                <tr class="drop-shadow-table">
-                  <td class="text-left rounded-tl-xl rounded-bl-xl bg-white">
-                    <div class="flex items-center ">
-                      <div class="tProfile bg-lightGrey p-1.5">
-                        <img src="../assest/images/svg/festum-evento-logo-1.svg" alt="logo"/>
-                      </div>
-                      <div class="pl-4">
-                        <span class="tTitel">FestumEvento</span>
-                        <span class="tSubTitel">Dashboard screen</span>
+                    <div class="flex items-center border p-3 lg:p-6 mt-3 rounded-xl lg:rounded-2xl">
+                      <img src="../assest/images/svg/festum-evento-logo-1.svg" alt="EventoPackage" class="w-6 h-6" />
+                      <div class="w-full sm:flex items-center justify-between pl-2 sm:pl-4">
+                        <p class="acName" title="FestumEvento">FestumEvento</p>
+                        <p class="acAmount">20,000</p>
                       </div>
                     </div>
-                  </td>
-                  <td class="bg-white">
-                    <div class="w-full min-w-[90px] border-2 border-gray-200 rounded-xl overflow-hidden">
-                      <img src="../assest/images/ads-banner.jpg" class="w-full h-full object-cover" alt="banner"/>
-                    </div>
-                  </td>
-                  <td class="bg-white">
-                    <span class="tSubTitel">Ads Link</span>
-                    <a href="javascript:void(0)" class="text-sm xl:text-base text-leafGreen">example.com./ladipage12345</a>
-                  </td>
-                  <td class="bg-white">
-                    <span class="tSubTitel">Start Date/End Date</span>
-                    <span class="text-sm xl:text-base text-dark">June 1, 2022 to June 10, 2022</span>
-                  </td>
-                  <td class="text-center bg-white">
-                    <span class="p-2 bg-greenishYellow rounded-lg px-3 text-xs font-semibold text-leafGreen">Running</span>
-                  </td>
-                  <td class="text-right rounded-br-xl rounded-tr-xl bg-white">
-                    <span class="tSubTitel text-left pt-0">Earn</span>
-                    <div class="flex items-center">
-                      <span class="tcTitel min-w-max text-dark justify-start">
-                        <div class="flex items-center w-10 pr-2"> 
-                          <img src="../assest/images/svg/logo.svg" class="max-w-full" alt="single-coin"/>
-                        </div>
-                        - 3000
-                      </span>
-                    </div>
-                  </td>
-                </tr>
-                <tr class="drop-shadow-table">
-                  <td class="text-left rounded-tl-xl rounded-bl-xl bg-white">
-                    <div class="flex items-center ">
-                      <div class="tProfile bg-lightGrey p-1.5">
-                        <img src="../assest/images/svg/festum-evento-logo-1.svg" alt="logo"/>
-                      </div>
-                      <div class="pl-4">
-                        <span class="tTitel">FestumEvento</span>
-                        <span class="tSubTitel">Dashboard screen</span>
+                    <div class="flex items-center border p-3 lg:p-6 mt-3 rounded-xl lg:rounded-2xl">
+                      <img src="../assest/images/svg/EventoPackage.svg" alt="EventoPackage" class="w-6 h-6" />
+                      <div class="w-full sm:flex items-center justify-between pl-2 sm:pl-4">
+                        <p class="acName" title="Friends Fields">Friends Fields</p>
+                        <p class="acAmount">1,00,000</p>
                       </div>
                     </div>
-                  </td>
-                  <td class="bg-white">
-                    <div class="w-full min-w-[90px] border-2 border-gray-200 rounded-xl overflow-hidden">
-                      <img src="../assest/images/ads-banner.jpg" class="w-full h-full object-cover" alt="banner"/>
-                    </div>
-                  </td>
-                  <td class="bg-white">
-                    <span class="tSubTitel">Ads Link</span>
-                    <a href="javascript:void(0)" class="text-sm xl:text-base text-leafGreen">example.com./ladipage12345</a>
-                  </td>
-                  <td class="bg-white">
-                    <span class="tSubTitel">Start Date/End Date</span>
-                    <span class="text-sm xl:text-base text-dark">June 1, 2022 to June 10, 2022</span>
-                  </td>
-                  <td class="text-center bg-white">
-                    <span class="p-2 bg-greenishYellow rounded-lg px-3 text-xs font-semibold text-leafGreen">Running</span>
-                  </td>
-                  <td class="text-right rounded-br-xl rounded-tr-xl bg-white">
-                    <span class="tSubTitel text-left pt-0">Earn</span>
-                    <div class="flex items-center">
-                      <span class="tcTitel min-w-max text-dark justify-start">
-                        <div class="flex items-center w-10 pr-2"> 
-                          <img src="../assest/images/svg/logo.svg" class="max-w-full" alt="single-coin"/>
-                        </div>
-                        - 3000
-                      </span>
-                    </div>
-                  </td>
-                </tr>
-                 <tr class="drop-shadow-table">
-                  <td class="text-left rounded-tl-xl rounded-bl-xl bg-white">
-                    <div class="flex items-center ">
-                      <div class="tProfile bg-lightGrey p-1.5">
-                        <img src="../assest/images/svg/festum-evento-logo-1.svg" alt="logo"/>
-                      </div>
-                      <div class="pl-4">
-                        <span class="tTitel">FestumEvento</span>
-                        <span class="tSubTitel">Dashboard screen</span>
-                      </div>
-                    </div>
-                  </td>
-                  <td class="bg-white">
-                    <div class="w-full min-w-[90px] border-2 border-gray-200 rounded-xl overflow-hidden">
-                      <img src="../assest/images/ads-banner.jpg" class="w-full h-full object-cover" alt="banner"/>
-                    </div>
-                  </td>
-                  <td class="bg-white">
-                    <span class="tSubTitel">Ads Link</span>
-                    <a href="javascript:void(0)" class="text-sm xl:text-base text-leafGreen">example.com./ladipage12345</a>
-                  </td>
-                  <td class="bg-white">
-                    <span class="tSubTitel">Start Date/End Date</span>
-                    <span class="text-sm xl:text-base text-dark">June 1, 2022 to June 10, 2022</span>
-                  </td>
-                  <td class="text-center bg-white">
-                    <span class="p-2 bg-greenishYellow rounded-lg px-3 text-xs font-semibold text-leafGreen">Running</span>
-                  </td>
-                  <td class="text-right rounded-br-xl rounded-tr-xl bg-white">
-                    <span class="tSubTitel text-left pt-0">Earn</span>
-                    <div class="flex items-center">
-                      <span class="tcTitel min-w-max text-dark justify-start">
-                        <div class="flex items-center w-10 pr-2"> 
-                          <img src="../assest/images/svg/logo.svg" class="max-w-full" alt="single-coin"/>
-                        </div>
-                        - 3000
-                      </span>
-                    </div>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+                  </div>
+                  <!-- transferable Coin -->
+                  <div class="w-5/12 sm:w-4/12">
+                    <p class="text-sm font-semibold text-dark whitespace-nowrap">Transferable Coin</p>
+                    <input type="text" placeholder="00000" class="acInput h-[66px] sm:h-auto" />
+                    <input type="text" placeholder="00000" class="acInput h-[66px] sm:h-auto" value="10,000" />
+                    <input type="text" placeholder="00000" class="acInput h-[66px] sm:h-auto" value="90,000" />
+                  </div>
+                </div>
+                <!-- Total Transferable Coin -->
+                <div class="pt-3 lg:pt-6">
+                  <p class="text-sm font-semibold text-dark">Total Coin</p>
+                  <input type="text" class="w-full border border-leafGreen p-3 lg:p-6 mt-3 rounded-xl lg:rounded-2xl text-lg lg:text-xl text-dark font-semibold outline-0" value="12000" />
+                </div>
+              </form>
+            </div>
+            <div class="w-full pt-7 2xl:w-1/2 2xl:pt-0 md:px-3">
+              <!-- Transfer To -->
+              <form method="" action="" class="bg-white p-4 md:p-8 rounded-2xl">
+                <h3 class="text-xl md:text-2xl font-semibold pb-5">Transfer To</h3>
+                <!-- Enter ID -->
+                <div class="bg-gray-100 p-4 lg:p-7 rounded-2xl flex justify-between items-center">
+                  <input type="text" class="w-full bg-gray-100 text-lg lg:text-xl text-dark font-normal outline-0" placeholder="Enter ID" />
+                  <a href="#" class="icon-scanner text-[26px] pl-5"></a>
+                </div>
+                <!-- Quick Transfer -->
+                <div class="pt-3 lg:pt-6">
+                  <h4 class="text-xl md:text-xl text-dark font-semibold">Quick Transfer</h4>
+                  <!-- other id -->
+                  <div class="flex flex-wrap pt-3 lg:pt-5">
+                    <a href="#" class="qtId">
+                      <span class="qtProfile">JD</span>
+                      <p class="qtName">John Doe</p>
+                    </a>
+                    <a href="#" class="qtId">
+                      <span class="qtProfile">OV</span>
+                      <p class="qtName">Olivia Vats</p>
+                    </a>
+                    <a href="#" class="qtId">
+                      <span class="qtProfile">SS</span>
+                      <p class="qtName">Smith s</p>
+                    </a>
+                    <a href="#" class="qtId">
+                      <span class="qtProfile">JD</span>
+                      <p class="qtName">John Doe</p>
+                    </a>
+                    <a href="#" class="qtId">
+                      <span class="qtProfile">OV</span>
+                      <p class="qtName">Olivia Vats</p>
+                    </a>
+                    <a href="#" class="qtId">
+                      <span class="qtProfile">SS</span>
+                      <p class="qtName">Smith s</p>
+                    </a>
+                    <a href="#" class="qtId">
+                      <span class="qtProfile">SS</span>
+                      <p class="qtName">Smith s</p>
+                    </a>
+                    <a href="#" class="qtId">
+                      <span class="qtProfile">SS</span>
+                      <p class="qtName">Smith s</p>
+                    </a>
+                    <a href="#" class="qtId">
+                      <span class="qtProfile">SS</span>
+                      <p class="qtName">Smith s</p>
+                    </a>
+                    <a href="#" class="qtId">
+                      <span class="qtProfile">SS</span>
+                      <p class="qtName">Smith s</p>
+                    </a>
+                    <a href="#" class="qtId">
+                      <span class="qtProfile">SS</span>
+                      <p class="qtName">Smith s</p>
+                    </a>
+                    <a href="#" class="qtId">
+                      <span class="qtProfile">SS</span>
+                      <p class="qtName">Smith s</p>
+                    </a>
+                    <a href="#" class="qtId">
+                      <span class="qtProfile">SS</span>
+                      <p class="qtName">Smith s</p>
+                    </a>
+                  </div>
+                </div>
+              </form>
+            </div>
           </div>
+
         </div>
       </div>
     </div>
     <script src="../assest/js/jquery.min.js"></script>
     <script src="../assest/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </body>
 </html>

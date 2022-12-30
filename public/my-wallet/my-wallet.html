@@ -236,15 +236,34 @@
                 </div>
               </a>
             </div>
+            <div class="w-auto 2xl:w-5/12 flex flex-wrap md:flex-nowrap items-center">
+              <!-- transfer coin -->
+                <div class="w-auto 2xl:w-full 2xl:min-w-[159px] p-2">
+                  <a href="#" class="bg-white block rounded-2xl md:rounded-3xl drop-shadow-table text-sm md:text-base font-semibold py-[14px] px-4 text-center"><span class="icon-transfer-coin text-leafGreen text-xl bg-greenishYellow w-[38px] h-[38px] rounded-full flex justify-center items-center p-3 py-6 mb-2 mx-auto"></span>Transfer Coin</a>
+                </div>
+                <!-- Receive Coin -->
+                <div class="w-auto 2xl:w-full 2xl:min-w-[159px] p-2">
+                  <a href="#" class="bg-white block rounded-2xl md:rounded-3xl drop-shadow-table text-sm md:text-base font-semibold py-[14px] px-4 text-center"><span class="icon-scanner text-leafGreen text-xl bg-greenishYellow w-[38px] h-[38px] rounded-full flex justify-center items-center p-3 py-6 mb-2 mx-auto"></span>Receive Coin</a>
+                </div>
+                <!-- Redeem Coin -->
+                <div class="w-auto 2xl:w-full 2xl:min-w-[159px] p-2">
+                  <a href="#" class="bg-white block rounded-2xl md:rounded-3xl drop-shadow-table text-sm md:text-base font-semibold py-[14px] px-4 text-center"><span class="icon-redeem-coin text-leafGreen text-xl bg-greenishYellow w-[38px] h-[38px] rounded-full flex justify-center items-center p-3 py-6 mb-2 mx-auto"></span>Redeem Coin</a>
+                </div>
+              </div>  
+              <div class="w-full 2xl:w-7/12 flex flex-wrap px-3">
+                <div class="bg-gradient-to-r from-leafGreen/50 py-[14px] px-4 w-full rounded-2xl relative">
+                  <img src="../assest/images/wallet-linkcopy.png" class="inset-0 absolute w-full h-full object-cover object-left opacity-20 sm:opacity-100" alt="wallet-linkcopy"/>
+                  <div class="space-y-2 w-full sm:w-9/12 ml-auto z-10 relative">
+                    <label for="" class="text-dark font-semibold text-sm">My Referral link</label>
+                    <div class="bg-white rounded-xl px-3 py-2 flex items-center">
+                      <input type="text" placeholder="http://link.roll/@/0x123129hb3821hksnmks" class="outline-none whitespace-nowrap text-ellipsis pr-3 sm:px-3 w-full max-w-full text-sm sm:text-base md:text-lg lg:text-xl 2xl:text-xl"/>
+                      <button class="px-2 py-1 rounded-md bg-davyGrey/30 text-sm xl:text-base">Copy</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
           </div>
-          <div class="w-full relative p-10 bg-white max-h-[500px] rounded-3xl mt-3">
-            <div class="flex items-center p-2 px-4 bg-white border border-gray-200 rounded-md absolute right-10 top-10 datepicker text-grey">
-              <span class="icon-filter-calender text-sm"></span>
-              <input type="date" class="outline-none px-2 text-sm" value="2017-01"/>
-              <span class="icon-arrow-down-2 text-[10px]"></span>
-            </div>
-            <canvas id="myChart"></canvas>
-          </div>
+          <!-- table -->
           <div class="w-full mt-8">
             <div class="relative flex flex-col min-w-0 break-words w-full mb-6">
               <div class="flex flex-wrap md:flex-nowrap justify-between space-y-3 sm:space-y-0">
@@ -332,91 +351,5 @@
     </div>
     <script src="../assest/js/jquery.min.js"></script>
     <script src="../assest/js/script.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script>
-        const ctx = document.getElementById('myChart');        
-        new Chart(ctx, {          
-          type: 'line',
-          data: {
-            labels: ['10:30 AM', '11:30 AM', '12:30 PM', '01:30 PM', '02:30 PM', '03:30 PM', '04:30 PM', '05:30 PM', '06:30 PM'],          
-            datasets: [{
-              label: 'EP',
-              data: [3000, 5000, 3000, 7000, 6000, 2000, 4000, 1000, 3000],
-              borderWidth: 1,
-              tension: 0.3              
-            }, {
-              label: 'FE',
-              data: [1000, 3000, 8000, 5000, 2000, 7000, 3000, 2000, 5000],
-              borderWidth: 1,
-              tension: 0.3              
-           },
-           {
-              label: 'FF',
-              data: [5000, 8000, 4000, 3000, 6000, 7000, 2000, 5000, 2000],
-              borderWidth: 1,
-              tension: 0.3               
-           }]
-          }, 
-          options: {
-            scales: {  
-              x: {
-                grid: {
-                  display: false
-                }
-              },            
-              y: {
-                min: 0,
-                max: 9000,
-                ticks: {
-                  stepSize: 2500
-                },
-                grid: {
-                  display: false
-                }
-              }
-            },
-            plugins: {
-              title: {
-                  display: true,
-                  text: 'Custom Chart Title',
-                  align:'start',
-                  color:'#1F2937',
-                  padding: {
-                      top: 10,
-                      bottom: 8
-                  },
-                  font: {
-                    size: 32,
-                  }
-              },
-              subtitle: {
-                display: true,
-                text: 'September 1,2022',
-                align:'start',
-                color:'#6B7280',
-                padding: {
-                    bottom: 0
-                },
-                font: {
-                    size: 14,
-                },
-                
-              },
-                legend: {
-                    labels: {
-                      fontColor: "white",
-                      fontSize: 12
-                    }
-                }
-            },
-            elements: {
-              point:{
-                radius: 0
-              }
-            }
-          }
-        });
-    </script>
   </body>
 </html>
