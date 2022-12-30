@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>F-coin || Transfer Coin screen</title>
+    <title>F-coin || SYNC/Fail </title>
     <link rel="stylesheet" href="../assest/css/fonts.css" />
     <link rel="stylesheet" href="../assest/css/iconmoon.css" />
     <link rel="stylesheet" href="../assest/css/style.css" />
   </head>
   <body>
     <div class="main flex min-h-screen relative">
-       <!-- left-bar -->
-       <div class="left_bar">
+      <!-- left-bar -->
+      <div class="left_bar">
         <a href="javascript:void(0)" class="inline-block w-full text-center">
           <img src="../assest/images/svg/logo.svg" alt="logo" class="mx-auto"/>
         </a>
@@ -118,7 +118,6 @@
       </div>
       <!-- right-bar -->
       <div class="right_bar relative ml-auto">
-        <!-- header -->
         <div class="w-full bg-white p-5 lg:px-6 xl:px-12 lg:py-6 flex items-center relative">
           <h3>Dashboard</h3>
           <div class="flex items-center ml-auto">
@@ -183,151 +182,40 @@
             </a>
           </div>        
         </div>
-        <!-- main-content -->
         <div class="content-area h-[calc(100vh-72px)] sm:h-[calc(100vh-84px)] lg:h-[calc(100vh-100px)] p-4 sm:p-6 lg:p-8 xl:p-10 pb-0 overflow-y-auto">
-           <!-- Pagination -->
-          <div class="sm:flex items-center justify-between pb-4 md:pb-7 lg:pb-11">
-            <!-- Pagination -->
-            <a href="#" class="text-xl md:text-2xl font-semibold flex items-center">
-              <span class="pr-3 md:pr-6">
-                <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M10.3937 16.8625C9.9174 17.4089 9.08831 17.4657 8.54192 16.9893L0.51251 9.98935C0.226598 9.74009 0.0625 9.37933 0.0625 9.00002C0.0625 8.62071 0.226597 8.25995 0.51251 8.01069L8.54192 1.01069C9.08831 0.534353 9.9174 0.591138 10.3937 1.13753C10.8701 1.68392 10.8133 2.51301 10.2669 2.98935L4.87782 7.68752L20.625 7.68752C21.3499 7.68752 21.9375 8.27514 21.9375 9.00002C21.9375 9.72489 21.3499 10.3125 20.625 10.3125L4.87782 10.3125L10.2669 15.0107C10.8133 15.487 10.8701 16.3161 10.3937 16.8625Z" fill="#1F2937"/>
-                </svg>                
-              </span>
-              Transfer Coin
-            </a>
-            <!-- btn -->
-            <div class="flex space-x-4 pt-4 sm:pt-0">
-              <!-- Cancel btn  -->
-              <a href="#" class="block min-w-[108px] text-xs text-davyGrey font-semibold border rounded-lg py-3 text-center">Cancel</a>
-              <!-- transfer btn  -->
-              <a href="#" class="block min-w-[108px] text-xs text-white font-semibold bg-leafGreen rounded-lg py-3 text-center">Transfer</a>
-            </div>
-          </div>
-          <!-- kyc -->
-          <div class="bg-[#E9F1FF] p-4 rounded-2xl inline-flex w-full mb-3 md:mb-6">
-            <span><svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg"> <g clip-path="url(#clip0_519_5150)"> <path fill-rule="evenodd" clip-rule="evenodd" d="M24 13C24 19.6274 18.6274 25 12 25C5.37258 25 0 19.6274 0 13C0 6.37258 5.37258 1 12 1C18.6274 1 24 6.37258 24 13ZM13.5 7C13.5 7.82843 12.8284 8.5 12 8.5C11.1716 8.5 10.5 7.82843 10.5 7C10.5 6.17157 11.1716 5.5 12 5.5C12.8284 5.5 13.5 6.17157 13.5 7ZM10.5 11.5C9.67157 11.5 9 12.1716 9 13C9 13.8284 9.67157 14.5 10.5 14.5V19C10.5 19.8284 11.1716 20.5 12 20.5H13.5C14.3284 20.5 15 19.8284 15 19C15 18.1716 14.3284 17.5 13.5 17.5V13C13.5 12.1716 12.8284 11.5 12 11.5H10.5Z" fill="#0041D1"/> </g> <defs> <clipPath id="clip0_519_5150"> <rect width="24" height="24" fill="white" transform="translate(0 1)"/> </clipPath> </defs> </svg></span>
-            <div class="pl-4">
-              <p class="text-base leading-7 font-semibold text-[#0041D1]">KYC</p>
-              <span class="text-xs md:text-sm text-[#0041D1]">As per the guidelines of bank all users need to complete KYC to get free from transaction limits </span>
-            </div>
-          </div>
-          <!-- transfer from / Transfer To -->
-          <div class="flex flex-wrap -mx-3">
-            <!-- transfer from -->
-            <div class="w-full 2xl:w-1/2 md:px-3">
-              <form method="" action="" class="bg-white p-4 py-6 md:p-8 rounded-2xl h-full">
-                <h3 class="text-xl md:text-2xl font-semibold pb-5">Transfer From</h3>
-                <!-- Total Coin / transferable Coin -->
-                <div class="flex pt-3 lg:pt-6">
-                  <!-- Total Coin  -->
-                  <div class="w-7/12 sm:w-8/12 pr-3">
-                    <p class="text-sm font-semibold text-dark">Total Coin</p>
-                    <div class="w-full sm:flex items-center justify-between border p-3 lg:p-6 mt-3 rounded-xl lg:rounded-2xl">
-                      <div class="flex items-center space-x-2 md:space-x-4">
-                        <img src="../assest/images/svg/EventoPackage.svg" alt="EventoPackage" class="w-6 h-6" />
-                        <p class="acAmount" title="EventoPackage">EventoPackage</p>
-                      </div>
-                      <div class="flex items-center space-x-2 md:space-x-4 mt-2 sm:mt-0">
-                        <span class="icon-my-wallet text-xl leading-5"></span>
-                        <p class="acAmount">1,20,000</p>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- transferable Coin -->
-                  <div class="w-5/12 sm:w-4/12">
-                    <p class="text-sm font-semibold text-dark">Transferable Coin</p>
-                    <input type="text" placeholder="00000" class="acInput h-[78px] sm:h-auto" />
-                  </div>
-                </div>
-              </form>
-            </div>
-            <!-- Transfer To -->
-            <div class="w-full pt-7 2xl:w-1/2 2xl:pt-0 md:px-3">
-              <form method="" action="" class="bg-white p-4 md:p-8 rounded-2xl">
-                <h3 class="text-xl md:text-2xl font-semibold pb-5">Transfer To</h3>
-                <!-- Enter ID -->
-                <div class="bg-gray-100 p-4 lg:p-7 rounded-2xl flex justify-between items-center">
-                  <input type="text" class="w-full bg-gray-100 text-lg lg:text-xl text-dark font-normal outline-0" placeholder="Enter ID" />
-                  <a href="#" class="icon-scanner text-[26px] pl-5"></a>
-                </div>
-                <!-- Quick Transfer -->
-                <div class="pt-3 lg:pt-6">
-                  <h4 class="text-xl md:text-xl text-dark font-semibold">Quick Transfer</h4>
-                  <!-- other id -->
-                  <div class="flex flex-wrap pt-3 lg:pt-5">
-                    <a href="#" class="qtId">
-                      <span class="qtProfile">JD</span>
-                      <p class="qtName">John Doe</p>
-                    </a>
-                    <a href="#" class="qtId">
-                      <span class="qtProfile">OV</span>
-                      <p class="qtName">Olivia Vats</p>
-                    </a>
-                    <a href="#" class="qtId">
-                      <span class="qtProfile">SS</span>
-                      <p class="qtName">Smith s</p>
-                    </a>
-                    <a href="#" class="qtId">
-                      <span class="qtProfile">JD</span>
-                      <p class="qtName">John Doe</p>
-                    </a>
-                    <a href="#" class="qtId">
-                      <span class="qtProfile">OV</span>
-                      <p class="qtName">Olivia Vats</p>
-                    </a>
-                    <a href="#" class="qtId">
-                      <span class="qtProfile">SS</span>
-                      <p class="qtName">Smith s</p>
-                    </a>
-                    <a href="#" class="qtId">
-                      <span class="qtProfile">SS</span>
-                      <p class="qtName">Smith s</p>
-                    </a>
-                    <a href="#" class="qtId">
-                      <span class="qtProfile">SS</span>
-                      <p class="qtName">Smith s</p>
-                    </a>
-                    <a href="#" class="qtId">
-                      <span class="qtProfile">SS</span>
-                      <p class="qtName">Smith s</p>
-                    </a>
-                    <a href="#" class="qtId">
-                      <span class="qtProfile">SS</span>
-                      <p class="qtName">Smith s</p>
-                    </a>
-                    <a href="#" class="qtId">
-                      <span class="qtProfile">SS</span>
-                      <p class="qtName">Smith s</p>
-                    </a>
-                    <a href="#" class="qtId">
-                      <span class="qtProfile">SS</span>
-                      <p class="qtName">Smith s</p>
-                    </a>
-                    <a href="#" class="qtId">
-                      <span class="qtProfile">SS</span>
-                      <p class="qtName">Smith s</p>
-                    </a>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- successfully Transferred -->
-      <div class="absolute top-20 2xl:top-32 px-4 w-full flex flex-col items-center justify-between">
-        <div class="w-full max-w-xl lg:max-w-3xl flex items-center bg-[#ECFCCB] p-4 rounded-xl">
-          <span>
-            <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg"> <g clip-path="url(#clip0_587_23732)"> <path fill-rule="evenodd" clip-rule="evenodd" d="M8 16.5C12.4183 16.5 16 12.9183 16 8.5C16 4.08172 12.4183 0.5 8 0.5C3.58172 0.5 0 4.08172 0 8.5C0 12.9183 3.58172 16.5 8 16.5ZM11.7071 7.20711C12.0976 6.81658 12.0976 6.18342 11.7071 5.79289C11.3166 5.40237 10.6834 5.40237 10.2929 5.79289L7 9.08579L5.70711 7.79289C5.31658 7.40237 4.68342 7.40237 4.29289 7.79289C3.90237 8.18342 3.90237 8.81658 4.29289 9.20711L6.29289 11.2071C6.68342 11.5976 7.31658 11.5976 7.70711 11.2071L11.7071 7.20711Z" fill="#65A30D"/> </g> <defs> <clipPath id="clip0_587_23732"> <rect width="16" height="16" fill="white" transform="translate(0 0.5)"/> </clipPath> </defs> </svg>
-          </span>
-          <span class="text-xs sm:text-sm md:text-base text-leafGreen font-semibold ml-4">Your Coin are successfully Transferred</span>
+            
         </div>
       </div>
     </div>
+
+    <!-- SYNC Account  -->
+    <div class="fixed w-full inset-0 z-40 bg-black bg-opacity-70">
+      <div class="flex flex-col items-center justify-center h-screen">
+        <div class="w-full sm:max-w-[480px] mx-auto max-h-[calc(100vh-55px)] overflow-y-auto px-4 md:px-0">
+          <!-- Modal content -->
+          <div class="bg-white rounded-lg shadow">
+            <div class="py-4 md:py-[30px] px-4 sm:px-[30px] md:px-[60px] text-center">
+              <div class="relative py-9">
+                <svg class="z-50 relative mx-auto" width="28" height="28<svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M8 17.5C12.4183 17.5 16 13.9183 16 9.5C16 5.08172 12.4183 1.5 8 1.5C3.58172 1.5 0 5.08172 0 9.5C0 13.9183 3.58172 17.5 8 17.5Z" fill="#D92D20"/>
+                  <path d="M11 7L6 12" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M6 7L11 12" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  " viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M17.3965 1.25L1.89648 16.75" stroke="#D92D20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> <path d="M1.89648 1.25L17.3965 16.75" stroke="#D92D20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> </svg>
+                <span class="animate-ping absolute top-[30px] right-[44.3%] h-10 w-10 rounded-full bg-[#FEE4E2] opacity-100"></span>
+              </div>
+              <h3 class="text-2xl lg:text-[32px] text-center font-semibold">Failed <br> Synchronized!</h3>
+              <div class="flex justify-between pt-5">
+                <button type="button" class="w-full text-white font-semibold rounded-xl text-xs sm:text-sm border border-[#D1D5DB] bg-leafGreen px-5 py-3 text-center ml-1">Done!</button>
+              </div>
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
     <script src="../assest/js/jquery.min.js"></script>
-    <script src="../assest/js/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../assest/js/script.js"></script>
   </body>
 </html>

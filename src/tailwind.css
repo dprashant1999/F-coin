@@ -23,18 +23,24 @@ body{@apply text-dark bg-ghostWhite font-pop;}
 
 h1 {@apply font-bold text-3xl md:text-4xl xl:text-5xl;}
 h2 {@apply font-bold text-2xl md:text-3xl xl:text-4xl;}
-h3 {@apply font-bold text-[16px] md:text-[24px] xl:text-32;}
+h3 {@apply font-bold text-2xl xl:text-32;}
 p {@apply font-semibold md:font-bold text-xs md:text-base lg:text-lg;}
+.ellipSis{@apply w-full whitespace-nowrap overflow-hidden text-ellipsis;}
 .balanceTitle{@apply text-2xl md:text-3xl 2xl:text-4xl text-leafGreen font-bold tracking-[1px];}
 .balancesubTitle{@apply block text-grey text-sm md:text-base;}
 .productTitle{@apply text-xl xl:text-2xl text-dark font-semibold;}
 .productsubTitle{@apply block text-grey text-xs sm:text-sm whitespace-nowrap;}
-.acName{@apply text-sm sm:text-base lg:text-lg lg:leading-8 text-dark font-normal pr-2 w-full text-ellipsis whitespace-nowrap overflow-hidden;}
+.acName{@apply text-sm sm:text-base lg:text-lg lg:leading-8 text-dark font-normal pr-2 ellipSis;}
 .acAmount{@apply text-sm sm:mt-0 sm:text-base lg:text-lg lg:leading-8 text-dark font-normal;}
 .acInput{@apply w-full bg-gray-50 p-3 lg:p-6 mt-3 rounded-xl lg:rounded-2xl text-base lg:text-lg lg:leading-8 text-dark font-normal outline-0;}
 .qtId{@apply text-center py-3 px-1 max-w-[75px] min-w-[75px] sm:max-w-[85px] sm:min-w-[85px] inline-block;}
 .qtProfile{@apply mx-auto bg-greenishYellow w-10 lg:w-12 h-10 lg:h-12 flex items-center justify-center text-sm lg:text-base text-leafGreen font-bold rounded-full;}
 .qtName{@apply text-xs text-dark font-medium pt-2 whitespace-nowrap;}
+.selectFilter{@apply w-full sm:w-auto outline-none px-4 py-2 rounded-lg text-sm border border-gray-200 text-darkGrey font-normal appearance-none cursor-pointer text-center;}
+
+.balanceTab.active{@apply bg-greenishYellow drop-shadow-active;}
+.balanceTab.active span{@apply text-leafGreen;}
+
 
 
 nav a{@apply flex items-center px-6 xl:px-8 py-5 w-full xl:rounded-xl text-grey font-normal anim;}
@@ -103,6 +109,8 @@ tr td{@apply border-0 px-6 p-4 align-middle whitespace-nowrap;}
   opacity: 0;
 }
 .toDatepiker input{@apply outline-none text-center relative w-[100px];}
+
+input{@apply outline-none;}
 
 
 /* radio checked style */

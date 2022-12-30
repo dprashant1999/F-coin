@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>F-coin || Transfer Coin screen</title>
+    <title>F-coin || SYNC/Detail Account</title>
     <link rel="stylesheet" href="../assest/css/fonts.css" />
     <link rel="stylesheet" href="../assest/css/iconmoon.css" />
     <link rel="stylesheet" href="../assest/css/style.css" />
   </head>
   <body>
     <div class="main flex min-h-screen relative">
-       <!-- left-bar -->
-       <div class="left_bar">
+      <!-- left-bar -->
+      <div class="left_bar">
         <a href="javascript:void(0)" class="inline-block w-full text-center">
           <img src="../assest/images/svg/logo.svg" alt="logo" class="mx-auto"/>
         </a>
@@ -118,7 +118,6 @@
       </div>
       <!-- right-bar -->
       <div class="right_bar relative ml-auto">
-        <!-- header -->
         <div class="w-full bg-white p-5 lg:px-6 xl:px-12 lg:py-6 flex items-center relative">
           <h3>Dashboard</h3>
           <div class="flex items-center ml-auto">
@@ -183,151 +182,74 @@
             </a>
           </div>        
         </div>
-        <!-- main-content -->
         <div class="content-area h-[calc(100vh-72px)] sm:h-[calc(100vh-84px)] lg:h-[calc(100vh-100px)] p-4 sm:p-6 lg:p-8 xl:p-10 pb-0 overflow-y-auto">
-           <!-- Pagination -->
-          <div class="sm:flex items-center justify-between pb-4 md:pb-7 lg:pb-11">
-            <!-- Pagination -->
-            <a href="#" class="text-xl md:text-2xl font-semibold flex items-center">
-              <span class="pr-3 md:pr-6">
-                <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M10.3937 16.8625C9.9174 17.4089 9.08831 17.4657 8.54192 16.9893L0.51251 9.98935C0.226598 9.74009 0.0625 9.37933 0.0625 9.00002C0.0625 8.62071 0.226597 8.25995 0.51251 8.01069L8.54192 1.01069C9.08831 0.534353 9.9174 0.591138 10.3937 1.13753C10.8701 1.68392 10.8133 2.51301 10.2669 2.98935L4.87782 7.68752L20.625 7.68752C21.3499 7.68752 21.9375 8.27514 21.9375 9.00002C21.9375 9.72489 21.3499 10.3125 20.625 10.3125L4.87782 10.3125L10.2669 15.0107C10.8133 15.487 10.8701 16.3161 10.3937 16.8625Z" fill="#1F2937"/>
-                </svg>                
-              </span>
-              Transfer Coin
-            </a>
-            <!-- btn -->
-            <div class="flex space-x-4 pt-4 sm:pt-0">
-              <!-- Cancel btn  -->
-              <a href="#" class="block min-w-[108px] text-xs text-davyGrey font-semibold border rounded-lg py-3 text-center">Cancel</a>
-              <!-- transfer btn  -->
-              <a href="#" class="block min-w-[108px] text-xs text-white font-semibold bg-leafGreen rounded-lg py-3 text-center">Transfer</a>
-            </div>
-          </div>
-          <!-- kyc -->
-          <div class="bg-[#E9F1FF] p-4 rounded-2xl inline-flex w-full mb-3 md:mb-6">
-            <span><svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg"> <g clip-path="url(#clip0_519_5150)"> <path fill-rule="evenodd" clip-rule="evenodd" d="M24 13C24 19.6274 18.6274 25 12 25C5.37258 25 0 19.6274 0 13C0 6.37258 5.37258 1 12 1C18.6274 1 24 6.37258 24 13ZM13.5 7C13.5 7.82843 12.8284 8.5 12 8.5C11.1716 8.5 10.5 7.82843 10.5 7C10.5 6.17157 11.1716 5.5 12 5.5C12.8284 5.5 13.5 6.17157 13.5 7ZM10.5 11.5C9.67157 11.5 9 12.1716 9 13C9 13.8284 9.67157 14.5 10.5 14.5V19C10.5 19.8284 11.1716 20.5 12 20.5H13.5C14.3284 20.5 15 19.8284 15 19C15 18.1716 14.3284 17.5 13.5 17.5V13C13.5 12.1716 12.8284 11.5 12 11.5H10.5Z" fill="#0041D1"/> </g> <defs> <clipPath id="clip0_519_5150"> <rect width="24" height="24" fill="white" transform="translate(0 1)"/> </clipPath> </defs> </svg></span>
-            <div class="pl-4">
-              <p class="text-base leading-7 font-semibold text-[#0041D1]">KYC</p>
-              <span class="text-xs md:text-sm text-[#0041D1]">As per the guidelines of bank all users need to complete KYC to get free from transaction limits </span>
-            </div>
-          </div>
-          <!-- transfer from / Transfer To -->
-          <div class="flex flex-wrap -mx-3">
-            <!-- transfer from -->
-            <div class="w-full 2xl:w-1/2 md:px-3">
-              <form method="" action="" class="bg-white p-4 py-6 md:p-8 rounded-2xl h-full">
-                <h3 class="text-xl md:text-2xl font-semibold pb-5">Transfer From</h3>
-                <!-- Total Coin / transferable Coin -->
-                <div class="flex pt-3 lg:pt-6">
-                  <!-- Total Coin  -->
-                  <div class="w-7/12 sm:w-8/12 pr-3">
-                    <p class="text-sm font-semibold text-dark">Total Coin</p>
-                    <div class="w-full sm:flex items-center justify-between border p-3 lg:p-6 mt-3 rounded-xl lg:rounded-2xl">
-                      <div class="flex items-center space-x-2 md:space-x-4">
-                        <img src="../assest/images/svg/EventoPackage.svg" alt="EventoPackage" class="w-6 h-6" />
-                        <p class="acAmount" title="EventoPackage">EventoPackage</p>
-                      </div>
-                      <div class="flex items-center space-x-2 md:space-x-4 mt-2 sm:mt-0">
-                        <span class="icon-my-wallet text-xl leading-5"></span>
-                        <p class="acAmount">1,20,000</p>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- transferable Coin -->
-                  <div class="w-5/12 sm:w-4/12">
-                    <p class="text-sm font-semibold text-dark">Transferable Coin</p>
-                    <input type="text" placeholder="00000" class="acInput h-[78px] sm:h-auto" />
-                  </div>
-                </div>
-              </form>
-            </div>
-            <!-- Transfer To -->
-            <div class="w-full pt-7 2xl:w-1/2 2xl:pt-0 md:px-3">
-              <form method="" action="" class="bg-white p-4 md:p-8 rounded-2xl">
-                <h3 class="text-xl md:text-2xl font-semibold pb-5">Transfer To</h3>
-                <!-- Enter ID -->
-                <div class="bg-gray-100 p-4 lg:p-7 rounded-2xl flex justify-between items-center">
-                  <input type="text" class="w-full bg-gray-100 text-lg lg:text-xl text-dark font-normal outline-0" placeholder="Enter ID" />
-                  <a href="#" class="icon-scanner text-[26px] pl-5"></a>
-                </div>
-                <!-- Quick Transfer -->
-                <div class="pt-3 lg:pt-6">
-                  <h4 class="text-xl md:text-xl text-dark font-semibold">Quick Transfer</h4>
-                  <!-- other id -->
-                  <div class="flex flex-wrap pt-3 lg:pt-5">
-                    <a href="#" class="qtId">
-                      <span class="qtProfile">JD</span>
-                      <p class="qtName">John Doe</p>
-                    </a>
-                    <a href="#" class="qtId">
-                      <span class="qtProfile">OV</span>
-                      <p class="qtName">Olivia Vats</p>
-                    </a>
-                    <a href="#" class="qtId">
-                      <span class="qtProfile">SS</span>
-                      <p class="qtName">Smith s</p>
-                    </a>
-                    <a href="#" class="qtId">
-                      <span class="qtProfile">JD</span>
-                      <p class="qtName">John Doe</p>
-                    </a>
-                    <a href="#" class="qtId">
-                      <span class="qtProfile">OV</span>
-                      <p class="qtName">Olivia Vats</p>
-                    </a>
-                    <a href="#" class="qtId">
-                      <span class="qtProfile">SS</span>
-                      <p class="qtName">Smith s</p>
-                    </a>
-                    <a href="#" class="qtId">
-                      <span class="qtProfile">SS</span>
-                      <p class="qtName">Smith s</p>
-                    </a>
-                    <a href="#" class="qtId">
-                      <span class="qtProfile">SS</span>
-                      <p class="qtName">Smith s</p>
-                    </a>
-                    <a href="#" class="qtId">
-                      <span class="qtProfile">SS</span>
-                      <p class="qtName">Smith s</p>
-                    </a>
-                    <a href="#" class="qtId">
-                      <span class="qtProfile">SS</span>
-                      <p class="qtName">Smith s</p>
-                    </a>
-                    <a href="#" class="qtId">
-                      <span class="qtProfile">SS</span>
-                      <p class="qtName">Smith s</p>
-                    </a>
-                    <a href="#" class="qtId">
-                      <span class="qtProfile">SS</span>
-                      <p class="qtName">Smith s</p>
-                    </a>
-                    <a href="#" class="qtId">
-                      <span class="qtProfile">SS</span>
-                      <p class="qtName">Smith s</p>
-                    </a>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- successfully Transferred -->
-      <div class="absolute top-20 2xl:top-32 px-4 w-full flex flex-col items-center justify-between">
-        <div class="w-full max-w-xl lg:max-w-3xl flex items-center bg-[#ECFCCB] p-4 rounded-xl">
-          <span>
-            <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg"> <g clip-path="url(#clip0_587_23732)"> <path fill-rule="evenodd" clip-rule="evenodd" d="M8 16.5C12.4183 16.5 16 12.9183 16 8.5C16 4.08172 12.4183 0.5 8 0.5C3.58172 0.5 0 4.08172 0 8.5C0 12.9183 3.58172 16.5 8 16.5ZM11.7071 7.20711C12.0976 6.81658 12.0976 6.18342 11.7071 5.79289C11.3166 5.40237 10.6834 5.40237 10.2929 5.79289L7 9.08579L5.70711 7.79289C5.31658 7.40237 4.68342 7.40237 4.29289 7.79289C3.90237 8.18342 3.90237 8.81658 4.29289 9.20711L6.29289 11.2071C6.68342 11.5976 7.31658 11.5976 7.70711 11.2071L11.7071 7.20711Z" fill="#65A30D"/> </g> <defs> <clipPath id="clip0_587_23732"> <rect width="16" height="16" fill="white" transform="translate(0 0.5)"/> </clipPath> </defs> </svg>
-          </span>
-          <span class="text-xs sm:text-sm md:text-base text-leafGreen font-semibold ml-4">Your Coin are successfully Transferred</span>
+            
         </div>
       </div>
     </div>
+
+    <!-- SYNC Account  -->
+    <div class="fixed w-full inset-0 z-40 bg-black bg-opacity-70">
+      <div class="flex flex-col items-center justify-center h-screen">
+        <div class="w-full sm:max-w-[480px] mx-auto max-h-[calc(100vh-55px)] overflow-y-auto px-4 md:px-0">
+          <!-- Modal content -->
+          <div class="relative bg-white rounded-lg shadow">
+            <div class="py-4 md:py-[30px] px-4 sm:px-[30px] md:px-[60px]">
+                <h3 class="text-2xl lg:text-[32px] text-center font-semibold pb-5">SYNC Account</h3>
+                <div class="w-full max-w-xl lg:max-w-3xl flex bg-[#FFF7D0] p-4 rounded-xl mb-2">
+                  <span class="pt-1.5"><svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" clip-rule="evenodd" d="M6.25706 1.01948C7.02167 -0.339826 8.97875 -0.339826 9.74336 1.01948L15.3237 10.94C16.0736 12.2732 15.1102 13.9205 13.5805 13.9205H2.4199C0.890251 13.9205 -0.0731769 12.2732 0.676753 10.94L6.25706 1.01948ZM9.00012 10.9207C9.00012 11.4729 8.55241 11.9207 8.00012 11.9207C7.44784 11.9207 7.00012 11.4729 7.00012 10.9207C7.00012 10.3684 7.44784 9.92065 8.00012 9.92065C8.55241 9.92065 9.00012 10.3684 9.00012 10.9207ZM8.00012 2.92065C7.44784 2.92065 7.00012 3.36837 7.00012 3.92065V6.92065C7.00012 7.47294 7.44784 7.92065 8.00012 7.92065C8.55241 7.92065 9.00012 7.47294 9.00012 6.92065V3.92065C9.00012 3.36837 8.55241 2.92065 8.00012 2.92065Z" fill="#FFB729"/> </svg></span>
+                  <span class="text-xs sm:text-sm md:text-base text-[#763E00] font-semibold ml-4">Make sure your email and details same</span>
+                </div>
+                <form action="#" method="">
+                  <div class="mb-2 sm:mb-4">
+                    <label for="email" class="loginLabel">Name</label>
+                    <div class="loginInputdata">
+                      <span class="loginInputicon">
+                        <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M9.41667 7.26667C9.86131 6.88178 10.218 6.40574 10.4624 5.87085C10.7068 5.33597 10.8333 4.75476 10.8333 4.16667C10.8333 3.0616 10.3943 2.00179 9.61294 1.22039C8.83154 0.438987 7.77174 0 6.66667 0C5.5616 0 4.50179 0.438987 3.72039 1.22039C2.93899 2.00179 2.5 3.0616 2.5 4.16667C2.49999 4.75476 2.6265 5.33597 2.87094 5.87085C3.11537 6.40574 3.47202 6.88178 3.91667 7.26667C2.75012 7.7949 1.76039 8.64794 1.06582 9.72379C0.371246 10.7996 0.00122655 12.0528 0 13.3333C0 13.5543 0.0877973 13.7663 0.244078 13.9226C0.400358 14.0789 0.61232 14.1667 0.833333 14.1667C1.05435 14.1667 1.26631 14.0789 1.42259 13.9226C1.57887 13.7663 1.66667 13.5543 1.66667 13.3333C1.66667 12.0073 2.19345 10.7355 3.13113 9.7978C4.06881 8.86012 5.34058 8.33333 6.66667 8.33333C7.99275 8.33333 9.26452 8.86012 10.2022 9.7978C11.1399 10.7355 11.6667 12.0073 11.6667 13.3333C11.6667 13.5543 11.7545 13.7663 11.9107 13.9226C12.067 14.0789 12.279 14.1667 12.5 14.1667C12.721 14.1667 12.933 14.0789 13.0893 13.9226C13.2455 13.7663 13.3333 13.5543 13.3333 13.3333C13.3321 12.0528 12.9621 10.7996 12.2675 9.72379C11.5729 8.64794 10.5832 7.7949 9.41667 7.26667ZM6.66667 6.66667C6.17221 6.66667 5.68886 6.52004 5.27774 6.24534C4.86662 5.97064 4.54619 5.58019 4.35697 5.12338C4.16775 4.66656 4.11824 4.16389 4.2147 3.67894C4.31117 3.19399 4.54927 2.74853 4.8989 2.3989C5.24853 2.04927 5.69399 1.81117 6.17894 1.7147C6.66389 1.61824 7.16656 1.66775 7.62337 1.85697C8.08019 2.04619 8.47064 2.36662 8.74534 2.77774C9.02004 3.18886 9.16667 3.67221 9.16667 4.16667C9.16667 4.82971 8.90327 5.46559 8.43443 5.93443C7.96559 6.40328 7.32971 6.66667 6.66667 6.66667Z" fill="#9CA3AF"/> </svg>
+                      </span>
+                      <input type="email" id="email" class="loginInput" placeholder="Enter Name">
+                    </div>
+                  </div>
+                  <div class="mb-2 sm:mb-4">
+                    <label for="email" class="loginLabel">Email</label>
+                    <div class="loginInputdata">
+                      <span class="loginInputicon">
+                        <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M14.8333 1.16666H3.16667C2.24619 1.16666 1.5 1.91286 1.5 2.83333V11.1667C1.5 12.0871 2.24619 12.8333 3.16667 12.8333H14.8333C15.7538 12.8333 16.5 12.0871 16.5 11.1667V2.83333C16.5 1.91286 15.7538 1.16666 14.8333 1.16666Z" stroke="#9CA3AF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M1.5 2.83334L9 7.83334L16.5 2.83334" stroke="#9CA3AF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </svg>
+                      </span>
+                      <input type="email" id="email" class="loginInput" placeholder="Enter your email">
+                    </div>
+                  </div>
+                  <div class="mb-2 sm:mb-4">
+                    <label for="email" class="loginLabel">Phone Number</label>
+                    <div class="loginInputdata">
+                      <span class="loginInputicon">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M15.1998 9.83331C15.0165 9.83331 14.8248 9.77497 14.6415 9.73331C14.2702 9.65149 13.9054 9.54287 13.5498 9.40831C13.1632 9.26766 12.7383 9.27497 12.3568 9.42881C11.9752 9.58265 11.6641 9.87217 11.4832 10.2416L11.2998 10.6166C10.4882 10.1651 9.74233 9.60433 9.08317 8.94997C8.42881 8.29082 7.86803 7.54497 7.41651 6.7333L7.76651 6.49997C8.13598 6.31907 8.42549 6.00791 8.57933 5.62638C8.73318 5.24485 8.74048 4.8199 8.59984 4.4333C8.46753 4.07699 8.35895 3.7123 8.27484 3.34164C8.23317 3.1583 8.19984 2.96664 8.17484 2.77497C8.07364 2.18799 7.76619 1.65642 7.30786 1.276C6.84952 0.895585 6.27042 0.691312 5.67484 0.699971H3.17484C2.8157 0.696599 2.46005 0.770649 2.1321 0.91708C1.80415 1.06351 1.5116 1.27888 1.27437 1.54854C1.03713 1.81819 0.860785 2.1358 0.75733 2.47973C0.653874 2.82367 0.625739 3.18585 0.67484 3.54164C1.11879 7.03279 2.7132 10.2765 5.20622 12.7605C7.69924 15.2445 10.9488 16.8271 14.4415 17.2583H14.7582C15.3727 17.2592 15.966 17.0337 16.4248 16.625C16.6885 16.3892 16.8991 16.1001 17.0427 15.7769C17.1864 15.4537 17.2598 15.1037 17.2582 14.75V12.25C17.248 11.6711 17.0372 11.1138 16.6618 10.673C16.2864 10.2323 15.7697 9.93549 15.1998 9.83331ZM15.6165 14.8333C15.6164 14.9516 15.591 15.0686 15.5422 15.1763C15.4933 15.2841 15.4221 15.3802 15.3332 15.4583C15.2401 15.5387 15.1312 15.5988 15.0135 15.6346C14.8958 15.6705 14.772 15.6814 14.6498 15.6666C11.5289 15.2665 8.63004 13.8387 6.41044 11.6085C4.19084 9.37838 2.77685 6.47275 2.39151 3.34997C2.37824 3.2279 2.38987 3.10441 2.42567 2.98696C2.46148 2.86951 2.52073 2.76054 2.59984 2.66664C2.67793 2.57775 2.77406 2.50651 2.88182 2.45765C2.98959 2.4088 3.10652 2.38345 3.22484 2.3833H5.72484C5.91863 2.37899 6.10786 2.44237 6.25996 2.56253C6.41206 2.68269 6.51751 2.85211 6.55817 3.04164C6.59151 3.26942 6.63317 3.49442 6.68317 3.71664C6.77944 4.15593 6.90756 4.58762 7.06651 5.00831L5.89984 5.54997C5.80009 5.59574 5.71036 5.66076 5.6358 5.7413C5.56125 5.82184 5.50334 5.91632 5.4654 6.0193C5.42746 6.12228 5.41023 6.23175 5.41471 6.34141C5.41919 6.45107 5.44529 6.55876 5.49151 6.6583C6.69084 9.22727 8.75588 11.2923 11.3248 12.4916C11.5277 12.575 11.7553 12.575 11.9582 12.4916C12.0621 12.4545 12.1576 12.397 12.2391 12.3226C12.3207 12.2482 12.3866 12.1584 12.4332 12.0583L12.9498 10.8916C13.3806 11.0457 13.8203 11.1737 14.2665 11.275C14.4887 11.325 14.7137 11.3666 14.9415 11.4C15.131 11.4406 15.3005 11.5461 15.4206 11.6982C15.5408 11.8503 15.6042 12.0395 15.5998 12.2333L15.6165 14.8333Z" fill="#9CA3AF"/> </svg>
+                      </span>
+                      <input type="email" id="email" class="loginInput" placeholder="Enter your phone number">
+                    </div>
+                  </div>
+                  <div class="flex justify-between pt-5">
+                    <button type="button" class="w-full md:max-w-[172px] text-davyGrey font-semibold rounded-xl text-xs sm:text-sm border border-[#D1D5DB] px-5 py-3 text-center mr-1">Back</button>
+                    <button type="button" class="w-full md:max-w-[172px] text-white font-semibold rounded-xl text-xs sm:text-sm border border-[#D1D5DB] bg-leafGreen px-5 py-3 text-center ml-1">Sync</button>
+                  </div>
+                </form>
+            </div>
+        </div>
+        </div>
+      </div>
+      <!-- successfully Transferred -->
+      <div class="absolute top-10 px-4 w-full flex flex-col items-center justify-between">
+        <div class="w-full max-w-xl lg:max-w-3xl flex items-center bg-[#FEE4E2] p-4 rounded-xl">
+          <span>
+            <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" clip-rule="evenodd" d="M8 17.5C12.4183 17.5 16 13.9183 16 9.5C16 5.08172 12.4183 1.5 8 1.5C3.58172 1.5 0 5.08172 0 9.5C0 13.9183 3.58172 17.5 8 17.5Z" fill="#D92D20"/> <path d="M11 7L6 12" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/> <path d="M6 7L11 12" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/> </svg>
+          </span>
+          <span class="text-xs sm:text-sm md:text-base text-[#D92D20] font-semibold ml-4">Your password is wrong please check your password.</span>
+        </div>
+      </div>
+    </div>
+
     <script src="../assest/js/jquery.min.js"></script>
-    <script src="../assest/js/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../assest/js/script.js"></script>
   </body>
 </html>

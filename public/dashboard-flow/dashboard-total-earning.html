@@ -11,8 +11,8 @@
   </head>
   <body>
     <div class="main flex min-h-screen relative">
-       <!-- left-bar -->
-       <div class="left_bar">
+      <!-- left-bar -->
+      <div class="left_bar">
         <a href="javascript:void(0)" class="inline-block w-full text-center">
           <img src="../assest/images/svg/logo.svg" alt="logo" class="mx-auto"/>
         </a>
@@ -118,6 +118,7 @@
       </div>
       <!-- right-bar -->
       <div class="right_bar relative ml-auto">
+        <!-- header -->
         <div class="w-full bg-white p-5 lg:px-6 xl:px-12 lg:py-6 flex items-center relative">
           <h3>Dashboard</h3>
           <div class="flex items-center ml-auto">
@@ -182,18 +183,19 @@
             </a>
           </div>        
         </div>
+        <!-- main content -->
         <div class="content-area h-[calc(100vh-72px)] sm:h-[calc(100vh-84px)] lg:h-[calc(100vh-100px)] p-4 sm:p-6 lg:p-8 xl:p-10 pb-0 overflow-y-auto">
-          <!-- back arrow -->
+          <!-- Pagination -->
           <a href="#" class="text-xl md:text-2xl font-semibold flex items-center pb-2 md:pb-4">
             <span class="pr-3 md:pr-6">
               <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M10.3937 16.8625C9.9174 17.4089 9.08831 17.4657 8.54192 16.9893L0.51251 9.98935C0.226598 9.74009 0.0625 9.37933 0.0625 9.00002C0.0625 8.62071 0.226597 8.25995 0.51251 8.01069L8.54192 1.01069C9.08831 0.534353 9.9174 0.591138 10.3937 1.13753C10.8701 1.68392 10.8133 2.51301 10.2669 2.98935L4.87782 7.68752L20.625 7.68752C21.3499 7.68752 21.9375 8.27514 21.9375 9.00002C21.9375 9.72489 21.3499 10.3125 20.625 10.3125L4.87782 10.3125L10.2669 15.0107C10.8133 15.487 10.8701 16.3161 10.3937 16.8625Z" fill="#1F2937"/>
               </svg>                
             </span>
-            Total Balance
+            Total Earnings
           </a>
           <!-- Total Earnings -->
-          <div class="flex flex-wrap items-center w-full 2xl:w-[60%]">
+          <div class="flex flex-wrap items-center w-full 2xl:w-[60%] sm:-mx-2">
             <!-- Total Earnings -->
             <div class="w-full max-w-sm 2xl:w-4/12 p-2">
               <div class="bg-white rounded-2xl md:rounded-3xl py-[15px] px-7 md:pl-6 2xl:pr-4">
@@ -201,6 +203,7 @@
                 <h3 class="balanceTitle">1,63,000</h3>
               </div>
             </div>
+            <!-- Earned type -->
             <div class="w-full max-w-lg 2xl:w-8/12 p-2">
               <div class="bg-white rounded-2xl md:rounded-3xl flex flex-wrap">
                 <!-- Referral Earned -->
@@ -220,10 +223,10 @@
           <div class="w-full mt-4">
             <div class="relative flex flex-col min-w-0 break-words w-full mb-6">
               <div class="flex flex-wrap md:flex-nowrap justify-between items-center space-y-3 sm:space-y-0 pb-3">
-                <h3 class="font-semibold">Recent Activity</h3>
+                <h4 class="font-semibold text-lg sm:text-xl lg:text-2xl">Recent Activity</h4>
                 <div class="flex flex-wrap space-y-3 sm:space-y-0 sm:flex-nowrap sm:space-x-5 w-full sm:w-auto">
-                  <select name="product" class="w-full sm:w-auto outline-none px-4 py-2 rounded-lg text-sm border border-gray-200 text-darkGrey font-normal appearance-none cursor-pointer" id="product">
-                    <option value="eventoPackage">Referral</option>
+                  <select name="product" class="selectFilter" id="product">
+                    <option value="referral">Referral</option>
                     <option value="eventoPackage">Evento Package</option>
                     <option value="festumEvento">Festum Evento</option>
                     <option value="friendsFields">Friends Fields</option>
@@ -440,7 +443,6 @@
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </div>
