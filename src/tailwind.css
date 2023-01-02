@@ -132,4 +132,9 @@ input[type=radio].bankholder:checked + .transactionBank .selact-bank span {
 
 /* by product card  */
 .product{@apply min-w-[85px] h-full xl:min-w-[100px] rounded-lg bg-black/10 border border-black/20 p-3 flex items-center justify-center;}
+
+/* profile */
+.prLlb{@apply block text-gray-700 text-base md:text-xl font-semibold mb-1 sm:mb-2;}
+.prInput{@apply block w-full bg-white text-base md:text-lg text-gray-700 rounded-xl md:rounded-2xl py-3 md:py-6 px-5 md:px-8;}
+
 @tailwind utilities;
