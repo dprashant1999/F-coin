@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>By Bank</title>
+    <title>Bill Details</title>
     <link rel="stylesheet" href="../assest/css/fonts.css" />
     <link rel="stylesheet" href="../assest/css/iconmoon.css" />
     <link rel="stylesheet" href="../assest/css/style.css" />
@@ -183,7 +183,7 @@
           </div>        
         </div>
         <div class="content-area h-[calc(100vh-72px)] sm:h-[calc(100vh-84px)] lg:h-[calc(100vh-100px)] p-4 sm:p-6 lg:p-8 xl:p-10 pb-0 overflow-y-auto">
-          <div class="sm:flex items-center justify-between pb-4 md:pb-7 lg:pb-11">
+          <div class="flex items-center justify-between pb-4 md:pb-7 lg:pb-11">
             <!-- back arrow -->
             <a href="#" class="text-xl md:text-2xl font-semibold flex items-center">
               <span class="pr-3 md:pr-6">
@@ -191,115 +191,74 @@
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M10.3937 16.8625C9.9174 17.4089 9.08831 17.4657 8.54192 16.9893L0.51251 9.98935C0.226598 9.74009 0.0625 9.37933 0.0625 9.00002C0.0625 8.62071 0.226597 8.25995 0.51251 8.01069L8.54192 1.01069C9.08831 0.534353 9.9174 0.591138 10.3937 1.13753C10.8701 1.68392 10.8133 2.51301 10.2669 2.98935L4.87782 7.68752L20.625 7.68752C21.3499 7.68752 21.9375 8.27514 21.9375 9.00002C21.9375 9.72489 21.3499 10.3125 20.625 10.3125L4.87782 10.3125L10.2669 15.0107C10.8133 15.487 10.8701 16.3161 10.3937 16.8625Z" fill="#1F2937"/>
                 </svg>                
               </span>
-              Redeem Coin
+              Notification Promote
             </a>
           </div>
-          <!-- selaction transaction -->
-          <div class="2xl:px-6 flex flex-wrap -mx-3 2xl:-mx-6 space-y-3 sm:space-y-0">
-            <div class="px-3 2xl:px-6 w-full sm:w-1/2">
-              <div class="flex items-center relative">
-                <input class="absolute inset-0 z-10 cursor-pointer opacity-0 transactiongroup" type="radio" name="bytransaction" checked/>
-                <div>
-                  <span class="inline-block w-4 h-4 rounded-full border-2 border-black/20 mr-4 radio"></span>
-                </div>
-                <div class="flex items-center p-3 xl:px-5 xl:py-4 bg-white rounded-lg border-2 border-black/20 w-full transactionoption">
-                  <div>
-                    <div class="w-10 h-10 xl:w-12 xl:h-12 rounded-full bg-black/5 flex items-center justify-center">
-                      <span class="icon-by-bank text-lg xl:text-2xl text-dark"></span>
-                    </div>
+          <div class="flex items-stretch flex-wrap -mx-3.5">
+            <div class="w-full lg:w-1/2 p-3.5">
+              <div class="w-full h-full bg-white rounded-xl p-5 xl:p-8">
+                <span class="text-xl md:text-2xl text-dark font-semibold">Bill Details</span>
+                <div class="flex flex-wrap pt-5">
+                  <div class="w-9/12 py-2 md:py-3 flex items-center">
+                    <i class="icon-userplan-notification text-leafGreen text-xl xl:text-3xl"></i>
+                    <p class="ml-3 text-base xl:text-lg font-bold">Notification <span class="text-sm text-davyGrey font-normal block xl:inline-block xl:ml-2">500 Users x 5</span></p>
                   </div>
-                  <div class="flex items-center flex-wrap pl-3 space-y-1 2xl:flex-nowrap 2xl:space-y-0">
-                    <p class="text-base lg:text-lg 2xl:text-xl font-semibold text-dark">By Bank</p>
-                    <span class="2xl:ml-2 text-xs sm:text-sm 2xl:text-base font-normal opacity-50">(You can redeem coin by bank)</span>
+                  <div class="w-3/12 py-2 md:py-3 text-right">
+                    <span class="whitespace-nowrap text-base md:text-xl xl:text-2xl font-normal text-darkGrey">₹ 299</span> 
+                  </div>
+                  <div class="w-9/12 py-2 md:py-3 flex items-center">
+                    <i class="icon-userplan-email text-leafGreen text-xl xl:text-3xl"></i>
+                    <p class="ml-3 text-base xl:text-lg font-bold">Notification <span class="text-sm text-davyGrey font-normal block xl:inline-block xl:ml-2">500 Users x 5</span></p>
+                  </div>
+                  <div class="w-3/12 py-2 md:py-3 text-right">
+                    <span class="whitespace-nowrap text-base md:text-xl xl:text-2xl font-normal text-darkGrey">₹ 1999</span> 
+                  </div>
+                  <div class="w-9/12 py-2 md:py-3 flex items-center">
+                    <i class="icon-userplan-email text-leafGreen text-xl xl:text-3xl"></i>
+                    <p class="ml-3 text-base xl:text-lg font-bold">Notification <span class="text-sm text-davyGrey font-normal block xl:inline-block xl:ml-2">500 Users x 5</span></p>
+                  </div>
+                  <div class="w-3/12 py-2 md:py-3 text-right">
+                    <span class="whitespace-nowrap text-base md:text-xl xl:text-2xl font-normal text-darkGrey">₹ 8399</span> 
                   </div>
                 </div>
               </div>
             </div>
-            <div class="px-3 2xl:px-6 w-full sm:w-1/2">
-              <div class="flex items-center relative">
-                <input class="absolute inset-0 z-10 cursor-pointer opacity-0 transactiongroup" type="radio" name="bytransaction"/>
-                <div>
-                  <span class="inline-block w-4 h-4 rounded-full border-2 border-black/20 mr-4 radio"></span>
-                </div>
-                <div class="flex items-center p-3 xl:px-5 xl:py-4 bg-white rounded-lg border-2 border-black/20 w-full transactionoption">
-                  <div>
-                    <div class="w-10 h-10 xl:w-12 xl:h-12 rounded-full bg-black/5 flex items-center justify-center">
-                      <span class="icon-by-product text-lg xl:text-2xl text-dark"></span>
-                    </div>
+            <div class="w-full lg:w-1/2 p-3.5">
+              <div class="w-full h-full bg-white rounded-xl p-5 md:p-8 flex flex-col justify-between">
+                <div class="flex flex-wrap pb-10">
+                  <div class="w-1/2 py-2">
+                    <p class="ml-3 font-semibold text-base lg:text-xl text-dark">Subtotal</p>
                   </div>
-                  <div class="flex items-center flex-wrap pl-3 space-y-1 2xl:flex-nowrap 2xl:space-y-0">
-                    <p class="text-base lg:text-lg 2xl:text-xl font-semibold text-dark">By Product</p>
-                    <span class="2xl:ml-2 text-xs sm:text-sm 2xl:text-base font-normal opacity-50">(You can redeem coin by Product)</span>
+                  <div class="w-1/2 py-2 text-right">
+                    <span class="whitespace-nowrap text-base md:text-xl xl:text-2xl font-normal text-darkGrey">₹ 10,499</span> 
+                  </div>
+                  <div class="w-1/2 py-2">
+                    <p class="ml-3 text-leafGreen font-semibold text-base lg:text-xl">Discount</p>
+                  </div>
+                  <div class="w-1/2 py-2 text-right">
+                    <span class="whitespace-nowrap text-base md:text-xl xl:text-2xl font-normal text-leafGreen">₹ 1999</span> 
                   </div>
                 </div>
+                <div class="flex flex-wrap border-t-2 border-gray-300">
+                  <div class="w-1/2 py-2">
+                    <p class="ml-3 font-semibold text-base lg:text-xl text-dark">Total</p>
+                  </div>
+                  <div class="w-1/2 py-2 text-right">
+                    <span class="text-xl md:text-2xl font-bold text-dark">₹ 9,400</span> 
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-full lg:w-1/2 p-3.5">
+              <div class="rounded-lg bg-white flex items-center p-5 md:py-6 px-7">
+                <input type="text" placeholder="Coupon Code" class="text-base xl:text-lg w-full pr-3"/>
+                <a href="javascript:void(0)" class="text-base text-leafGreen font-semibold">Apply</a>
               </div>
             </div>
           </div>
-          <!-- Redeem by bank -->
-          <div class="bg-white p-8 lg:p-12 rounded-2xl drop-shadow-one mt-9 lg:mt-12">
-            <div class="flex flex-wrap items-center justify-between">
-              <div class="w-full sm:w-1/2 order-2 sm:order-1 mt-3 sm:mt-0">
-                <h4 class="text-dark font-bold text-xl lg:text-2xl">Redeem by bank</h4>
-                <p class="text-sm sm:text-base text-dark font-normal">Redeem your coin from your wallet to bank account</p>
-              </div>
-              <a href="javascript:void(0)" class="text-lg text-leafGreen flex items-center order-1 sm:order-2"><i class="icon-plus text-base pr-2"></i>Add new bank</a>
-            </div>
-            <div class="w-full py-8 space-y-3">
-              <div class="relative">
-                <input class="absolute inset-0 z-10 cursor-pointer opacity-0 transactiongroup" type="radio" name="bankName" checked/>
-                <div class="flex items-center p-3 xl:px-5 xl:py-4 bg-white rounded-lg border-2 border-black/20 w-full transactionBank">
-                  <div class="selact-bank flex items-center">
-                    <span class="inline-block w-4 h-4 rounded-full border-2 border-black/20 mr-4"></span>
-                  </div>
-                  <div class="flex items-center">
-                    <div>
-                      <div class="w-10 h-10 xl:w-12 xl:h-12 rounded-full bg-black/5 flex items-center justify-center">
-                        <span class="icon-by-product text-lg xl:text-2xl text-dark"></span>
-                      </div>
-                    </div>
-                    <div class="flex items-center flex-wrap pl-3">
-                      <p class="text-base lg:text-lg 2xl:text-xl font-semibold text-dark">Axis Bank</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="relative">
-                <input class="absolute inset-0 z-10 cursor-pointer opacity-0 transactiongroup" type="radio" name="bankName" checked/>
-                <div class="flex items-center p-3 xl:px-5 xl:py-4 bg-white rounded-lg border-2 border-black/20 w-full transactionBank">
-                  <div class="selact-bank flex items-center">
-                    <span class="inline-block w-4 h-4 rounded-full border-2 border-black/20 mr-4"></span>
-                  </div>
-                  <div class="flex items-center">
-                    <div>
-                      <div class="w-10 h-10 xl:w-12 xl:h-12 rounded-full bg-black/5 flex items-center justify-center">
-                        <span class="icon-by-product text-lg xl:text-2xl text-dark"></span>
-                      </div>
-                    </div>
-                    <div class="flex items-center flex-wrap pl-3">
-                      <p class="text-base lg:text-lg 2xl:text-xl font-semibold text-dark">Central Bank of India</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="relative">
-                <input class="absolute inset-0 z-10 cursor-pointer opacity-0 transactiongroup" type="radio" name="bankName" checked/>
-                <div class="flex items-center p-3 xl:px-5 xl:py-4 bg-white rounded-lg border-2 border-black/20 w-full transactionBank">
-                  <div class="selact-bank flex items-center">
-                    <span class="inline-block w-4 h-4 rounded-full border-2 border-black/20 mr-4"></span>
-                  </div>
-                  <div class="flex items-center">
-                    <div>
-                      <div class="w-10 h-10 xl:w-12 xl:h-12 rounded-full bg-black/5 flex items-center justify-center">
-                        <span class="icon-by-product text-lg xl:text-2xl text-dark"></span>
-                      </div>
-                    </div>
-                    <div class="flex items-center flex-wrap pl-3">
-                      <p class="text-base lg:text-lg 2xl:text-xl font-semibold text-dark">Bank Of Baroda</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="flex justify-center items-center space-x-5 mt-10 xl:mt-20">
+            <a href="javascript:void(0)" class="btnPrimary border-gray-300 bg-white text-dark hover:bg-leafGreen hover:text-white hover:border-white">Cancel</a>
+            <a href="javascript:void(0)" class="btnPrimary">Pay</a>
           </div>
         </div>
       </div>
