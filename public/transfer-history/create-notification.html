@@ -191,7 +191,7 @@
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M10.3937 16.8625C9.9174 17.4089 9.08831 17.4657 8.54192 16.9893L0.51251 9.98935C0.226598 9.74009 0.0625 9.37933 0.0625 9.00002C0.0625 8.62071 0.226597 8.25995 0.51251 8.01069L8.54192 1.01069C9.08831 0.534353 9.9174 0.591138 10.3937 1.13753C10.8701 1.68392 10.8133 2.51301 10.2669 2.98935L4.87782 7.68752L20.625 7.68752C21.3499 7.68752 21.9375 8.27514 21.9375 9.00002C21.9375 9.72489 21.3499 10.3125 20.625 10.3125L4.87782 10.3125L10.2669 15.0107C10.8133 15.487 10.8701 16.3161 10.3937 16.8625Z" fill="#1F2937"/>
                 </svg>                
               </span>
-              Transfer Coin
+              Create New Notification
             </a>
             <!-- btn -->
             <div class="flex space-x-4 pt-4 sm:pt-0">
@@ -201,7 +201,67 @@
               <a href="#" class="block min-w-[108px] text-xs text-white font-semibold bg-leafGreen rounded-lg py-3 text-center">Transfer</a>
             </div>
           </div>
-
+          <div class="flex flex-wrap -mx-3">
+            <div class="w-full md:w-1/2 p-3">
+              <label class="w-full block py-4 px-4 sm:py-6 sm:px-8 bg-white rounded-xl">
+                <input type="text" placeholder="Notification Title" class="w-full text-sm md:text-base xl:text-xl"/>
+              </label>
+            </div>
+            <div class="w-full md:w-1/2 p-3">
+              <label class="w-full block py-4 px-4 sm:py-6 sm:px-8 bg-white rounded-xl">
+                <input type="text" placeholder="Link" class="w-full text-sm md:text-base xl:text-xl"/>
+              </label>
+            </div>
+            <div class="w-full p-3">
+              <label class="w-full flex items-center justify-center py-8 px-4 sm:py-10 sm:px-8 bg-white rounded-xl relative border-2 border-dashed border-davyGrey/60">
+                <input type="file" placeholder="Notification Title" class="w-full h-full invisible inset-0 absolute"/>
+                <span class="flex items-center text-sm md:text-base xl:text-xl text-davyGrey/60"><i class="icon-upload-image mr-3"></i> Upload Image</span>
+              </label>
+            </div>
+            <div class="w-full p-3">
+              <label class="w-full flex items-center justify-center py-5 pt-16 px-4 sm:py-5 sm:px-8 bg-white rounded-xl relative">
+                <textarea id="message" rows="7" class="block w-full outline-none text-sm md:text-base xl:text-xl" placeholder="Description"></textarea>
+                <div class="flex items-center absolute sm:right-10 top-7 space-x-3 md:space-x-8 z-10 px-2">
+                  <div class="p-0 flex items-center space-x-2">
+                    <a href="javascript:void(0)" class="inline-block">
+                      <img src="../assest/images/svg/bold.svg" alt="bold"/>
+                    </a>
+                    <a href="javascript:void(0)" class="inline-block">
+                      <img src="../assest/images/svg/capitals.svg" alt="capitals"/>
+                    </a>
+                    <a href="javascript:void(0)" class="inline-block">
+                      <img src="../assest/images/svg/underline.svg" alt="underline"/>
+                    </a>
+                    <a href="javascript:void(0)" class="inline-block">
+                      <img src="../assest/images/svg/italic.svg" alt="italic"/>
+                    </a>
+                  </div>
+                  <div class="p-0 flex items-center space-x-2">
+                    <a href="javascript:void(0)" class="inline-block">
+                      <img src="../assest/images/svg/left-alignment.svg" alt="left-alignment"/>
+                    </a>
+                    <a href="javascript:void(0)" class="inline-block">
+                      <img src="../assest/images/svg/center-alignment.svg" alt="center-alignment"/>
+                    </a>
+                    <a href="javascript:void(0)" class="inline-block">
+                      <img src="../assest/images/svg/right-alignment.svg" alt="right-alignment"/>
+                    </a>
+                  </div>
+                  <div class="p-0 flex items-center space-x-2">
+                    <a href="javascript:void(0)" class="inline-block">
+                      <img src="../assest/images/svg/listnumber.svg" alt="listnumber"/>
+                    </a>
+                    <a href="javascript:void(0)" class="inline-block">
+                      <img src="../assest/images/svg/liststyle.svg" alt="liststyle"/>
+                    </a>
+                    <a href="javascript:void(0)" class="inline-block">
+                      <img src="../assest/images/svg/listabc.svg" alt="listabc"/>
+                    </a>
+                  </div>
+                </div>
+              </label>
+            </div>
+          </div>
         </div>
       </div>
     </div>

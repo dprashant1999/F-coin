@@ -20,15 +20,3 @@ $(function() {
   });
 });
 
-// header profile 
-$(function() {
-  $("#userProfile").on("click", function(a) {
-    $(".homeProfile").addClass("open");
-    a.stopPropagation()
-  });
-  $(document).on("click", function(a) {
-    if ($(a.target).is(".homeProfile") === false) {
-      $(".homeProfile").removeClass("open");
-    }
-  });
-});
