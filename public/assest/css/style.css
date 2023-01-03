@@ -1986,6 +1986,10 @@ input[type=radio].bankholder:checked + .transactionBank .selact-bank span {
   top: 0px;
 }
 
+.left-1\/2 {
+  left: 50%;
+}
+
 .right-24 {
   right: 6rem;
 }
@@ -2020,10 +2024,6 @@ input[type=radio].bankholder:checked + .transactionBank .selact-bank span {
 
 .top-7 {
   top: 1.75rem;
-}
-
-.left-1\/2 {
-  left: 50%;
 }
 
 .top-5 {
@@ -2084,19 +2084,14 @@ input[type=radio].bankholder:checked + .transactionBank .selact-bank span {
   margin-right: -0.875rem;
 }
 
-.my-4 {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+.my-3 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
 }
 
 .mx-4 {
   margin-left: 1rem;
   margin-right: 1rem;
-}
-
-.my-3 {
-  margin-top: 0.75rem;
-  margin-bottom: 0.75rem;
 }
 
 .mt-8 {
@@ -2217,6 +2212,10 @@ input[type=radio].bankholder:checked + .transactionBank .selact-bank span {
 
 .mb-4 {
   margin-bottom: 1rem;
+}
+
+.mt-7 {
+  margin-top: 1.75rem;
 }
 
 .block {
@@ -2347,16 +2346,16 @@ input[type=radio].bankholder:checked + .transactionBank .selact-bank span {
   height: 3px;
 }
 
+.h-\[250px\] {
+  height: 250px;
+}
+
 .max-h-\[570px\] {
   max-height: 570px;
 }
 
 .max-h-\[500px\] {
   max-height: 500px;
-}
-
-.max-h-\[142px\] {
-  max-height: 142px;
 }
 
 .min-h-screen {
@@ -2423,6 +2422,10 @@ input[type=radio].bankholder:checked + .transactionBank .selact-bank span {
   width: 1.75rem;
 }
 
+.w-16 {
+  width: 4rem;
+}
+
 .w-20 {
   width: 5rem;
 }
@@ -2441,10 +2444,6 @@ input[type=radio].bankholder:checked + .transactionBank .selact-bank span {
 
 .w-4 {
   width: 1rem;
-}
-
-.w-16 {
-  width: 4rem;
 }
 
 .w-9\/12 {
@@ -2535,6 +2534,16 @@ input[type=radio].bankholder:checked + .transactionBank .selact-bank span {
 
 .-translate-y-1\/2 {
   --tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-translate-x-1\/2 {
+  --tw-translate-x: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-translate-y-8 {
+  --tw-translate-y: -2rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -3268,6 +3277,10 @@ input[type=radio].bankholder:checked + .transactionBank .selact-bank span {
   padding-top: 0.5rem;
 }
 
+.pl-11 {
+  padding-left: 2.75rem;
+}
+
 .pt-8 {
   padding-top: 2rem;
 }
@@ -3310,10 +3323,6 @@ input[type=radio].bankholder:checked + .transactionBank .selact-bank span {
 
 .pr-10 {
   padding-right: 2.5rem;
-}
-
-.pb-1 {
-  padding-bottom: 0.25rem;
 }
 
 .text-left {
@@ -3566,6 +3575,11 @@ input[type=radio].bankholder:checked + .transactionBank .selact-bank span {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
+.drop-shadow-gift {
+  --tw-drop-shadow: drop-shadow(0px 2px 21px rgba(209, 213, 219, 0.44));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
 .filter {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
@@ -3792,6 +3806,10 @@ input[type=radio].bankholder:checked + .transactionBank .selact-bank span {
     padding: 2rem;
   }
 
+  .sm\:p-2 {
+    padding: 0.5rem;
+  }
+
   .sm\:py-4 {
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -3916,10 +3934,6 @@ input[type=radio].bankholder:checked + .transactionBank .selact-bank span {
 
   .md\:h-24 {
     height: 6rem;
-  }
-
-  .md\:max-h-\[142px\] {
-    max-height: 142px;
   }
 
   .md\:w-10 {
@@ -4163,6 +4177,11 @@ input[type=radio].bankholder:checked + .transactionBank .selact-bank span {
 }
 
 @media (min-width: 1024px) {
+  .lg\:-mx-3 {
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
+  }
+
   .lg\:mt-\[91px\] {
     margin-top: 91px;
   }
@@ -4242,6 +4261,10 @@ input[type=radio].bankholder:checked + .transactionBank .selact-bank span {
 
   .lg\:p-7 {
     padding: 1.75rem;
+  }
+
+  .lg\:p-3 {
+    padding: 0.75rem;
   }
 
   .lg\:p-0 {
