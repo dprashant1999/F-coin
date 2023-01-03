@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>F-coin || Dashboard Profile</title>
+    <title>F-coin || Dashboard Edit Profile</title>
     <link rel="stylesheet" href="../assest/css/fonts.css" />
     <link rel="stylesheet" href="../assest/css/iconmoon.css" />
     <link rel="stylesheet" href="../assest/css/style.css" />
@@ -12,7 +12,7 @@
   <body>
     <div class="main flex min-h-screen relative">
        <!-- left-bar -->
-       <div class="left_bar">
+      <div class="left_bar">
         <a href="javascript:void(0)" class="inline-block w-full text-center">
           <img src="../assest/images/svg/logo.svg" alt="logo" class="mx-auto"/>
         </a>
@@ -185,65 +185,152 @@
         </div>
         <!-- main content -->
         <div class="content-area h-[calc(100vh-72px)] sm:h-[calc(100vh-84px)] lg:h-[calc(100vh-100px)] p-4 sm:p-6 lg:p-8 xl:p-10 pb-0 overflow-y-auto">
-          <!-- edit btn -->
-          <button class="p-3 md:px-4 md:py-3 bg-leafGreen text-white rounded-lg text-xs md:text-sm font-semibold ml-auto block">Edit Profile</button>
-          <!-- profile picture -->
-          <div class="bg-white p-4 sm:p-8 md:p-12 rounded-xl sm:rounded-2xl md:rounded-t-3xl mt-5 md:mt-6 mb-2 relative overflow-hidden">
-            <div class="sm:flex items-end justify-between relative z-50">
-              <div class="sm:flex items-end">
-                <img src="../assest/images/profile-img.png" alt="profile-image" class="bg-white w-28 sm:w-36 md:w-44 h-28 sm:h-36 md:h-44 rounded-full object-cover border-4 sm:border-8 md:border-[10px] border-white mx-auto" />
-                <div class="pt-5 text-center sm:text-left sm:pl-6">
-                  <h3 class="font-semibold">John Doe</h3>
-                  <p class="text-base md:text-lg font-semibold text-grey">johndoe12@gmail.com</p>
+          <!-- search bar -->
+          <div class="relative bg-white w-full max-w-3xl mx-auto flex items-center justify-between p-4 md:py-6 md:px-8 rounded-2xl">
+            <input class="w-full text-lg border-none outline-none" id="search" type="search" placeholder="Search" />    
+            <button type="button">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 lg:w-7 lg:h-7 stroke-grey" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+              </svg>
+            </button>  
+          </div>
+          <!-- faq -->
+          <div class="accordions w-full flex flex-wrap pt-8 md:pt-12">
+            <div class="w-full 2xl:w-1/2 space-y-3 2xl:pr-3">
+              <div class="faqMain">
+                <p class="title_tab faqHad font-semibold">What is the meaning of Lorem ipsum?
+                  <span class="icon-arrow-down-2 text-[8px] md:text-[12px] anim"></span>
+                </p>
+                <div class="inner_content faqDown">
+                  <p class="font-semibold pt-5">You can create a new account at the end of the order process or on the following page: Create new account. You can view all of your orders and subscriptions in your customer account. You can also change your addresses and your password.</p>
                 </div>
               </div>
-              <span class="pt-5 block">
-                <svg class="mx-auto" width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M4.6875 4.6875H18.75V0H0V18.75H4.6875V4.6875Z" fill="black"/> <path d="M61.25 0V4.6875H75.3125V18.75H80V0H61.25Z" fill="black"/> <path d="M75.3125 75.3125H61.25V80H80V61.25H75.3125V75.3125Z" fill="black"/> <path d="M4.6875 61.25H0V80H18.75V75.3125H4.6875V61.25Z" fill="black"/> <path d="M9.53125 9.375V32.8125H32.9688V18.75H37.6562V14.0625H32.9688V9.375H9.53125ZM28.2812 28.125H14.2188V14.0625H28.2812V28.125Z" fill="black"/> <path d="M70.4688 70.3125V46.875H61.0938V42.1875H56.4062V46.875H42.3438V51.5625H47.0312V56.25H42.3438V60.9375H47.0312V70.3125H70.4688ZM51.7188 51.5625H65.7812V65.625H51.7188V51.5625Z" fill="black"/> <path d="M23.5938 42.1875H32.9688V37.5H9.53125V42.1875H18.9062V46.875H14.2188V51.5625H18.9062V60.9375H14.2188V65.625H18.9062V70.3125H42.3438V65.625H37.6562V60.9375H32.9688V65.625H23.5938V60.9375H28.2812V56.25H23.5938V42.1875Z" fill="black"/> <path d="M18.9062 18.75H23.5938V23.4375H18.9062V18.75Z" fill="black"/> <path d="M56.4062 18.75H61.0938V23.4375H56.4062V18.75Z" fill="black"/> <path d="M61.0938 32.8125H70.4688V9.375H47.0312V32.8125H56.4062V37.5H61.0938V32.8125ZM51.7188 28.125V14.0625H65.7812V28.125H51.7188Z" fill="black"/> <path d="M70.4688 42.1875V37.5C69.3347 37.5 62.2357 37.5 61.0938 37.5V42.1875H70.4688Z" fill="black"/> <path d="M56.4062 56.25H61.0938V60.9375H56.4062V56.25Z" fill="black"/> <path d="M37.6562 51.5625H42.3438V56.25H37.6562V51.5625Z" fill="black"/> <path d="M28.2812 56.25H32.9688C32.9688 55.116 32.9688 48.017 32.9688 46.875H28.2812V56.25Z" fill="black"/> <path d="M32.9688 42.1875H37.6562V46.875H32.9688V42.1875Z" fill="black"/> <path d="M14.2188 51.5625H9.53125V60.9375H14.2188C14.2188 59.8035 14.2188 52.7045 14.2188 51.5625Z" fill="black"/> <path d="M9.53125 65.625H14.2188V70.3125H9.53125V65.625Z" fill="black"/> <path d="M37.6562 9.375H42.3438V14.0625H37.6562V9.375Z" fill="black"/> <path d="M37.6562 28.125H42.3438C42.3438 26.991 42.3438 19.892 42.3438 18.75H37.6562V28.125Z" fill="black"/> <path d="M42.3438 37.5V32.8125H37.6562V42.1875H56.4062V37.5H42.3438Z" fill="black"/> </svg>                  
-              </span>
+              <div class="faqMain">
+                <p class="title_tab faqHad font-semibold">Why do the prices in the shop sometimes change?
+                  <span class="icon-arrow-down-2 text-[8px] md:text-[12px] anim"></span>
+                </p>
+                <div class="inner_content faqDown">
+                  <p class="font-semibold pt-5">You can create a new account at the end of the order process or on the following page: Create new account. You can view all of your orders and subscriptions in your customer account. You can also change your addresses and your password.</p>                          
+                </div>
+              </div>
+              <div class="faqMain">
+                <p class="title_tab faqHad font-semibold">What is the meaning of Lorem ipsum?
+                  <span class="icon-arrow-down-2 text-[8px] md:text-[12px] anim"></span>
+                </p>
+                <div class="inner_content faqDown">
+                  <p class="font-semibold pt-5">You can create a new account at the end of the order process or on the following page: Create new account. You can view all of your orders and subscriptions in your customer account. You can also change your addresses and your password.</p>
+                </div>
+              </div>
+              <div class="faqMain">
+                <p class="title_tab faqHad font-semibold">What is the meaning of Lorem ipsum?
+                  <span class="icon-arrow-down-2 text-[8px] md:text-[12px] anim"></span>
+                </p>
+                <div class="inner_content faqDown">
+                  <p class="font-semibold pt-5">You can create a new account at the end of the order process or on the following page: Create new account. You can view all of your orders and subscriptions in your customer account. You can also change your addresses and your password.</p>                          
+                </div>
+              </div>
+              <div class="faqMain">
+                <p class="title_tab faqHad font-semibold">What is the meaning of Lorem ipsum?
+                  <span class="icon-arrow-down-2 text-[8px] md:text-[12px] anim"></span>
+                </p>
+                <div class="inner_content faqDown">
+                  <p class="font-semibold pt-5">You can create a new account at the end of the order process or on the following page: Create new account. You can view all of your orders and subscriptions in your customer account. You can also change your addresses and your password.</p>
+                </div>
+              </div>
             </div>
-            <span class="bg-gradient-to-r from-[#65A30D] to-[#26434F] w-full h-16 sm:h-20 md:h-24 block absolute top-0 right-0"></span>
+            <div class="w-full 2xl:w-1/2 space-y-3 2xl:pl-3">
+              <div class="faqMain">
+                <p class="title_tab faqHad font-semibold">Do I need to create an account to make an order?
+                  <span class="icon-arrow-down-2 text-[8px] md:text-[12px] anim"></span>
+                </p>
+                <div class="inner_content faqDown">
+                  <p class="font-semibold pt-5">You can create a new account at the end of the order process or on the following page: Create new account. You can view all of your orders and subscriptions in your customer account. You can also change your addresses and your password.</p>
+                </div>
+              </div>
+              <div class="faqMain">
+                <p class="title_tab faqHad font-semibold">Do I need to create an account to make an order?
+                  <span class="icon-arrow-down-2 text-[8px] md:text-[12px] anim"></span>
+                </p>
+                <div class="inner_content faqDown">
+                  <p class="font-semibold pt-5">You can create a new account at the end of the order process or on the following page: Create new account. You can view all of your orders and subscriptions in your customer account. You can also change your addresses and your password.</p>                          
+                </div>
+              </div>
+              <div class="faqMain">
+                <p class="title_tab faqHad font-semibold">Do I need to create an account to make an order?
+                  <span class="icon-arrow-down-2 text-[8px] md:text-[12px] anim"></span>
+                </p>
+                <div class="inner_content faqDown">
+                  <p class="font-semibold pt-5">You can create a new account at the end of the order process or on the following page: Create new account. You can view all of your orders and subscriptions in your customer account. You can also change your addresses and your password.</p>
+                </div>
+              </div>
+              <div class="faqMain">
+                <p class="title_tab faqHad font-semibold">Why do the prices in the shop sometimes change?
+                  <span class="icon-arrow-down-2 text-[8px] md:text-[12px] anim"></span>
+                </p>
+                <div class="inner_content faqDown">
+                  <p class="font-semibold pt-5">You can create a new account at the end of the order process or on the following page: Create new account. You can view all of your orders and subscriptions in your customer account. You can also change your addresses and your password.</p>                          
+                </div>
+              </div>
+              <div class="faqMain">
+                <p class="title_tab faqHad font-semibold">Why do the prices in the shop sometimes change?
+                  <span class="icon-arrow-down-2 text-[8px] md:text-[12px] anim"></span>
+                </p>
+                <div class="inner_content faqDown">
+                  <p class="font-semibold pt-5">You can create a new account at the end of the order process or on the following page: Create new account. You can view all of your orders and subscriptions in your customer account. You can also change your addresses and your password.</p>
+                </div>
+              </div>
+            </div>
           </div>
-          <!-- profile form -->
-          <form method="" action="" class="flex flex-wrap items-center -mx-3">
-            <div class="w-full md:w-1/2 px-3 py-2.5 md:py-4">
-              <label class="prLlb">Name</label>
-              <input class="prInput" type="text" placeholder="John Doe" />
+          <!-- user chat -->
+          <div class="fixed right-24 bottom-24">
+            <a href="#" class="bg-leafGreen rounded-full w-20 h-20 flex items-center justify-center ml-auto">
+              <svg width="30" height="36" viewBox="0 0 30 36" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M4.83815 19.0258H7.32956C4.9364 15.9263 4.93661 10.9735 7.32963 7.87417H5.12024C9.35757 0.16175 20.6618 0.167029 24.897 7.87417H22.6873C25.0805 10.9737 25.0803 15.9265 22.6873 19.0258H25.1787C27.0071 19.0258 28.4945 17.5384 28.4945 15.7101V11.19C28.4945 10.4238 28.2326 9.71806 27.7945 9.15591C23.566 -3.04144 6.46624 -3.06256 2.22216 9.15612C1.78423 9.7182 1.52234 10.4239 1.52234 11.1899V15.71C1.52234 17.5384 3.00981 19.0258 4.83815 19.0258Z" fill="white"/> <path d="M29.8776 32.8056C28.5932 26.9018 23.2007 20.8329 15.0081 20.832C7.14867 20.832 1.50305 26.5528 0.125659 32.7883C-0.226397 34.4433 1.03852 36.0003 2.7261 35.9997C8.03853 35.9997 22.1504 35.9997 27.2901 35.9833C28.965 35.9833 30.2167 34.4458 29.8776 32.8056Z" fill="white"/> <path d="M17.2685 15.7841H22.0123C23.6468 11.1398 19.9536 5.97768 15.0083 6.06756C10.9378 6.06749 7.6261 9.37915 7.6261 13.4497C7.64137 20.5286 16.7051 23.4823 20.8979 17.8956H17.2685C15.8698 17.844 15.8698 15.8357 17.2685 15.7841Z" fill="white"/> </svg>
+            </a>          
+          </div>
+          <!-- Component Start -->
+          <div class="hidden flex flex-col flex-grow w-full max-w-sm bg-white shadow-xl rounded-2xl overflow-hidden fixed right-24 bottom-24 z-50">
+            <div class="p-4 flex items-center bg-leafGreen">
+              <div class="relative">
+                <img src="../assest/images/profile-img.png" alt="profile-pic" class="w-9 h-9 border-2 border-white rounded-full" />
+                <span class="bg-[#00BDA5] w-3 h-3 border-2 border-white rounded-full block absolute bottom-0 right-0"></span>
+              </div>
+              <p class="text-sm text-white ml-5 font-semibold">John Doe</p>
             </div>
-            <div class="w-full md:w-1/2 px-3 py-2.5 md:py-4">
-              <label class="prLlb">Email</label>
-              <input class="prInput" type="email" placeholder="johndoe12@gmail.com" />
+
+            <div class="flex flex-col flex-grow p-4 h-96 overflow-auto">
+              <div class="flex w-full mt-6 space-x-3 max-w-xs">
+                 <img src="../assest/images/profile-img.png" alt="profile-pic" class="w-9 h-9 border-2 border-white rounded-full" />           
+                <div>
+                  <div class="bg-gray-100 p-3 rounded-r-lg rounded-bl-lg">
+                    <p class="text-sm font-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </div>
+                  <span class="text-xs font-normal leading-none">2 min ago</span>
+                </div>
+              </div>
+              <div class="flex w-full mt-6 space-x-3 max-w-xs ml-auto justify-end">
+                <div>
+                  <div class="bg-gray-100 text-davyGrey p-3 rounded-l-lg rounded-br-lg">
+                    <p class="text-sm font-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+                  </div>
+                  <span class="text-sm font-normal leading-none">2 min ago</span>
+                </div>
+              </div>
             </div>
-            <div class="w-full md:w-1/2 px-3 py-2.5 md:py-4">
-              <label class="prLlb">Phone number</label>
-              <input class="prInput" type="text" placeholder="+91 98768 98765" />
+
+            <div class="p-4 flex items-center border-t">
+              <input class="w-full text-sm" type="text" placeholder="Write a message" />
+              <a href="#" class="pl-6">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M17.5114 0.197009C17.8665 0.443103 18.0529 0.868494 17.9861 1.29388L15.7361 15.9189C15.6833 16.2599 15.4759 16.5587 15.1736 16.7275C14.8712 16.8962 14.5091 16.9173 14.1892 16.7837L9.9845 15.0365L7.57629 17.6415C7.2634 17.9826 6.77122 18.0951 6.33879 17.9263C5.90637 17.7576 5.62512 17.3392 5.62512 16.8751V13.9361C5.62512 13.7954 5.67786 13.6619 5.77278 13.5599L11.665 7.12982C11.8689 6.90834 11.8618 6.56732 11.6509 6.35638C11.44 6.14545 11.0989 6.13138 10.8775 6.33178L3.72668 12.6845L0.622388 11.1306C0.249731 10.9443 0.0106689 10.5716 0.000122031 10.1568C-0.0104248 9.74193 0.207544 9.35521 0.566138 9.14779L16.3161 0.147791C16.6923 -0.0666624 17.1564 -0.0455687 17.5114 0.197009Z" fill="#65A30D"/> </svg>
+              </a>
             </div>
-            <div class="w-full md:w-1/2 px-3 py-2.5 md:py-4">
-              <label class="prLlb">Password</label>
-              <input class="prInput" type="Password" />
-            </div>
-            <div class="w-full md:w-1/2 px-3 py-2.5 md:py-4">
-              <label class="prLlb">Address</label>
-              <input class="prInput" type="text" placeholder="Aka nagar, 1 Block, Surat" />
-            </div>
-            <div class="w-full md:w-1/2 px-3 py-2.5 md:py-4">
-              <label class="prLlb">Date of birth</label>
-              <input class="prInput" type="text" placeholder="20 January 2001" />
-            </div>
-            <div class="w-full md:w-1/2 px-3 py-2.5 md:py-4">
-              <label class="prLlb">Country</label>
-              <input class="prInput" type="text" placeholder="India" />
-            </div>
-            <div class="w-full md:w-1/2 px-3 py-2.5 md:py-4">
-              <label class="prLlb">About me</label>
-              <input class="prInput" type="text" placeholder="Lorem ipsum dummy text is best for the teams. " />
-            </div>
-          </form>
+          </div>
+          <!-- Component End  -->
         </div>
       </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <script src="../assest/js/jquery.min.js"></script>
     <script src="../assest/js/script.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </body>
 </html>
