@@ -191,15 +191,15 @@
     <!-- SYNC Account  -->
     <div class="fixed w-full inset-0 z-40 bg-black bg-opacity-70">
       <div class="flex flex-col items-center justify-center h-screen">
-        <div class="w-full sm:max-w-[480px] mx-auto max-h-[calc(100vh-55px)] overflow-y-auto px-4 md:px-0">
+        <div class="popWidth">
           <!-- Modal content -->
-          <div class="relative bg-white rounded-lg shadow">
-            <div class="py-4 md:py-[30px] px-4 sm:px-[30px] md:px-[60px]">
-                <h3 class="text-2xl lg:text-[32px] text-center font-semibold pb-5">SYNC Account</h3>
+          <div class="popMain">
+            <div class="popPad">
+                <h3 class="text-center font-semibold pb-5">SYNC Account</h3>
                 <form action="#">
                   <div class="space-y-4">
                     <div class="flex items-center">
-                      <img alt="Women" src="../assest/images/Image.png" class="h-10 w-10 rounded-full object-cover"/>
+                      <img alt="Women" src="../assest/images/ads-banner.jpg" class="h-10 w-10 rounded-full object-cover"/>
                       <div class="ml-3 overflow-hidden">
                         <p class="w-full truncate text-base font-semibold text-dark" title="FestumEvento">FestumEvento</p>
                         <p class="w-full truncate text-sm font-normal text-davyGrey" title="Test@untitledui.com">Test@untitledui.com</p>
@@ -228,12 +228,12 @@
                     </div>
                   </div>
                   <div class="pt-5">
-                    <label for="countries" class="block mb-1 text-sm text-dark">Select Account</label>
+                    <label class="popLabel">Select Account</label>
                     <div class="flex items-center pl-3 border rounded-xl overflow-hidden shadow-sm">
                       <span class="icon-user text-grey"></span>
                       <div class="relative w-full">
-                        <span class="icon-arrow-down-2 text-[8px] text-grey absolute right-3 top-[18px] pointer-events-none"></span>
-                        <select id="countries" class="text-grey font-normal text-sm md:text-base rounded-lg block w-full p-2.5 outline-none appearance-none">
+                        <span class="popSeicon icon-arrow-down-2"></span>
+                        <select class="popSelect">
                           <option selected>Friends Field</option>
                           <option value="US">United States</option>
                           <option value="CA">Canada</option>
@@ -244,8 +244,8 @@
                     </div>
                   </div>
                   <div class="flex justify-between pt-5">
-                    <button type="button" class="w-full md:max-w-[172px] text-davyGrey font-semibold rounded-xl text-xs sm:text-sm border border-[#D1D5DB] px-5 py-3 text-center mr-1">Cancel</button>
-                    <button type="button" class="w-full md:max-w-[172px] text-white font-semibold rounded-xl text-xs sm:text-sm border border-[#D1D5DB] bg-leafGreen px-5 py-3 text-center ml-1">Sync</button>
+                    <button type="button" class="popBtn text-davyGrey border border-[#D1D5DB] mr-1">Cancel</button>
+                    <button type="button" class="popBtn text-white bg-leafGreen ml-1">Sync</button>
                   </div>
                 </form>
             </div>

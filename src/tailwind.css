@@ -137,4 +137,23 @@ input[type=radio].bankholder:checked + .transactionBank .selact-bank span {
 .prLlb{@apply block text-gray-700 text-base md:text-xl font-semibold mb-1 sm:mb-2;}
 .prInput{@apply block w-full bg-white text-base md:text-lg text-gray-700 rounded-xl md:rounded-2xl py-3 md:py-6 px-5 md:px-8;}
 
+/* popup */
+.popWidth{@apply w-full sm:max-w-[480px] mx-auto max-h-[calc(100vh-55px)] overflow-y-auto px-4 md:px-0;}
+.popMain{@apply relative bg-white rounded-lg shadow;}
+.popPad{@apply py-4 md:py-[30px] px-4 sm:px-[30px] md:px-[60px];}
+.popBtn{@apply w-full md:max-w-[172px] font-semibold rounded-xl text-xs sm:text-sm px-5 py-3 text-center;}
+.popLabel{@apply text-xs sm:text-sm font-medium;}
+.popInputdata{@apply relative mt-1 border border-gray-300 rounded-xl overflow-hidden;}
+.popInput{@apply w-full p-2 pl-11 text-xs sm:text-base leading-6 sm:leading-7 outline-0;}
+.popInputicon{@apply absolute inset-y-0 left-4 inline-flex items-center;}
+.popSelect{@apply text-grey font-normal text-sm md:text-base rounded-lg block w-full p-2.5 outline-none appearance-none;}
+.popSeicon{@apply text-[8px] text-grey absolute right-3 top-[18px] pointer-events-none;}
+
+/* FAQ */
+.accordionTab.active span{@apply rotate-180 anim;}
+.faqMain{@apply relative p-4 md:py-6 md:px-8 bg-white rounded-2xl text-davyGrey text-base md:text-lg;}
+.faqHad{@apply cursor-pointer flex items-center justify-between;}
+.faqDown{@apply overflow-hidden hidden;}
+.faqHad.active span{@apply rotate-180 anim;}
+
 @tailwind utilities;

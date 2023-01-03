@@ -191,22 +191,17 @@
     <!-- SYNC Account  -->
     <div class="fixed w-full inset-0 z-40 bg-black bg-opacity-70">
       <div class="flex flex-col items-center justify-center h-screen">
-        <div class="w-full sm:max-w-[480px] mx-auto max-h-[calc(100vh-55px)] overflow-y-auto px-4 md:px-0">
+        <div class="popWidth">
           <!-- Modal content -->
-          <div class="bg-white rounded-lg shadow">
-            <div class="py-4 md:py-[30px] px-4 sm:px-[30px] md:px-[60px] text-center">
+          <div class="popMain">
+            <div class="popPad">
               <div class="relative py-9">
-                <svg class="z-50 relative mx-auto" width="28" height="28<svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M8 17.5C12.4183 17.5 16 13.9183 16 9.5C16 5.08172 12.4183 1.5 8 1.5C3.58172 1.5 0 5.08172 0 9.5C0 13.9183 3.58172 17.5 8 17.5Z" fill="#D92D20"/>
-                  <path d="M11 7L6 12" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M6 7L11 12" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                  " viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M17.3965 1.25L1.89648 16.75" stroke="#D92D20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> <path d="M1.89648 1.25L17.3965 16.75" stroke="#D92D20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> </svg>
+                <svg class="z-50 relative mx-auto" width="28" height="28" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M17.3965 1.25L1.89648 16.75" stroke="#D92D20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> <path d="M1.89648 1.25L17.3965 16.75" stroke="#D92D20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> </svg>
                 <span class="animate-ping absolute top-[30px] right-[44.3%] h-10 w-10 rounded-full bg-[#FEE4E2] opacity-100"></span>
               </div>
-              <h3 class="text-2xl lg:text-[32px] text-center font-semibold">Failed <br> Synchronized!</h3>
-              <div class="flex justify-between pt-5">
-                <button type="button" class="w-full text-white font-semibold rounded-xl text-xs sm:text-sm border border-[#D1D5DB] bg-leafGreen px-5 py-3 text-center ml-1">Done!</button>
+              <h3 class="text-center font-semibold">Failed <br> Synchronized!</h3>
+              <div class="pt-5">
+                <button type="button" class="popBtn w-full max-w-full text-white bg-leafGreen">Done!</button>
               </div>
             </div>
         </div>
