@@ -166,4 +166,7 @@ input[type=radio].bankholder:checked + .transactionBank .selact-bank span {
 @media(max-width: 1600px) and (min-width: 1536px){
 .singleProduct{@apply max-w-[150px];}
 };
+
+/* select plan checked */
+.userPlan:checked + div .selactPlan{@apply border-8 border-leafGreen;}
 @tailwind utilities;
