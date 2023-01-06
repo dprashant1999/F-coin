@@ -2168,6 +2168,14 @@ input[type=radio].bankholder:checked + .transactionBank .selact-bank span {
   top: 0.25rem;
 }
 
+.top-\[30px\] {
+  top: 30px;
+}
+
+.right-\[44\.3\%\] {
+  right: 44.3%;
+}
+
 .z-50 {
   z-index: 50;
 }
@@ -2403,6 +2411,10 @@ input[type=radio].bankholder:checked + .transactionBank .selact-bank span {
 
 .h-full {
   height: 100%;
+}
+
+.h-5 {
+  height: 1.25rem;
 }
 
 .h-10 {
@@ -2641,6 +2653,14 @@ input[type=radio].bankholder:checked + .transactionBank .selact-bank span {
 
 .w-\[193px\] {
   width: 193px;
+}
+
+.w-\[46px\] {
+  width: 46px;
+}
+
+.w-4\/12 {
+  width: 33.333333%;
 }
 
 .min-w-\[90px\] {
