@@ -147,15 +147,6 @@ input[type=radio].bankholder:checked + .transactionBank .selact-bank span {
 .faqDown{@apply overflow-hidden hidden;}
 .faqHad.active span{@apply rotate-180 anim;}
 
-/* userPlan check  */
-.userPlans{@apply flex items-center relative;}
-.userPlans input{@apply absolute inset-0 w-full h-full opacity-0 cursor-pointer;}
-.userPlans span{@apply w-8 h-8 md:w-10 md:h-10 mr-1.5 md:mr-3 rounded-md bg-gray-200 flex items-center justify-center;}
-.userPlans span i{@apply text-white scale-0 anim text-xs md:text-base;}
-.userPlans label{@apply text-sm sm:text-base text-davyGrey font-semibold;}
-/* user plan checked  */
-.userPlans input:checked ~ span{@apply bg-leafGreen;}
-.userPlans input:checked ~ span i{@apply scale-100;}
 
 
 /* singleproduct card  */
