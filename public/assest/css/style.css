@@ -2485,6 +2485,10 @@ input[type=radio].bankholder:checked + .transactionBank .selact-bank span {
   height: 100vh;
 }
 
+.h-\[46px\] {
+  height: 46px;
+}
+
 .h-11 {
   height: 2.75rem;
 }
@@ -2499,10 +2503,6 @@ input[type=radio].bankholder:checked + .transactionBank .selact-bank span {
 
 .h-\[48px\] {
   height: 48px;
-}
-
-.h-\[46px\] {
-  height: 46px;
 }
 
 .max-h-\[570px\] {
@@ -2599,6 +2599,10 @@ input[type=radio].bankholder:checked + .transactionBank .selact-bank span {
   width: 100px;
 }
 
+.w-\[46px\] {
+  width: 46px;
+}
+
 .w-9\/12 {
   width: 75%;
 }
@@ -2637,10 +2641,6 @@ input[type=radio].bankholder:checked + .transactionBank .selact-bank span {
 
 .w-\[193px\] {
   width: 193px;
-}
-
-.w-\[46px\] {
-  width: 46px;
 }
 
 .min-w-\[90px\] {
