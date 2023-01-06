@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F-Coin || View Ads</title>
+    <link rel="stylesheet" href="../assest/css/fonts.css" />
+    <link rel="stylesheet" href="../assest/css/iconmoon.css" />
+    <link rel="stylesheet" href="../assest/css/style.css" />
+  </head>
+  <body>
+    <div class="main flex min-h-screen relative">
+      <!-- left-bar -->
+      <div class="left_bar">
+        <a href="javascript:void(0)" class="inline-block w-full text-center">
+          <img src="../assest/images/svg/logo.svg" alt="logo" class="mx-auto"/>
+        </a>
+        <nav aria-label="Main Nav" class="flex flex-col mt-8 lg:mt-[91px] space-y-2">
+          <a href="../dashboard-flow/dashboard.html" class="active">
+            <i class="icon-dashboard text-xl"></i>
+            <span class="ml-4 lg:16px xl:text-xl">Dashboard</span>
+          </a>
+          <a href="../all-ads/all-ads.html">
+            <i class="icon-all-ads text-xl"></i>              
+            <span class="ml-4 lg:16px xl:text-xl">All Ads</span>
+          </a>
+          <a href="../view-advertisment/view-ads.html">
+            <i class="icon-view-ad text-2xl font-medium"></i>
+            <span class="ml-4 lg:16px xl:text-xl">View Ads</span>
+          </a>
+          <a href="../my-wallet/my-wallet.html">
+            <i class="icon-my-wallet text-xl"></i>             
+            <span class="ml-4 lg:16px xl:text-xl">My Wallet</span>
+          </a>
+          <a href="../transfer-history/transfer-history.html">
+            <i class="icon-transfer-history text-xl"></i>                           
+            <span class="ml-4 lg:16px xl:text-xl">Transfer History</span>
+          </a>
+          <a href="../our-product/our-product.html">
+            <i class="icon-our-product text-xl"></i>                           
+            <span class="ml-4 lg:16px xl:text-xl">Our Product</span>
+          </a>
+          <a href="../Notification-Promotion-flow/promotion.html">
+            <i class="icon-promotion text-xl font-semibold"></i>              
+            <span class="ml-4 lg:16px xl:text-xl">Promotion</span>
+          </a>
+          <a href="../help-and-faq/helpandfaq.html">
+            <i class="icon-help text-xl"></i>            
+            <span class="ml-4 lg:16px xl:text-xl">Helps & FAQs</span>
+          </a>
+        </nav>
+      </div>
+      <!-- right-bar -->
+      <div class="right_bar relative ml-auto">
+        <div class="w-full bg-white p-5 lg:px-6 xl:px-12 lg:py-6 flex items-center relative">
+          <h3>Dashboard</h3>
+          <div class="flex items-center ml-auto">
+            <div id="searchBar">
+              <div class="searchHolder">
+                <button type="button" class="absolute top-1/2 left-6 sm:left-4 -translate-y-1/2 rounded-md text-gray-600 transition hover:text-gray-700">
+                  <i class="icon-search text-grey text-2xl"></i>
+                </button>  
+                <input class="h-10 lg:h-12 w-full rounded-lg border-none sm:bg-ghostWhite pl-12 lg:pl-14 pr-4 outline-none" id="search" type="search" placeholder="Search">    
+              </div>
+              <button type="button" class="block sm:hidden px-2 xl:px-4" id="searchbtn">
+                <i class="icon-search text-xl"></i>
+              </button>    
+            </div>
+            <a href="../gift/gift-brand-list.html" class="block px-2 xl:px-4">
+              <i class="icon-gift text-xl lg:text-2xl"></i>                 
+            </a> 
+            <a href="../popup/scan.html" class="block px-2 xl:px-4">
+              <i class="icon-scanner text-xl lg:text-2xl"></i>
+            </a>    
+            <a href="../javascript:void(0)" id="notifications" class="block px-2 xl:px-4">
+              <i class="icon-notification text-xl lg:text-2xl"></i>
+            </a>
+            <button type="button" id="userProfile" class="ml-2 xl:ml-4">
+              <div class="w-8 h-8 md:h-10 md:w-10 rounded-full overflow-hidden">
+                <img alt="Man" class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1600486913747-55e5470d6f40?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1770&amp;q=80">
+              </div>
+            </button>
+            <!-- onlclick show Profilepopup  -->
+            <div class="homeProfile">
+              <a href="../dashboard-profile/profile.html" class="flex items-center text-dark group hover:text-leafGreen">
+                <i class="icon-right mr-3 text-white group-hover:text-leafGreen text-sm"></i>
+                Profile
+              </a>
+              <a href="../popup/sync-account.html" class="flex items-center text-leafGreen">
+                <i class="icon-right mr-3 text-leafGreen text-sm"></i>
+                Account SYNC
+              </a>
+              <a href="../popup/logout.html" class="flex items-center text-dark group hover:text-leafGreen">
+                <i class="icon-right mr-3 text-white group-hover:text-leafGreen text-sm"></i>
+                Logout
+              </a>
+            </div>
+            <!-- On click Notifications -->
+            <div class="notifictionbar">
+              <div class="flex items-center justify-between p-4">
+                <span class="inline-block font-semibold text-dark">Notifications</span>
+                <a href="javascript:void(0)" class="text-sm text-darkGrey flex items-center">Mark all as read<span class="icon-right ml-1 w-[18px] h-[18px] leading-4 text-center inline-block border-2 border-davyGrey rounded-full text-[8px] font-bold"></span></a>
+              </div>
+              <div class="w-full border-t border-darkGrey/50 h-full max-h-[570px] overflow-y-auto">
+                <div class="relative w-full flex p-4">
+                  <div>
+                    <span class="w-8 h-8 inline-block rounded-full overflow-hidden mr-4">
+                      <img src="../public/assest/images/profile-img.png" alt="notification-profile"/>
+                    </span>
+                  </div>
+                  <div>
+                    <p class="text-davyGrey text-xs sm:text-sm  font-normal">Ray Arnold left 6 comments on <span class="font-semibold text-dark">Isla Nublar SOC2 compliance report</span></p>
+                    <span class="text-darkGrey text-xs">Yesterday at 11:42 PM</span>
+                  </div>
+                  <span class="absolute left-2 top-2 w-2 h-2 rounded-full bg-leafGreen"></span>
+                </div>
+                <div class="relative w-full flex p-4">
+                  <div>
+                    <span class="w-8 h-8 inline-block rounded-full overflow-hidden mr-4">
+                      <img src="../public/assest/images/profile-img.png" alt="notification-profile"/>
+                    </span>
+                  </div>
+                  <div>
+                    <p class="text-davyGrey text-xs sm:text-sm  font-normal">Ray Arnold left 6 comments on <span class="font-semibold text-dark">Isla Nublar SOC2 compliance report</span></p>
+                    <span class="text-darkGrey text-xs">Yesterday at 11:42 PM</span>
+                  </div>
+                  <span class="absolute left-2 top-2 w-2 h-2 rounded-full bg-leafGreen"></span>
+                </div>
+                <div class="relative w-full flex p-4">
+                  <div>
+                    <span class="w-8 h-8 inline-block rounded-full overflow-hidden mr-4">
+                      <img src="../public/assest/images/profile-img.png" alt="notification-profile"/>
+                    </span>
+                  </div>
+                  <div>
+                    <p class="text-davyGrey text-xs sm:text-sm  font-normal">Ray Arnold left 6 comments on <span class="font-semibold text-dark">Isla Nublar SOC2 compliance report</span></p>
+                    <span class="text-darkGrey text-xs">Yesterday at 11:42 PM</span>
+                  </div>
+                </div>
+                <div class="relative w-full flex p-4">
+                  <div>
+                    <span class="w-8 h-8 inline-block rounded-full overflow-hidden mr-4">
+                      <img src="../public/assest/images/profile-img.png" alt="notification-profile"/>
+                    </span>
+                  </div>
+                  <div>
+                    <p class="text-davyGrey text-xs sm:text-sm  font-normal">Ray Arnold left 6 comments on <span class="font-semibold text-dark">Isla Nublar SOC2 compliance report</span></p>
+                    <span class="text-darkGrey text-xs">Yesterday at 11:42 PM</span>
+                  </div>
+                </div>
+                <div class="relative w-full flex p-4">
+                  <div>
+                    <span class="w-8 h-8 inline-block rounded-full overflow-hidden mr-4">
+                      <img src="../public/assest/images/profile-img.png" alt="notification-profile"/>
+                    </span>
+                  </div>
+                  <div>
+                    <p class="text-davyGrey text-xs sm:text-sm  font-normal">Ray Arnold left 6 comments on <span class="font-semibold text-dark">Isla Nublar SOC2 compliance report</span></p>
+                    <span class="text-darkGrey text-xs">Yesterday at 11:42 PM</span>
+                  </div>
+                </div>
+                <div class="relative w-full flex p-4">
+                  <div>
+                    <span class="w-8 h-8 inline-block rounded-full overflow-hidden mr-4">
+                      <img src="../public/assest/images/profile-img.png" alt="notification-profile"/>
+                    </span>
+                  </div>
+                  <div>
+                    <p class="text-davyGrey text-xs sm:text-sm  font-normal">Ray Arnold left 6 comments on <span class="font-semibold text-dark">Isla Nublar SOC2 compliance report</span></p>
+                    <span class="text-darkGrey text-xs">Yesterday at 11:42 PM</span>
+                  </div>
+                </div>
+                <div class="relative w-full flex p-4">
+                  <div>
+                    <span class="w-8 h-8 inline-block rounded-full overflow-hidden mr-4">
+                      <img src="../public/assest/images/profile-img.png" alt="notification-profile"/>
+                    </span>
+                  </div>
+                  <div>
+                    <p class="text-davyGrey text-xs sm:text-sm  font-normal">Ray Arnold left 6 comments on <span class="font-semibold text-dark">Isla Nublar SOC2 compliance report</span></p>
+                    <span class="text-darkGrey text-xs">Yesterday at 11:42 PM</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-area h-[calc(100vh-72px)] sm:h-[calc(100vh-84px)] lg:h-[calc(100vh-100px)] p-4 sm:p-6 lg:p-8 xl:p-10 pb-0 overflow-y-auto">
+          <!-- titel and date filters -->
+          <div class="relative w-full mb-2">
+            <div class="flex flex-wrap md:flex-nowrap justify-between space-y-3 sm:space-y-0">
+              <div class="text-xl md:text-2xl font-semibold flex items-center sm:pb-2 md:pb-4">
+                View Ads
+              </div>
+              <div class="flex flex-wrap items-center sm:flex-nowrap space-x-2 sm:space-x-5 w-full sm:w-auto">
+                <div class="w-[48%] sm:w-auto border border-gray-200 text-darkGrey cursor-pointer bg-white overflow-hidden rounded-lg relative">
+                  <select name="product" id="product" class="appearance-none px-4 pr-8 font-normal py-2.5 w-full sm:w-auto outline-none text-xs sm:text-sm">
+                    <option value="eventoPackage">Newest</option>
+                    <option value="festumEvento">Festum Evento</option>
+                    <option value="friendsFields">Friends Fields</option>
+                  </select>
+                  <span class="icon-arrow-down-2 text-[8px] absolute right-3 top-1/2 -translate-y-1/2"></span>
+                </div>
+                <div class="w-[48%] sm:w-auto flex items-center p-2 px-4 bg-white border border-gray-200 rounded-md datepicker text-grey relative">
+                  <span class="icon-filter-calender text-sm"></span>
+                  <input type="date" class="outline-none px-2 text-xs sm:text-sm" value="2017-01">
+                  <span class="icon-arrow-down-2 text-[8px] absolute right-3 top-1/2 -translate-y-1/2"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- balace ditails  -->
+          <div class="flex flex-wrap -mx-4">
+            <div class="w-full xl:w-5/12 2xl:w-4/12 py-2 p-4 sm:py-4">
+              <div class="px-12 py-4 bg-white rounded-2xl">
+                <div class="w-full xl:pl-0 xl:max-w-[300px] space-y-0.5">
+                  <span class="balancesubTitle">Total Viewed Advertisments</span>
+                  <h3 class="balanceTitle text-dark">500</h3>
+                </div>
+              </div>
+            </div>
+            <div class="w-full xl:w-5/12 2xl:w-4/12 py-2 p-4 sm:py-4">
+              <div class="px-12 py-4 bg-white rounded-2xl">
+                <div class="w-full xl:pl-0 xl:max-w-[300px] space-y-0.5">
+                  <span class="balancesubTitle">Total coin you earned</span>
+                  <h3 class="balanceTitle">10,000</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- table  -->
+          <div class="block w-full overflow-x-auto">
+            <table class="items-center w-full bg-transparent border-collapse">
+              <tbody>
+                <tr class="drop-shadow-table">
+                  <td class="w-[25%] text-left rounded-tl-xl rounded-bl-xl bg-white">
+                    <div class="flex items-center ">
+                      <div class="tProfile bg-lightGrey p-1.5">
+                        <img src="../assest/images/svg/festum-evento-logo-1.svg" alt="logo"/>
+                      </div>
+                      <div class="pl-4">
+                        <span class="tTitel">FestumEvento</span>
+                        <span class="tSubTitel">Dashboard screen</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="w-[25%] bg-white">
+                    <div class="w-[193px] h-[48px] border-2 border-gray-200 rounded-xl overflow-hidden mx-auto">
+                      <img src="../assest/images/ads-banner.jpg" class="w-full h-full object-cover" alt="banner"/>
+                    </div>
+                  </td>
+                  <td class="w-[25%] bg-white">
+                    <div class="w-full max-w-max ml-auto">
+                      <span class="tSubTitel">Advertisement view Date</span>
+                      <span class="text-sm xl:text-base text-dark">June 1, 2022 </span>
+                    </div>
+                  </td>
+                  <td class="w-[25%] rounded-br-xl rounded-tr-xl bg-white ml-auto">
+                    <div class="w-full max-w-max ml-auto">
+                      <span class="tSubTitel text-left pt-0">Earned coin</span>
+                      <div class="flex items-center tcTitel min-w-max text-dark justify-start space-x-3">
+                          <img src="../assest/images/svg/logo.svg" class="w-7" alt="single-coin"/>
+                          <span>1,10,000</span>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="drop-shadow-table">
+                  <td class="w-[25%] text-left rounded-tl-xl rounded-bl-xl bg-white">
+                    <div class="flex items-center ">
+                      <div class="tProfile bg-lightGrey p-1.5">
+                        <img src="../assest/images/svg/festum-evento-logo-1.svg" alt="logo"/>
+                      </div>
+                      <div class="pl-4">
+                        <span class="tTitel">FestumEvento</span>
+                        <span class="tSubTitel">Dashboard screen</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="w-[25%] bg-white">
+                    <div class="w-[193px] h-[48px] border-2 border-gray-200 rounded-xl overflow-hidden mx-auto">
+                      <img src="../assest/images/ads-banner.jpg" class="w-full h-full object-cover" alt="banner"/>
+                    </div>
+                  </td>
+                  <td class="w-[25%] bg-white">
+                    <div class="w-full max-w-max ml-auto">
+                      <span class="tSubTitel">Advertisement view Date</span>
+                      <span class="text-sm xl:text-base text-dark">June 1, 2022 </span>
+                    </div>
+                  </td>
+                  <td class="w-[25%] rounded-br-xl rounded-tr-xl bg-white ml-auto">
+                    <div class="w-full max-w-max ml-auto">
+                      <span class="tSubTitel text-left pt-0">Earned coin</span>
+                      <div class="flex items-center tcTitel min-w-max text-dark justify-start space-x-3">
+                          <img src="../assest/images/svg/logo.svg" class="w-7" alt="single-coin"/>
+                          <span>1,10,000</span>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="drop-shadow-table">
+                  <td class="w-[25%] text-left rounded-tl-xl rounded-bl-xl bg-white">
+                    <div class="flex items-center ">
+                      <div class="tProfile bg-lightGrey p-1.5">
+                        <img src="../assest/images/svg/festum-evento-logo-1.svg" alt="logo"/>
+                      </div>
+                      <div class="pl-4">
+                        <span class="tTitel">FestumEvento</span>
+                        <span class="tSubTitel">Dashboard screen</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="w-[25%] bg-white">
+                    <div class="w-[193px] h-[48px] border-2 border-gray-200 rounded-xl overflow-hidden mx-auto">
+                      <img src="../assest/images/ads-banner.jpg" class="w-full h-full object-cover" alt="banner"/>
+                    </div>
+                  </td>
+                  <td class="w-[25%] bg-white">
+                    <div class="w-full max-w-max ml-auto">
+                      <span class="tSubTitel">Advertisement view Date</span>
+                      <span class="text-sm xl:text-base text-dark">June 1, 2022 </span>
+                    </div>
+                  </td>
+                  <td class="w-[25%] rounded-br-xl rounded-tr-xl bg-white ml-auto">
+                    <div class="w-full max-w-max ml-auto">
+                      <span class="tSubTitel text-left pt-0">Earned coin</span>
+                      <div class="flex items-center tcTitel min-w-max text-dark justify-start space-x-3">
+                          <img src="../assest/images/svg/logo.svg" class="w-7" alt="single-coin"/>
+                          <span>1,10,000</span>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="drop-shadow-table">
+                  <td class="w-[25%] text-left rounded-tl-xl rounded-bl-xl bg-white">
+                    <div class="flex items-center ">
+                      <div class="tProfile bg-lightGrey p-1.5">
+                        <img src="../assest/images/svg/festum-evento-logo-1.svg" alt="logo"/>
+                      </div>
+                      <div class="pl-4">
+                        <span class="tTitel">FestumEvento</span>
+                        <span class="tSubTitel">Dashboard screen</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="w-[25%] bg-white">
+                    <div class="w-[193px] h-[48px] border-2 border-gray-200 rounded-xl overflow-hidden mx-auto">
+                      <img src="../assest/images/ads-banner.jpg" class="w-full h-full object-cover" alt="banner"/>
+                    </div>
+                  </td>
+                  <td class="w-[25%] bg-white">
+                    <div class="w-full max-w-max ml-auto">
+                      <span class="tSubTitel">Advertisement view Date</span>
+                      <span class="text-sm xl:text-base text-dark">June 1, 2022 </span>
+                    </div>
+                  </td>
+                  <td class="w-[25%] rounded-br-xl rounded-tr-xl bg-white ml-auto">
+                    <div class="w-full max-w-max ml-auto">
+                      <span class="tSubTitel text-left pt-0">Earned coin</span>
+                      <div class="flex items-center tcTitel min-w-max text-dark justify-start space-x-3">
+                          <img src="../assest/images/svg/logo.svg" class="w-7" alt="single-coin"/>
+                          <span>1,10,000</span>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                 <tr class="drop-shadow-table">
+                  <td class="w-[25%] text-left rounded-tl-xl rounded-bl-xl bg-white">
+                    <div class="flex items-center ">
+                      <div class="tProfile bg-lightGrey p-1.5">
+                        <img src="../assest/images/svg/festum-evento-logo-1.svg" alt="logo"/>
+                      </div>
+                      <div class="pl-4">
+                        <span class="tTitel">FestumEvento</span>
+                        <span class="tSubTitel">Dashboard screen</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="w-[25%] bg-white">
+                    <div class="w-[193px] h-[48px] border-2 border-gray-200 rounded-xl overflow-hidden mx-auto">
+                      <img src="../assest/images/ads-banner.jpg" class="w-full h-full object-cover" alt="banner"/>
+                    </div>
+                  </td>
+                  <td class="w-[25%] bg-white">
+                    <div class="w-full max-w-max ml-auto">
+                      <span class="tSubTitel">Advertisement view Date</span>
+                      <span class="text-sm xl:text-base text-dark">June 1, 2022 </span>
+                    </div>
+                  </td>
+                  <td class="w-[25%] rounded-br-xl rounded-tr-xl bg-white ml-auto">
+                    <div class="w-full max-w-max ml-auto">
+                      <span class="tSubTitel text-left pt-0">Earned coin</span>
+                      <div class="flex items-center tcTitel min-w-max text-dark justify-start space-x-3">
+                          <img src="../assest/images/svg/logo.svg" class="w-7" alt="single-coin"/>
+                          <span>1,10,000</span>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../assest/js/jquery.min.js"></script>
+    <script src="../assest/js/script.js"></script>
+  </body>
+</html>
