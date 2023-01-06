@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transfer Coin</title>
+    <link rel="stylesheet" href="../assest/css/fonts.css" />
+    <link rel="stylesheet" href="../assest/css/iconmoon.css" />
+    <link rel="stylesheet" href="../assest/css/style.css" />
+  </head>
+  <body>
+    <div class="main flex min-h-screen relative">
+       <!-- left-bar -->
+       <div class="left_bar">
+        <a href="javascript:void(0)" class="inline-block w-full text-center">
+          <img src="../assest/images/svg/logo.svg" alt="logo" class="mx-auto"/>
+        </a>
+        <nav aria-label="Main Nav" class="flex flex-col mt-8 lg:mt-[91px] space-y-2">
+          <a href="../dashboard-flow/dashboard.html" class="active">
+            <i class="icon-dashboard text-xl"></i>
+            <span class="ml-4 lg:16px xl:text-xl">Dashboard</span>
+          </a>
+          <a href="../all-ads/all-ads.html">
+            <i class="icon-all-ads text-xl"></i>              
+            <span class="ml-4 lg:16px xl:text-xl">All Ads</span>
+          </a>
+          <a href="../view-advertisment/view-ads.html">
+            <i class="icon-view-ad text-2xl font-medium"></i>
+            <span class="ml-4 lg:16px xl:text-xl">View Ads</span>
+          </a>
+          <a href="../my-wallet/my-wallet.html">
+            <i class="icon-my-wallet text-xl"></i>             
+            <span class="ml-4 lg:16px xl:text-xl">My Wallet</span>
+          </a>
+          <a href="../transfer-history/transfer-history.html">
+            <i class="icon-transfer-history text-xl"></i>                           
+            <span class="ml-4 lg:16px xl:text-xl">Transfer History</span>
+          </a>
+          <a href="../our-product/our-product.html">
+            <i class="icon-our-product text-xl"></i>                           
+            <span class="ml-4 lg:16px xl:text-xl">Our Product</span>
+          </a>
+          <a href="../Notification-Promotion-flow/promotion.html">
+            <i class="icon-promotion text-xl font-semibold"></i>              
+            <span class="ml-4 lg:16px xl:text-xl">Promotion</span>
+          </a>
+          <a href="../help-and-faq/helpandfaq.html">
+            <i class="icon-help text-xl"></i>            
+            <span class="ml-4 lg:16px xl:text-xl">Helps & FAQs</span>
+          </a>
+        </nav>
+      </div>
+      <!-- right-bar -->
+      <div class="right_bar relative ml-auto">
+        <!-- header -->
+        <div class="w-full bg-white p-5 lg:px-6 xl:px-12 lg:py-6 flex items-center relative">
+          <h3>Dashboard</h3>
+          <div class="flex items-center ml-auto">
+            <div id="searchBar">
+              <div class="searchHolder">
+                <button type="button" class="absolute top-1/2 left-6 sm:left-4 -translate-y-1/2 rounded-md text-gray-600 transition hover:text-gray-700">
+                  <i class="icon-search text-grey text-2xl"></i>
+                </button>  
+                <input class="h-10 lg:h-12 w-full rounded-lg border-none sm:bg-ghostWhite pl-12 lg:pl-14 pr-4 outline-none" id="search" type="search" placeholder="Search">    
+              </div>
+              <button type="button" class="block sm:hidden px-2 xl:px-4" id="searchbtn">
+                <i class="icon-search text-xl"></i>
+              </button>    
+            </div>
+            <a href="../gift/gift-brand-list.html" class="block px-2 xl:px-4">
+              <i class="icon-gift text-xl lg:text-2xl"></i>                 
+            </a> 
+            <a href="../popup/scan.html" class="block px-2 xl:px-4">
+              <i class="icon-scanner text-xl lg:text-2xl"></i>
+            </a>    
+            <a href="../javascript:void(0)" id="notifications" class="block px-2 xl:px-4">
+              <i class="icon-notification text-xl lg:text-2xl"></i>
+            </a>
+            <button type="button" id="userProfile" class="ml-2 xl:ml-4">
+              <div class="w-8 h-8 md:h-10 md:w-10 rounded-full overflow-hidden">
+                <img alt="Man" class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1600486913747-55e5470d6f40?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1770&amp;q=80">
+              </div>
+            </button>
+            <!-- onlclick show Profilepopup  -->
+            <div class="homeProfile">
+              <a href="../dashboard-profile/profile.html" class="flex items-center text-dark group hover:text-leafGreen">
+                <i class="icon-right mr-3 text-white group-hover:text-leafGreen text-sm"></i>
+                Profile
+              </a>
+              <a href="../popup/sync-account.html" class="flex items-center text-leafGreen">
+                <i class="icon-right mr-3 text-leafGreen text-sm"></i>
+                Account SYNC
+              </a>
+              <a href="../popup/logout.html" class="flex items-center text-dark group hover:text-leafGreen">
+                <i class="icon-right mr-3 text-white group-hover:text-leafGreen text-sm"></i>
+                Logout
+              </a>
+            </div>
+            <!-- On click Notifications -->
+            <div class="notifictionbar">
+              <div class="flex items-center justify-between p-4">
+                <span class="inline-block font-semibold text-dark">Notifications</span>
+                <a href="javascript:void(0)" class="text-sm text-darkGrey flex items-center">Mark all as read<span class="icon-right ml-1 w-[18px] h-[18px] leading-4 text-center inline-block border-2 border-davyGrey rounded-full text-[8px] font-bold"></span></a>
+              </div>
+              <div class="w-full border-t border-darkGrey/50 h-full max-h-[570px] overflow-y-auto">
+                <div class="relative w-full flex p-4">
+                  <div>
+                    <span class="w-8 h-8 inline-block rounded-full overflow-hidden mr-4">
+                      <img src="../public/assest/images/profile-img.png" alt="notification-profile"/>
+                    </span>
+                  </div>
+                  <div>
+                    <p class="text-davyGrey text-xs sm:text-sm  font-normal">Ray Arnold left 6 comments on <span class="font-semibold text-dark">Isla Nublar SOC2 compliance report</span></p>
+                    <span class="text-darkGrey text-xs">Yesterday at 11:42 PM</span>
+                  </div>
+                  <span class="absolute left-2 top-2 w-2 h-2 rounded-full bg-leafGreen"></span>
+                </div>
+                <div class="relative w-full flex p-4">
+                  <div>
+                    <span class="w-8 h-8 inline-block rounded-full overflow-hidden mr-4">
+                      <img src="../public/assest/images/profile-img.png" alt="notification-profile"/>
+                    </span>
+                  </div>
+                  <div>
+                    <p class="text-davyGrey text-xs sm:text-sm  font-normal">Ray Arnold left 6 comments on <span class="font-semibold text-dark">Isla Nublar SOC2 compliance report</span></p>
+                    <span class="text-darkGrey text-xs">Yesterday at 11:42 PM</span>
+                  </div>
+                  <span class="absolute left-2 top-2 w-2 h-2 rounded-full bg-leafGreen"></span>
+                </div>
+                <div class="relative w-full flex p-4">
+                  <div>
+                    <span class="w-8 h-8 inline-block rounded-full overflow-hidden mr-4">
+                      <img src="../public/assest/images/profile-img.png" alt="notification-profile"/>
+                    </span>
+                  </div>
+                  <div>
+                    <p class="text-davyGrey text-xs sm:text-sm  font-normal">Ray Arnold left 6 comments on <span class="font-semibold text-dark">Isla Nublar SOC2 compliance report</span></p>
+                    <span class="text-darkGrey text-xs">Yesterday at 11:42 PM</span>
+                  </div>
+                </div>
+                <div class="relative w-full flex p-4">
+                  <div>
+                    <span class="w-8 h-8 inline-block rounded-full overflow-hidden mr-4">
+                      <img src="../public/assest/images/profile-img.png" alt="notification-profile"/>
+                    </span>
+                  </div>
+                  <div>
+                    <p class="text-davyGrey text-xs sm:text-sm  font-normal">Ray Arnold left 6 comments on <span class="font-semibold text-dark">Isla Nublar SOC2 compliance report</span></p>
+                    <span class="text-darkGrey text-xs">Yesterday at 11:42 PM</span>
+                  </div>
+                </div>
+                <div class="relative w-full flex p-4">
+                  <div>
+                    <span class="w-8 h-8 inline-block rounded-full overflow-hidden mr-4">
+                      <img src="../public/assest/images/profile-img.png" alt="notification-profile"/>
+                    </span>
+                  </div>
+                  <div>
+                    <p class="text-davyGrey text-xs sm:text-sm  font-normal">Ray Arnold left 6 comments on <span class="font-semibold text-dark">Isla Nublar SOC2 compliance report</span></p>
+                    <span class="text-darkGrey text-xs">Yesterday at 11:42 PM</span>
+                  </div>
+                </div>
+                <div class="relative w-full flex p-4">
+                  <div>
+                    <span class="w-8 h-8 inline-block rounded-full overflow-hidden mr-4">
+                      <img src="../public/assest/images/profile-img.png" alt="notification-profile"/>
+                    </span>
+                  </div>
+                  <div>
+                    <p class="text-davyGrey text-xs sm:text-sm  font-normal">Ray Arnold left 6 comments on <span class="font-semibold text-dark">Isla Nublar SOC2 compliance report</span></p>
+                    <span class="text-darkGrey text-xs">Yesterday at 11:42 PM</span>
+                  </div>
+                </div>
+                <div class="relative w-full flex p-4">
+                  <div>
+                    <span class="w-8 h-8 inline-block rounded-full overflow-hidden mr-4">
+                      <img src="../public/assest/images/profile-img.png" alt="notification-profile"/>
+                    </span>
+                  </div>
+                  <div>
+                    <p class="text-davyGrey text-xs sm:text-sm  font-normal">Ray Arnold left 6 comments on <span class="font-semibold text-dark">Isla Nublar SOC2 compliance report</span></p>
+                    <span class="text-darkGrey text-xs">Yesterday at 11:42 PM</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- main content -->
+        <div class="content-area h-[calc(100vh-72px)] sm:h-[calc(100vh-84px)] lg:h-[calc(100vh-100px)] p-4 sm:p-6 lg:p-8 xl:p-10 pb-0 overflow-y-auto">
+          <!-- Pagination -->
+          <div class="sm:flex items-center justify-between pb-4 md:pb-7 lg:pb-11">
+            <!-- Pagination -->
+            <a href="total-balance.html" class="text-xl md:text-2xl font-semibold flex items-center">
+              <span class="pr-3 md:pr-6">
+                <i class="icon-left-arrow"></i>               
+              </span>
+              Transfer Coin
+            </a>
+            <!-- btn -->
+            <div class="flex space-x-4 pt-4 sm:pt-0">
+              <!-- Cancel btn  -->
+              <a href="javascript:void(0);" class="block min-w-[108px] text-xs md:text-sm text-davyGrey font-semibold border-2 rounded-lg p-2 md:p-3 text-center">Cancel</a>
+              <!-- transfer btn  -->
+              <a href="javascript:void(0);" class="min-w-[108px] btnPrimary">Transfer</a>
+            </div>
+          </div>
+          <!-- kyc -->
+          <div class="bg-[#E9F1FF] p-4 rounded-2xl inline-flex w-full mb-3 md:mb-6">
+            <i class="icon-kyc text-[#0041D1] text-xl"></i>
+            <div class="pl-4">
+              <p class="text-base leading-7 font-semibold text-[#0041D1]">KYC</p>
+              <span class="text-xs md:text-sm text-[#0041D1]">As per the guidelines of bank all users need to complete KYC to get free from transaction limits </span>
+            </div>
+          </div>
+          <!-- Transfer From / Transfer To -->
+          <div class="flex flex-wrap -mx-3">
+            <!-- transfer from -->
+            <div class="w-full 2xl:w-1/2 md:px-3">
+              <form method="" action="" class="bg-white p-4 py-6 md:p-8 rounded-2xl">
+                <h3 class="text-xl md:text-2xl font-semibold pb-5">Transfer From</h3>
+                <!-- Total Balance -->
+                <div class="bg-gray-100 p-4 lg:p-7 rounded-2xl flex items-center">
+                  <span class="icon-my-wallet text-leafGreen text-xl"></span>
+                  <div class="w-full sm:flex items-centers justify-between pl-5">
+                    <h4 class="text-lg md:text-xl text-dark font-semibold">Total Balance</h4>
+                    <h4 class="text-lg md:text-xl text-dark font-semibold">3,45,0000</h4>
+                  </div>
+                </div>
+                <!-- Total Coin / transferable Coin -->
+                <div class="flex pt-3 lg:pt-6">
+                  <!-- Total Coin  -->
+                  <div class="w-7/12 sm:w-8/12 pr-3">
+                    <p class="text-sm font-semibold text-dark">Total Coin</p>
+                    <div class="flex items-center border p-3 lg:p-6 mt-3 rounded-xl lg:rounded-2xl">
+                      <img src="../assest/images/svg/EventoPackage.svg" alt="EventoPackage" class="w-6 h-6" />
+                      <div class="w-full sm:flex items-center justify-between pl-2 sm:pl-4">
+                        <p class="acName" title="EventoPackage">EventoPackage</p>
+                        <p class="acAmount">1,20,000</p>
+                      </div>
+                    </div>
+                    <div class="flex items-center border p-3 lg:p-6 mt-3 rounded-xl lg:rounded-2xl">
+                      <img src="../assest/images/svg/festum-evento-logo-1.svg" alt="EventoPackage" class="w-6 h-6" />
+                      <div class="w-full sm:flex items-center justify-between pl-2 sm:pl-4">
+                        <p class="acName" title="FestumEvento">FestumEvento</p>
+                        <p class="acAmount">20,000</p>
+                      </div>
+                    </div>
+                    <div class="flex items-center border p-3 lg:p-6 mt-3 rounded-xl lg:rounded-2xl">
+                      <img src="../assest/images/svg/EventoPackage.svg" alt="EventoPackage" class="w-6 h-6" />
+                      <div class="w-full sm:flex items-center justify-between pl-2 sm:pl-4">
+                        <p class="acName" title="Friends Fields">Friends Fields</p>
+                        <p class="acAmount">1,00,000</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- transferable Coin -->
+                  <div class="w-5/12 sm:w-4/12">
+                    <p class="text-sm font-semibold text-dark whitespace-nowrap">Transferable Coin</p>
+                    <input type="text" placeholder="00000" class="acInput h-[66px] sm:h-auto" />
+                    <input type="text" placeholder="00000" class="acInput h-[66px] sm:h-auto" value="10,000" />
+                    <input type="text" placeholder="00000" class="acInput h-[66px] sm:h-auto" value="90,000" />
+                  </div>
+                </div>
+                <!-- Total Transferable Coin -->
+                <div class="pt-3 lg:pt-6">
+                  <p class="text-sm font-semibold text-dark">Total Coin</p>
+                  <input type="text" class="w-full border border-leafGreen p-3 lg:p-6 mt-3 rounded-xl lg:rounded-2xl text-lg lg:text-xl text-dark font-semibold outline-0" value="12000" />
+                </div>
+              </form>
+            </div>
+            <!-- Transfer To -->
+            <div class="w-full pt-7 2xl:w-1/2 2xl:pt-0 md:px-3">
+              <form method="" action="" class="bg-white p-4 md:p-8 rounded-2xl">
+                <h3 class="text-xl md:text-2xl font-semibold pb-5">Transfer To</h3>
+                <!-- Enter ID -->
+                <div class="bg-gray-100 p-4 lg:p-7 rounded-2xl flex justify-between items-center">
+                  <input type="text" class="w-full bg-gray-100 text-lg lg:text-xl text-dark font-normal outline-0" placeholder="Enter ID" />
+                  <a href="javascript:void(0);" class="icon-scanner text-[26px] pl-5"></a>
+                </div>
+                <!-- Quick Transfer -->
+                <div class="pt-3 lg:pt-6">
+                  <h4 class="text-xl md:text-xl text-dark font-semibold">Quick Transfer</h4>
+                  <!-- other id -->
+                  <div class="flex flex-wrap pt-3 lg:pt-5">
+                    <a href="javascript:void(0);" class="qtId">
+                      <span class="qtProfile">JD</span>
+                      <p class="qtName">John Doe</p>
+                    </a>
+                    <a href="javascript:void(0);" class="qtId">
+                      <span class="qtProfile">OV</span>
+                      <p class="qtName">Olivia Vats</p>
+                    </a>
+                    <a href="javascript:void(0);" class="qtId">
+                      <span class="qtProfile">SS</span>
+                      <p class="qtName">Smith s</p>
+                    </a>
+                    <a href="javascript:void(0);" class="qtId">
+                      <span class="qtProfile">JD</span>
+                      <p class="qtName">John Doe</p>
+                    </a>
+                    <a href="javascript:void(0);" class="qtId">
+                      <span class="qtProfile">OV</span>
+                      <p class="qtName">Olivia Vats</p>
+                    </a>
+                    <a href="javascript:void(0);" class="qtId">
+                      <span class="qtProfile">SS</span>
+                      <p class="qtName">Smith s</p>
+                    </a>
+                    <a href="javascript:void(0);" class="qtId">
+                      <span class="qtProfile">SS</span>
+                      <p class="qtName">Smith s</p>
+                    </a>
+                    <a href="javascript:void(0);" class="qtId">
+                      <span class="qtProfile">SS</span>
+                      <p class="qtName">Smith s</p>
+                    </a>
+                    <a href="javascript:void(0);" class="qtId">
+                      <span class="qtProfile">SS</span>
+                      <p class="qtName">Smith s</p>
+                    </a>
+                    <a href="javascript:void(0);" class="qtId">
+                      <span class="qtProfile">SS</span>
+                      <p class="qtName">Smith s</p>
+                    </a>
+                    <a href="javascript:void(0);" class="qtId">
+                      <span class="qtProfile">SS</span>
+                      <p class="qtName">Smith s</p>
+                    </a>
+                    <a href="javascript:void(0);" class="qtId">
+                      <span class="qtProfile">SS</span>
+                      <p class="qtName">Smith s</p>
+                    </a>
+                    <a href="javascript:void(0);" class="qtId">
+                      <span class="qtProfile">SS</span>
+                      <p class="qtName">Smith s</p>
+                    </a>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--  successfully Transferred -->
+      <div class="hidden absolute top-20 2xl:top-32 px-4 w-full flex flex-col items-center justify-between">
+        <div class="w-full max-w-xl lg:max-w-3xl flex items-center bg-[#ECFCCB] p-4 rounded-xl">
+          <div class="bg-leafGreen rounded-full w-4 h-4 flex items-center justify-center">
+            <i class="block icon-right text-[7px] font-semibold leading-none text-white"></i>
+          </div>
+          <span class="text-xs sm:text-sm md:text-base text-leafGreen font-semibold ml-4">Your Coin are successfully Transferred</span>
+        </div>
+      </div>
+    </div>
+    <script src="../assest/js/jquery.min.js"></script>
+    <script src="../assest/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </body>
+</html>

@@ -36,7 +36,7 @@ p {@apply font-semibold md:font-bold text-xs md:text-base lg:text-lg;}
 .qtId{@apply text-center py-3 px-1 max-w-[75px] min-w-[75px] sm:max-w-[85px] sm:min-w-[85px] inline-block;}
 .qtProfile{@apply mx-auto bg-greenishYellow w-10 lg:w-12 h-10 lg:h-12 flex items-center justify-center text-sm lg:text-base text-leafGreen font-bold rounded-full;}
 .qtName{@apply text-xs text-dark font-medium pt-2 whitespace-nowrap;}
-.selectFilter{@apply w-full sm:w-auto outline-none px-4 py-2 rounded-lg text-sm border border-gray-200 text-darkGrey font-normal appearance-none cursor-pointer text-center;}
+.selectFilter{@apply w-full sm:w-auto outline-none px-4 py-2 rounded-lg text-sm border border-gray-200 text-darkGrey font-normal appearance-none cursor-pointer;}
 
 .balanceTab.active{@apply bg-greenishYellow drop-shadow-active;}
 .balanceTab.active span{@apply text-leafGreen;}
@@ -63,7 +63,7 @@ nav a.active svg, nav a:hover svg{@apply fill-black;}
 .loginLabel{@apply text-xs sm:text-sm font-medium;}
 .loginInputdata{@apply relative mt-1 border border-gray-300 rounded-xl overflow-hidden;}
 .loginInput{@apply w-full p-2 pl-11 text-xs sm:text-base leading-6 sm:leading-7 outline-0;}
-.loginInputicon{@apply absolute inset-y-0 left-4 inline-flex items-center;}
+.loginInputicon{@apply absolute inset-y-0 left-3 inline-flex items-center text-grey;}
 .otpInput{@apply w-full max-w-[81px] border border-gray-300 text-center text-base leading-7 rounded-xl py-2 sm:py-2.5 px-[14px] outline-0;}
 
 /* login flow end */
@@ -86,7 +86,7 @@ table{
 }
 tr td{@apply border-0 px-6 p-4 align-middle whitespace-nowrap;}
 .tTitel{@apply text-base lg:text-lg font-semibold block;}
-.tSubTitel{@apply text-xs lg:text-sm text-grey font-normal block pt-0.5 lg:pt-1;}
+.tSubTitel{@apply text-xs lg:text-sm text-davyGrey font-normal block pt-0.5 lg:pt-1;}
 .tProfile{@apply  h-12 w-12 bg-greenishYellow rounded-full flex items-center justify-center;}
 .tprofileName{@apply text-base text-leafGreen font-bold inline-block;}
 .tprofileIcon{@apply text-2xl text-leafGreen inline-block;}
@@ -136,9 +136,9 @@ input[type=radio].bankholder:checked + .transactionBank .selact-bank span {
 .popLabel{@apply text-xs sm:text-sm font-medium;}
 .popInputdata{@apply relative mt-1 border border-gray-300 rounded-xl overflow-hidden;}
 .popInput{@apply w-full p-2 pl-11 text-xs sm:text-base leading-6 sm:leading-7 outline-0;}
-.popInputicon{@apply absolute inset-y-0 left-4 inline-flex items-center;}
+.popInputicon{@apply absolute inset-y-0 left-3 inline-flex items-center text-grey;}
 .popSelect{@apply text-grey font-normal text-sm md:text-base rounded-lg block w-full p-2.5 outline-none appearance-none;}
-.popSeicon{@apply text-[8px] text-grey absolute right-3 top-[18px] pointer-events-none;}
+.popSeicon{@apply text-[8px] text-grey absolute right-3 top-[18px] md:top-5 pointer-events-none;}
 
 /* FAQ */
 .accordionTab.active span{@apply rotate-180 anim;}

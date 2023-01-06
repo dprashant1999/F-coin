@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F-coin || Dashboard Profile</title>
+    <link rel="stylesheet" href="../assest/css/fonts.css" />
+    <link rel="stylesheet" href="../assest/css/iconmoon.css" />
+    <link rel="stylesheet" href="../assest/css/style.css" />
+  </head>
+  <body>
+    <div class="main flex min-h-screen relative">
+       <!-- left-bar -->
+       <div class="left_bar">
+        <a href="javascript:void(0)" class="inline-block w-full text-center">
+          <img src="../assest/images/svg/logo.svg" alt="logo" class="mx-auto"/>
+        </a>
+        <nav aria-label="Main Nav" class="flex flex-col mt-8 lg:mt-[91px] space-y-2">
+          <a href="../dashboard-flow/dashboard.html" class="active">
+            <i class="icon-dashboard text-xl"></i>
+            <span class="ml-4 lg:16px xl:text-xl">Dashboard</span>
+          </a>
+          <a href="../all-ads/all-ads.html">
+            <i class="icon-all-ads text-xl"></i>              
+            <span class="ml-4 lg:16px xl:text-xl">All Ads</span>
+          </a>
+          <a href="../view-advertisment/view-ads.html">
+            <i class="icon-view-ad text-2xl font-medium"></i>
+            <span class="ml-4 lg:16px xl:text-xl">View Ads</span>
+          </a>
+          <a href="../my-wallet/my-wallet.html">
+            <i class="icon-my-wallet text-xl"></i>             
+            <span class="ml-4 lg:16px xl:text-xl">My Wallet</span>
+          </a>
+          <a href="../transfer-history/transfer-history.html">
+            <i class="icon-transfer-history text-xl"></i>                           
+            <span class="ml-4 lg:16px xl:text-xl">Transfer History</span>
+          </a>
+          <a href="../our-product/our-product.html">
+            <i class="icon-our-product text-xl"></i>                           
+            <span class="ml-4 lg:16px xl:text-xl">Our Product</span>
+          </a>
+          <a href="../Notification-Promotion-flow/promotion.html">
+            <i class="icon-promotion text-xl font-semibold"></i>              
+            <span class="ml-4 lg:16px xl:text-xl">Promotion</span>
+          </a>
+          <a href="../help-and-faq/helpandfaq.html">
+            <i class="icon-help text-xl"></i>            
+            <span class="ml-4 lg:16px xl:text-xl">Helps & FAQs</span>
+          </a>
+        </nav>
+      </div>
+      <!-- right-bar -->
+      <div class="right_bar relative ml-auto">
+        <!-- header -->
+        <div class="w-full bg-white p-5 lg:px-6 xl:px-12 lg:py-6 flex items-center relative">
+          <h3>Dashboard</h3>
+          <div class="flex items-center ml-auto">
+            <div id="searchBar">
+              <div class="searchHolder">
+                <button type="button" class="absolute top-1/2 left-6 sm:left-4 -translate-y-1/2 rounded-md text-gray-600 transition hover:text-gray-700">
+                  <i class="icon-search text-grey text-2xl"></i>
+                </button>  
+                <input class="h-10 lg:h-12 w-full rounded-lg border-none sm:bg-ghostWhite pl-12 lg:pl-14 pr-4 outline-none" id="search" type="search" placeholder="Search">    
+              </div>
+              <button type="button" class="block sm:hidden px-2 xl:px-4" id="searchbtn">
+                <i class="icon-search text-xl"></i>
+              </button>    
+            </div>
+            <a href="../gift/gift-brand-list.html" class="block px-2 xl:px-4">
+              <i class="icon-gift text-xl lg:text-2xl"></i>                 
+            </a> 
+            <a href="../popup/scan.html" class="block px-2 xl:px-4">
+              <i class="icon-scanner text-xl lg:text-2xl"></i>
+            </a>    
+            <a href="../javascript:void(0)" id="notifications" class="block px-2 xl:px-4">
+              <i class="icon-notification text-xl lg:text-2xl"></i>
+            </a>
+            <button type="button" id="userProfile" class="ml-2 xl:ml-4">
+              <div class="w-8 h-8 md:h-10 md:w-10 rounded-full overflow-hidden">
+                <img alt="Man" class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1600486913747-55e5470d6f40?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1770&amp;q=80">
+              </div>
+            </button>
+            <!-- onlclick show Profilepopup  -->
+            <div class="homeProfile">
+              <a href="../dashboard-profile/profile.html" class="flex items-center text-dark group hover:text-leafGreen">
+                <i class="icon-right mr-3 text-white group-hover:text-leafGreen text-sm"></i>
+                Profile
+              </a>
+              <a href="../popup/sync-account.html" class="flex items-center text-leafGreen">
+                <i class="icon-right mr-3 text-leafGreen text-sm"></i>
+                Account SYNC
+              </a>
+              <a href="../popup/logout.html" class="flex items-center text-dark group hover:text-leafGreen">
+                <i class="icon-right mr-3 text-white group-hover:text-leafGreen text-sm"></i>
+                Logout
+              </a>
+            </div>
+            <!-- On click Notifications -->
+            <div class="notifictionbar">
+              <div class="flex items-center justify-between p-4">
+                <span class="inline-block font-semibold text-dark">Notifications</span>
+                <a href="javascript:void(0)" class="text-sm text-darkGrey flex items-center">Mark all as read<span class="icon-right ml-1 w-[18px] h-[18px] leading-4 text-center inline-block border-2 border-davyGrey rounded-full text-[8px] font-bold"></span></a>
+              </div>
+              <div class="w-full border-t border-darkGrey/50 h-full max-h-[570px] overflow-y-auto">
+                <div class="relative w-full flex p-4">
+                  <div>
+                    <span class="w-8 h-8 inline-block rounded-full overflow-hidden mr-4">
+                      <img src="../public/assest/images/profile-img.png" alt="notification-profile"/>
+                    </span>
+                  </div>
+                  <div>
+                    <p class="text-davyGrey text-xs sm:text-sm  font-normal">Ray Arnold left 6 comments on <span class="font-semibold text-dark">Isla Nublar SOC2 compliance report</span></p>
+                    <span class="text-darkGrey text-xs">Yesterday at 11:42 PM</span>
+                  </div>
+                  <span class="absolute left-2 top-2 w-2 h-2 rounded-full bg-leafGreen"></span>
+                </div>
+                <div class="relative w-full flex p-4">
+                  <div>
+                    <span class="w-8 h-8 inline-block rounded-full overflow-hidden mr-4">
+                      <img src="../public/assest/images/profile-img.png" alt="notification-profile"/>
+                    </span>
+                  </div>
+                  <div>
+                    <p class="text-davyGrey text-xs sm:text-sm  font-normal">Ray Arnold left 6 comments on <span class="font-semibold text-dark">Isla Nublar SOC2 compliance report</span></p>
+                    <span class="text-darkGrey text-xs">Yesterday at 11:42 PM</span>
+                  </div>
+                  <span class="absolute left-2 top-2 w-2 h-2 rounded-full bg-leafGreen"></span>
+                </div>
+                <div class="relative w-full flex p-4">
+                  <div>
+                    <span class="w-8 h-8 inline-block rounded-full overflow-hidden mr-4">
+                      <img src="../public/assest/images/profile-img.png" alt="notification-profile"/>
+                    </span>
+                  </div>
+                  <div>
+                    <p class="text-davyGrey text-xs sm:text-sm  font-normal">Ray Arnold left 6 comments on <span class="font-semibold text-dark">Isla Nublar SOC2 compliance report</span></p>
+                    <span class="text-darkGrey text-xs">Yesterday at 11:42 PM</span>
+                  </div>
+                </div>
+                <div class="relative w-full flex p-4">
+                  <div>
+                    <span class="w-8 h-8 inline-block rounded-full overflow-hidden mr-4">
+                      <img src="../public/assest/images/profile-img.png" alt="notification-profile"/>
+                    </span>
+                  </div>
+                  <div>
+                    <p class="text-davyGrey text-xs sm:text-sm  font-normal">Ray Arnold left 6 comments on <span class="font-semibold text-dark">Isla Nublar SOC2 compliance report</span></p>
+                    <span class="text-darkGrey text-xs">Yesterday at 11:42 PM</span>
+                  </div>
+                </div>
+                <div class="relative w-full flex p-4">
+                  <div>
+                    <span class="w-8 h-8 inline-block rounded-full overflow-hidden mr-4">
+                      <img src="../public/assest/images/profile-img.png" alt="notification-profile"/>
+                    </span>
+                  </div>
+                  <div>
+                    <p class="text-davyGrey text-xs sm:text-sm  font-normal">Ray Arnold left 6 comments on <span class="font-semibold text-dark">Isla Nublar SOC2 compliance report</span></p>
+                    <span class="text-darkGrey text-xs">Yesterday at 11:42 PM</span>
+                  </div>
+                </div>
+                <div class="relative w-full flex p-4">
+                  <div>
+                    <span class="w-8 h-8 inline-block rounded-full overflow-hidden mr-4">
+                      <img src="../public/assest/images/profile-img.png" alt="notification-profile"/>
+                    </span>
+                  </div>
+                  <div>
+                    <p class="text-davyGrey text-xs sm:text-sm  font-normal">Ray Arnold left 6 comments on <span class="font-semibold text-dark">Isla Nublar SOC2 compliance report</span></p>
+                    <span class="text-darkGrey text-xs">Yesterday at 11:42 PM</span>
+                  </div>
+                </div>
+                <div class="relative w-full flex p-4">
+                  <div>
+                    <span class="w-8 h-8 inline-block rounded-full overflow-hidden mr-4">
+                      <img src="../public/assest/images/profile-img.png" alt="notification-profile"/>
+                    </span>
+                  </div>
+                  <div>
+                    <p class="text-davyGrey text-xs sm:text-sm  font-normal">Ray Arnold left 6 comments on <span class="font-semibold text-dark">Isla Nublar SOC2 compliance report</span></p>
+                    <span class="text-darkGrey text-xs">Yesterday at 11:42 PM</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- main content -->
+        <div class="content-area h-[calc(100vh-72px)] sm:h-[calc(100vh-84px)] lg:h-[calc(100vh-100px)] p-4 sm:p-6 lg:p-8 xl:p-10 pb-0 overflow-y-auto">
+          <!-- edit btn -->
+          <a href="edit-profile.html" class="w-full max-w-[108px] btnPrimary block ml-auto">Edit Profile</a>
+          <!-- profile picture -->
+          <div class="bg-white p-4 sm:p-8 md:p-12 rounded-xl sm:rounded-2xl md:rounded-t-3xl mt-5 md:mt-6 mb-2 relative overflow-hidden">
+            <div class="sm:flex items-end justify-between relative z-50">
+              <div class="sm:flex items-end">
+                <img src="../assest/images/profile-img.png" alt="profile-image" class="bg-white w-28 sm:w-36 md:w-44 h-28 sm:h-36 md:h-44 rounded-full object-cover border-4 sm:border-8 md:border-[10px] border-white mx-auto" />
+                <div class="pt-5 text-center sm:text-left sm:pl-6">
+                  <h3 class="font-semibold">John Doe</h3>
+                  <p class="text-base md:text-lg font-semibold text-grey">johndoe12@gmail.com</p>
+                </div>
+              </div>
+              <span class="pt-5 block">
+                <img src="../assest/images/svg/pre-scan.svg" alt="profile scan" class="mx-auto" />
+              </span>
+            </div>
+            <span class="bg-gradient-to-r from-[#65A30D] to-[#26434F] w-full h-16 sm:h-20 md:h-24 block absolute top-0 right-0"></span>
+          </div>
+          <!-- profile form -->
+          <form method="" action="" class="flex flex-wrap items-center -mx-3">
+            <div class="w-full md:w-1/2 px-3 py-2.5 md:py-4">
+              <label class="prLlb">Name</label>
+              <input class="prInput" type="text" placeholder="John Doe" />
+            </div>
+            <div class="w-full md:w-1/2 px-3 py-2.5 md:py-4">
+              <label class="prLlb">Email</label>
+              <input class="prInput" type="email" placeholder="johndoe12@gmail.com" />
+            </div>
+            <div class="w-full md:w-1/2 px-3 py-2.5 md:py-4">
+              <label class="prLlb">Phone number</label>
+              <input class="prInput" type="text" placeholder="+91 98768 98765" />
+            </div>
+            <div class="w-full md:w-1/2 px-3 py-2.5 md:py-4">
+              <label class="prLlb">Password</label>
+              <input class="prInput" type="Password" />
+            </div>
+            <div class="w-full md:w-1/2 px-3 py-2.5 md:py-4">
+              <label class="prLlb">Address</label>
+              <input class="prInput" type="text" placeholder="Aka nagar, 1 Block, Surat" />
+            </div>
+            <div class="w-full md:w-1/2 px-3 py-2.5 md:py-4">
+              <label class="prLlb">Date of birth</label>
+              <input class="prInput" type="text" placeholder="20 January 2001" />
+            </div>
+            <div class="w-full md:w-1/2 px-3 py-2.5 md:py-4">
+              <label class="prLlb">Country</label>
+              <input class="prInput" type="text" placeholder="India" />
+            </div>
+            <div class="w-full md:w-1/2 px-3 py-2.5 md:py-4">
+              <label class="prLlb">About me</label>
+              <input class="prInput" type="text" placeholder="Lorem ipsum dummy text is best for the teams. " />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="../assest/js/jquery.min.js"></script>
+    <script src="../assest/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </body>
+</html>

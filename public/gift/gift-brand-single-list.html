@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F-coin Promotion</title>
+    <link rel="stylesheet" href="../assest/css/fonts.css" />
+    <link rel="stylesheet" href="../assest/css/iconmoon.css" />
+    <link rel="stylesheet" href="../assest/css/style.css" />
+  </head>
+  <body>
+    <div class="main flex min-h-screen relative">
+      <!-- left-bar -->
+      <div class="left_bar">
+        <a href="javascript:void(0)" class="inline-block w-full text-center">
+          <img src="../assest/images/svg/logo.svg" alt="logo" class="mx-auto"/>
+        </a>
+        <nav aria-label="Main Nav" class="flex flex-col mt-8 lg:mt-[91px] space-y-2">
+          <a href="../dashboard-flow/dashboard.html" class="active">
+            <i class="icon-dashboard text-xl"></i>
+            <span class="ml-4 lg:16px xl:text-xl">Dashboard</span>
+          </a>
+          <a href="../all-ads/all-ads.html">
+            <i class="icon-all-ads text-xl"></i>              
+            <span class="ml-4 lg:16px xl:text-xl">All Ads</span>
+          </a>
+          <a href="../view-advertisment/view-ads.html">
+            <i class="icon-view-ad text-2xl font-medium"></i>
+            <span class="ml-4 lg:16px xl:text-xl">View Ads</span>
+          </a>
+          <a href="../my-wallet/my-wallet.html">
+            <i class="icon-my-wallet text-xl"></i>             
+            <span class="ml-4 lg:16px xl:text-xl">My Wallet</span>
+          </a>
+          <a href="../transfer-history/transfer-history.html">
+            <i class="icon-transfer-history text-xl"></i>                           
+            <span class="ml-4 lg:16px xl:text-xl">Transfer History</span>
+          </a>
+          <a href="../our-product/our-product.html">
+            <i class="icon-our-product text-xl"></i>                           
+            <span class="ml-4 lg:16px xl:text-xl">Our Product</span>
+          </a>
+          <a href="../Notification-Promotion-flow/promotion.html">
+            <i class="icon-promotion text-xl font-semibold"></i>              
+            <span class="ml-4 lg:16px xl:text-xl">Promotion</span>
+          </a>
+          <a href="../help-and-faq/helpandfaq.html">
+            <i class="icon-help text-xl"></i>            
+            <span class="ml-4 lg:16px xl:text-xl">Helps & FAQs</span>
+          </a>
+        </nav>
+      </div>
+      <!-- right-bar -->
+      <div class="right_bar relative ml-auto">
+        <div class="w-full bg-white p-5 lg:px-6 xl:px-12 lg:py-6 flex items-center relative">
+          <h3>Dashboard</h3>
+          <div class="flex items-center ml-auto">
+            <div id="searchBar">
+              <div class="searchHolder">
+                <button type="button" class="absolute top-1/2 left-6 sm:left-4 -translate-y-1/2 rounded-md text-gray-600 transition hover:text-gray-700">
+                  <i class="icon-search text-grey text-2xl"></i>
+                </button>  
+                <input class="h-10 lg:h-12 w-full rounded-lg border-none sm:bg-ghostWhite pl-12 lg:pl-14 pr-4 outline-none" id="search" type="search" placeholder="Search">    
+              </div>
+              <button type="button" class="block sm:hidden px-2 xl:px-4" id="searchbtn">
+                <i class="icon-search text-xl"></i>
+              </button>    
+            </div>
+            <a href="../gift/gift-brand-list.html" class="block px-2 xl:px-4">
+              <i class="icon-gift text-xl lg:text-2xl"></i>                 
+            </a> 
+            <a href="../popup/scan.html" class="block px-2 xl:px-4">
+              <i class="icon-scanner text-xl lg:text-2xl"></i>
+            </a>    
+            <a href="../javascript:void(0)" id="notifications" class="block px-2 xl:px-4">
+              <i class="icon-notification text-xl lg:text-2xl"></i>
+            </a>
+            <button type="button" id="userProfile" class="ml-2 xl:ml-4">
+              <div class="w-8 h-8 md:h-10 md:w-10 rounded-full overflow-hidden">
+                <img alt="Man" class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1600486913747-55e5470d6f40?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1770&amp;q=80">
+              </div>
+            </button>
+            <!-- onlclick show Profilepopup  -->
+            <div class="homeProfile">
+              <a href="../dashboard-profile/profile.html" class="flex items-center text-dark group hover:text-leafGreen">
+                <i class="icon-right mr-3 text-white group-hover:text-leafGreen text-sm"></i>
+                Profile
+              </a>
+              <a href="../popup/sync-account.html" class="flex items-center text-leafGreen">
+                <i class="icon-right mr-3 text-leafGreen text-sm"></i>
+                Account SYNC
+              </a>
+              <a href="../popup/logout.html" class="flex items-center text-dark group hover:text-leafGreen">
+                <i class="icon-right mr-3 text-white group-hover:text-leafGreen text-sm"></i>
+                Logout
+              </a>
+            </div>
+            <!-- On click Notifications -->
+            <div class="notifictionbar">
+              <div class="flex items-center justify-between p-4">
+                <span class="inline-block font-semibold text-dark">Notifications</span>
+                <a href="javascript:void(0)" class="text-sm text-darkGrey flex items-center">Mark all as read<span class="icon-right ml-1 w-[18px] h-[18px] leading-4 text-center inline-block border-2 border-davyGrey rounded-full text-[8px] font-bold"></span></a>
+              </div>
+              <div class="w-full border-t border-darkGrey/50 h-full max-h-[570px] overflow-y-auto">
+                <div class="relative w-full flex p-4">
+                  <div>
+                    <span class="w-8 h-8 inline-block rounded-full overflow-hidden mr-4">
+                      <img src="../public/assest/images/profile-img.png" alt="notification-profile"/>
+                    </span>
+                  </div>
+                  <div>
+                    <p class="text-davyGrey text-xs sm:text-sm  font-normal">Ray Arnold left 6 comments on <span class="font-semibold text-dark">Isla Nublar SOC2 compliance report</span></p>
+                    <span class="text-darkGrey text-xs">Yesterday at 11:42 PM</span>
+                  </div>
+                  <span class="absolute left-2 top-2 w-2 h-2 rounded-full bg-leafGreen"></span>
+                </div>
+                <div class="relative w-full flex p-4">
+                  <div>
+                    <span class="w-8 h-8 inline-block rounded-full overflow-hidden mr-4">
+                      <img src="../public/assest/images/profile-img.png" alt="notification-profile"/>
+                    </span>
+                  </div>
+                  <div>
+                    <p class="text-davyGrey text-xs sm:text-sm  font-normal">Ray Arnold left 6 comments on <span class="font-semibold text-dark">Isla Nublar SOC2 compliance report</span></p>
+                    <span class="text-darkGrey text-xs">Yesterday at 11:42 PM</span>
+                  </div>
+                  <span class="absolute left-2 top-2 w-2 h-2 rounded-full bg-leafGreen"></span>
+                </div>
+                <div class="relative w-full flex p-4">
+                  <div>
+                    <span class="w-8 h-8 inline-block rounded-full overflow-hidden mr-4">
+                      <img src="../public/assest/images/profile-img.png" alt="notification-profile"/>
+                    </span>
+                  </div>
+                  <div>
+                    <p class="text-davyGrey text-xs sm:text-sm  font-normal">Ray Arnold left 6 comments on <span class="font-semibold text-dark">Isla Nublar SOC2 compliance report</span></p>
+                    <span class="text-darkGrey text-xs">Yesterday at 11:42 PM</span>
+                  </div>
+                </div>
+                <div class="relative w-full flex p-4">
+                  <div>
+                    <span class="w-8 h-8 inline-block rounded-full overflow-hidden mr-4">
+                      <img src="../public/assest/images/profile-img.png" alt="notification-profile"/>
+                    </span>
+                  </div>
+                  <div>
+                    <p class="text-davyGrey text-xs sm:text-sm  font-normal">Ray Arnold left 6 comments on <span class="font-semibold text-dark">Isla Nublar SOC2 compliance report</span></p>
+                    <span class="text-darkGrey text-xs">Yesterday at 11:42 PM</span>
+                  </div>
+                </div>
+                <div class="relative w-full flex p-4">
+                  <div>
+                    <span class="w-8 h-8 inline-block rounded-full overflow-hidden mr-4">
+                      <img src="../public/assest/images/profile-img.png" alt="notification-profile"/>
+                    </span>
+                  </div>
+                  <div>
+                    <p class="text-davyGrey text-xs sm:text-sm  font-normal">Ray Arnold left 6 comments on <span class="font-semibold text-dark">Isla Nublar SOC2 compliance report</span></p>
+                    <span class="text-darkGrey text-xs">Yesterday at 11:42 PM</span>
+                  </div>
+                </div>
+                <div class="relative w-full flex p-4">
+                  <div>
+                    <span class="w-8 h-8 inline-block rounded-full overflow-hidden mr-4">
+                      <img src="../public/assest/images/profile-img.png" alt="notification-profile"/>
+                    </span>
+                  </div>
+                  <div>
+                    <p class="text-davyGrey text-xs sm:text-sm  font-normal">Ray Arnold left 6 comments on <span class="font-semibold text-dark">Isla Nublar SOC2 compliance report</span></p>
+                    <span class="text-darkGrey text-xs">Yesterday at 11:42 PM</span>
+                  </div>
+                </div>
+                <div class="relative w-full flex p-4">
+                  <div>
+                    <span class="w-8 h-8 inline-block rounded-full overflow-hidden mr-4">
+                      <img src="../public/assest/images/profile-img.png" alt="notification-profile"/>
+                    </span>
+                  </div>
+                  <div>
+                    <p class="text-davyGrey text-xs sm:text-sm  font-normal">Ray Arnold left 6 comments on <span class="font-semibold text-dark">Isla Nublar SOC2 compliance report</span></p>
+                    <span class="text-darkGrey text-xs">Yesterday at 11:42 PM</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- main content -->
+        <div class="content-area h-[calc(100vh-72px)] sm:h-[calc(100vh-84px)] lg:h-[calc(100vh-100px)] p-4 sm:p-6 lg:p-8 xl:p-10 pb-0 overflow-y-auto">
+            <a href="gift-brand-list.html" class="text-xl md:text-2xl font-semibold flex items-center w-max">
+              <span class="pr-3 md:pr-6">
+                <i class="icon-left-arrow"></i>               
+              </span>
+              Nike
+            </a>
+          <div class="flex flex-wrap -mx-3">
+            <div class="w-full 2xl:w-1/2 p-3" onclick="window.location='gift-brand-single-details.html'">
+              <div class="w-full bg-white rounded-xl p-1 sm:flex border">
+                <div class="singleProduct">
+                  <img src="../assest/images/product.png" class="w-full object-cover rounded-2xl" alt="product2"/>
+                </div>
+                <div class="w-full p-3">
+                  <div class="flex flex-wrap items-center justify-between">
+                    <div class="w-7/12">
+                      <div class="flex items-center space-x-3">
+                        <span class="brandLogo">
+                          <img src="../assest/images/sportShoos.png" class="w-full object-cover" alt="brandLogo"/>
+                        </span>
+                        <span class="brandName">Sport Shoes</span>
+                      </div>
+                      <div class="flex items-center flex-wrap space-x-2 sm:space-x-3 pt-1 sm:pt-2">
+                        <span class="inline-block">
+                          <svg width="56" height="8" viewBox="0 0 56 8" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M7.98851 3.03781C7.96095 2.94885 7.88762 2.88402 7.79934 2.87059L5.3193 2.49279L4.21017 0.136951C4.1707 0.0530865 4.08922 0 4.00001 0C3.91079 0 3.82933 0.0530865 3.78984 0.136951L2.68066 2.49279L0.200669 2.87059C0.112404 2.88402 0.0390446 2.94885 0.0114823 3.03779C-0.0160957 3.12675 0.00690416 3.22439 0.0707945 3.28966L1.86529 5.12343L1.44173 7.71278C1.42663 7.80497 1.46279 7.8981 1.53496 7.95309C1.57579 7.98418 1.62415 8 1.67274 8C1.71005 8 1.74749 7.99068 1.78177 7.97178L4 6.74923L6.21813 7.97176C6.29711 8.01528 6.39278 8.00804 6.46495 7.95307C6.53713 7.8981 6.5733 7.80493 6.55822 7.71275L6.13452 5.12343L7.92921 3.28965C7.99309 3.22439 8.0161 3.12675 7.98851 3.03781Z" fill="#FFBA09"/> <path d="M19.9885 3.03781C19.9609 2.94885 19.8876 2.88402 19.7993 2.87059L17.3193 2.49279L16.2102 0.136951C16.1707 0.0530865 16.0892 0 16 0C15.9108 0 15.8293 0.0530865 15.7898 0.136951L14.6807 2.49279L12.2007 2.87059C12.1124 2.88402 12.039 2.94885 12.0115 3.03779C11.9839 3.12675 12.0069 3.22439 12.0708 3.28966L13.8653 5.12343L13.4417 7.71278C13.4266 7.80497 13.4628 7.8981 13.535 7.95309C13.5758 7.98418 13.6241 8 13.6727 8C13.7101 8 13.7475 7.99068 13.7818 7.97178L16 6.74923L18.2181 7.97176C18.2971 8.01528 18.3928 8.00804 18.465 7.95307C18.5371 7.8981 18.5733 7.80493 18.5582 7.71275L18.1345 5.12343L19.9292 3.28965C19.9931 3.22439 20.0161 3.12675 19.9885 3.03781Z" fill="#FFBA09"/> <path d="M31.9885 3.03781C31.9609 2.94885 31.8876 2.88402 31.7993 2.87059L29.3193 2.49279L28.2102 0.136951C28.1707 0.0530865 28.0892 0 28 0C27.9108 0 27.8293 0.0530865 27.7898 0.136951L26.6807 2.49279L24.2007 2.87059C24.1124 2.88402 24.039 2.94885 24.0115 3.03779C23.9839 3.12675 24.0069 3.22439 24.0708 3.28966L25.8653 5.12343L25.4417 7.71278C25.4266 7.80497 25.4628 7.8981 25.535 7.95309C25.5758 7.98418 25.6241 8 25.6727 8C25.7101 8 25.7475 7.99068 25.7818 7.97178L28 6.74923L30.2181 7.97176C30.2971 8.01528 30.3928 8.00804 30.465 7.95307C30.5371 7.8981 30.5733 7.80493 30.5582 7.71275L30.1345 5.12343L31.9292 3.28965C31.9931 3.22439 32.0161 3.12675 31.9885 3.03781Z" fill="#FFBA09"/> <path d="M43.9885 3.03781C43.9609 2.94885 43.8876 2.88402 43.7993 2.87059L41.3193 2.49279L40.2102 0.136951C40.1707 0.0530865 40.0892 0 40 0C39.9108 0 39.8293 0.0530865 39.7898 0.136951L38.6807 2.49279L36.2007 2.87059C36.1124 2.88402 36.039 2.94885 36.0115 3.03779C35.9839 3.12675 36.0069 3.22439 36.0708 3.28966L37.8653 5.12343L37.4417 7.71278C37.4266 7.80497 37.4628 7.8981 37.535 7.95309C37.5758 7.98418 37.6241 8 37.6727 8C37.7101 8 37.7475 7.99068 37.7818 7.97178L40 6.74923L42.2181 7.97176C42.2971 8.01528 42.3928 8.00804 42.465 7.95307C42.5371 7.8981 42.5733 7.80493 42.5582 7.71275L42.1345 5.12343L43.9292 3.28965C43.9931 3.22439 44.0161 3.12675 43.9885 3.03781Z" fill="#D1D5DB"/> <path d="M55.9885 3.03781C55.9609 2.94885 55.8876 2.88402 55.7993 2.87059L53.3193 2.49279L52.2102 0.136951C52.1707 0.0530865 52.0892 0 52 0C51.9108 0 51.8293 0.0530865 51.7898 0.136951L50.6807 2.49279L48.2007 2.87059C48.1124 2.88402 48.039 2.94885 48.0115 3.03779C47.9839 3.12675 48.0069 3.22439 48.0708 3.28966L49.8653 5.12343L49.4417 7.71278C49.4266 7.80497 49.4628 7.8981 49.535 7.95309C49.5758 7.98418 49.6241 8 49.6727 8C49.7101 8 49.7475 7.99068 49.7818 7.97178L52 6.74923L54.2181 7.97176C54.2971 8.01528 54.3928 8.00804 54.465 7.95307C54.5371 7.8981 54.5733 7.80493 54.5582 7.71275L54.1345 5.12343L55.9292 3.28965C55.9931 3.22439 56.0161 3.12675 55.9885 3.03781Z" fill="#D1D5DB"/> </svg>
+                        </span>
+                        <span class="inline-block text-xs font-semibold text-grey"> 19,981 ratings</span>
+                      </div>
+                    </div>
+                    <div class="w-5/12">
+                      <a href="javascript:void(0);" class="productCoupon">
+                        <p class="text-xs 2xl:text-sm font-semibold text-dark">GPHPJ63P44</p>
+                        <i class="icon-copy text-leafGreen text-xl"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <span class="border w-full block my-3"></span>
+                  <div class="flex items-center">
+                    <div class="flex items-center w-7/12">
+                      <div class="space-y-1">
+                        <div class="flex items-center space-x-1">
+                          <i class="icon-expirydate text-grey text-xs"></i>
+                          <span class="inline-block text-[10px] text-grey  whitespace-nowrap">Expiry Date</span>
+                        </div>
+                        <p class="text-xs font-semibold whitespace-nowrap">July 23, 2021</p>
+                      </div>
+                      <span class="inline-block mx-4 border border-gray-300 h-8"></span>
+                      <div class="space-y-1">
+                        <div class="flex items-center space-x-1">
+                          <i class="icon-discount text-grey text-xs"></i>
+                          <span class="inline-block text-[10px] text-grey  whitespace-nowrap">Offer Type</span>
+                        </div>
+                        <p class="text-xs font-semibold">Online</p>
+                      </div>
+                    </div>
+                    <div class="w-5/12">
+                      <p class="text-sm md:text-lg 2xl:text-xl text-leafGreen font-semibold pl-2 ml-auto whitespace-nowrap text-right">Upto 12% OFF</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-full 2xl:w-1/2 p-3" onclick="window.location='gift-brand-single-details.html'">
+              <div class="w-full bg-white rounded-xl p-1 sm:flex border">
+                <div class="singleProduct">
+                  <img src="../assest/images/product.png" class="w-full object-cover rounded-2xl" alt="product2"/>
+                </div>
+                <div class="w-full p-3">
+                  <div class="flex flex-wrap items-center justify-between">
+                    <div class="w-7/12">
+                      <div class="flex items-center space-x-3">
+                        <span class="brandLogo">
+                          <img src="../assest/images/sportShoos.png" class="w-full object-cover" alt="brandLogo"/>
+                        </span>
+                        <span class="brandName">Sport Shoes</span>
+                      </div>
+                      <div class="flex items-center flex-wrap space-x-2 sm:space-x-3 pt-1 sm:pt-2">
+                        <span class="inline-block">
+                          <svg width="56" height="8" viewBox="0 0 56 8" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M7.98851 3.03781C7.96095 2.94885 7.88762 2.88402 7.79934 2.87059L5.3193 2.49279L4.21017 0.136951C4.1707 0.0530865 4.08922 0 4.00001 0C3.91079 0 3.82933 0.0530865 3.78984 0.136951L2.68066 2.49279L0.200669 2.87059C0.112404 2.88402 0.0390446 2.94885 0.0114823 3.03779C-0.0160957 3.12675 0.00690416 3.22439 0.0707945 3.28966L1.86529 5.12343L1.44173 7.71278C1.42663 7.80497 1.46279 7.8981 1.53496 7.95309C1.57579 7.98418 1.62415 8 1.67274 8C1.71005 8 1.74749 7.99068 1.78177 7.97178L4 6.74923L6.21813 7.97176C6.29711 8.01528 6.39278 8.00804 6.46495 7.95307C6.53713 7.8981 6.5733 7.80493 6.55822 7.71275L6.13452 5.12343L7.92921 3.28965C7.99309 3.22439 8.0161 3.12675 7.98851 3.03781Z" fill="#FFBA09"/> <path d="M19.9885 3.03781C19.9609 2.94885 19.8876 2.88402 19.7993 2.87059L17.3193 2.49279L16.2102 0.136951C16.1707 0.0530865 16.0892 0 16 0C15.9108 0 15.8293 0.0530865 15.7898 0.136951L14.6807 2.49279L12.2007 2.87059C12.1124 2.88402 12.039 2.94885 12.0115 3.03779C11.9839 3.12675 12.0069 3.22439 12.0708 3.28966L13.8653 5.12343L13.4417 7.71278C13.4266 7.80497 13.4628 7.8981 13.535 7.95309C13.5758 7.98418 13.6241 8 13.6727 8C13.7101 8 13.7475 7.99068 13.7818 7.97178L16 6.74923L18.2181 7.97176C18.2971 8.01528 18.3928 8.00804 18.465 7.95307C18.5371 7.8981 18.5733 7.80493 18.5582 7.71275L18.1345 5.12343L19.9292 3.28965C19.9931 3.22439 20.0161 3.12675 19.9885 3.03781Z" fill="#FFBA09"/> <path d="M31.9885 3.03781C31.9609 2.94885 31.8876 2.88402 31.7993 2.87059L29.3193 2.49279L28.2102 0.136951C28.1707 0.0530865 28.0892 0 28 0C27.9108 0 27.8293 0.0530865 27.7898 0.136951L26.6807 2.49279L24.2007 2.87059C24.1124 2.88402 24.039 2.94885 24.0115 3.03779C23.9839 3.12675 24.0069 3.22439 24.0708 3.28966L25.8653 5.12343L25.4417 7.71278C25.4266 7.80497 25.4628 7.8981 25.535 7.95309C25.5758 7.98418 25.6241 8 25.6727 8C25.7101 8 25.7475 7.99068 25.7818 7.97178L28 6.74923L30.2181 7.97176C30.2971 8.01528 30.3928 8.00804 30.465 7.95307C30.5371 7.8981 30.5733 7.80493 30.5582 7.71275L30.1345 5.12343L31.9292 3.28965C31.9931 3.22439 32.0161 3.12675 31.9885 3.03781Z" fill="#FFBA09"/> <path d="M43.9885 3.03781C43.9609 2.94885 43.8876 2.88402 43.7993 2.87059L41.3193 2.49279L40.2102 0.136951C40.1707 0.0530865 40.0892 0 40 0C39.9108 0 39.8293 0.0530865 39.7898 0.136951L38.6807 2.49279L36.2007 2.87059C36.1124 2.88402 36.039 2.94885 36.0115 3.03779C35.9839 3.12675 36.0069 3.22439 36.0708 3.28966L37.8653 5.12343L37.4417 7.71278C37.4266 7.80497 37.4628 7.8981 37.535 7.95309C37.5758 7.98418 37.6241 8 37.6727 8C37.7101 8 37.7475 7.99068 37.7818 7.97178L40 6.74923L42.2181 7.97176C42.2971 8.01528 42.3928 8.00804 42.465 7.95307C42.5371 7.8981 42.5733 7.80493 42.5582 7.71275L42.1345 5.12343L43.9292 3.28965C43.9931 3.22439 44.0161 3.12675 43.9885 3.03781Z" fill="#D1D5DB"/> <path d="M55.9885 3.03781C55.9609 2.94885 55.8876 2.88402 55.7993 2.87059L53.3193 2.49279L52.2102 0.136951C52.1707 0.0530865 52.0892 0 52 0C51.9108 0 51.8293 0.0530865 51.7898 0.136951L50.6807 2.49279L48.2007 2.87059C48.1124 2.88402 48.039 2.94885 48.0115 3.03779C47.9839 3.12675 48.0069 3.22439 48.0708 3.28966L49.8653 5.12343L49.4417 7.71278C49.4266 7.80497 49.4628 7.8981 49.535 7.95309C49.5758 7.98418 49.6241 8 49.6727 8C49.7101 8 49.7475 7.99068 49.7818 7.97178L52 6.74923L54.2181 7.97176C54.2971 8.01528 54.3928 8.00804 54.465 7.95307C54.5371 7.8981 54.5733 7.80493 54.5582 7.71275L54.1345 5.12343L55.9292 3.28965C55.9931 3.22439 56.0161 3.12675 55.9885 3.03781Z" fill="#D1D5DB"/> </svg>
+                        </span>
+                        <span class="inline-block text-xs font-semibold text-grey"> 19,981 ratings</span>
+                      </div>
+                    </div>
+                    <div class="w-5/12">
+                      <a href="javascript:void(0);" class="productCoupon">
+                        <p class="text-xs 2xl:text-sm font-semibold text-dark">GPHPJ63P44</p>
+                        <i class="icon-copy text-leafGreen text-xl"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <span class="border w-full block my-3"></span>
+                  <div class="flex items-center">
+                    <div class="flex items-center w-7/12">
+                      <div class="space-y-1">
+                        <div class="flex items-center space-x-1">
+                          <i class="icon-expirydate text-grey text-xs"></i>
+                          <span class="inline-block text-[10px] text-grey  whitespace-nowrap">Expiry Date</span>
+                        </div>
+                        <p class="text-xs font-semibold whitespace-nowrap">July 23, 2021</p>
+                      </div>
+                      <span class="inline-block mx-4 border border-gray-300 h-8"></span>
+                      <div class="space-y-1">
+                        <div class="flex items-center space-x-1">
+                          <i class="icon-discount text-grey text-xs"></i>
+                          <span class="inline-block text-[10px] text-grey  whitespace-nowrap">Offer Type</span>
+                        </div>
+                        <p class="text-xs font-semibold">Online</p>
+                      </div>
+                    </div>
+                    <div class="w-5/12">
+                      <p class="text-sm md:text-lg 2xl:text-xl text-leafGreen font-semibold pl-2 ml-auto whitespace-nowrap text-right">Upto 12% OFF</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-full 2xl:w-1/2 p-3" onclick="window.location='gift-brand-single-details.html'">
+              <div class="w-full bg-white rounded-xl p-1 sm:flex border">
+                <div class="singleProduct">
+                  <img src="../assest/images/product.png" class="w-full object-cover rounded-2xl" alt="product2"/>
+                </div>
+                <div class="w-full p-3">
+                  <div class="flex flex-wrap items-center justify-between">
+                    <div class="w-7/12">
+                      <div class="flex items-center space-x-3">
+                        <span class="brandLogo">
+                          <img src="../assest/images/sportShoos.png" class="w-full object-cover" alt="brandLogo"/>
+                        </span>
+                        <span class="brandName">Sport Shoes</span>
+                      </div>
+                      <div class="flex items-center flex-wrap space-x-2 sm:space-x-3 pt-1 sm:pt-2">
+                        <span class="inline-block">
+                          <svg width="56" height="8" viewBox="0 0 56 8" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M7.98851 3.03781C7.96095 2.94885 7.88762 2.88402 7.79934 2.87059L5.3193 2.49279L4.21017 0.136951C4.1707 0.0530865 4.08922 0 4.00001 0C3.91079 0 3.82933 0.0530865 3.78984 0.136951L2.68066 2.49279L0.200669 2.87059C0.112404 2.88402 0.0390446 2.94885 0.0114823 3.03779C-0.0160957 3.12675 0.00690416 3.22439 0.0707945 3.28966L1.86529 5.12343L1.44173 7.71278C1.42663 7.80497 1.46279 7.8981 1.53496 7.95309C1.57579 7.98418 1.62415 8 1.67274 8C1.71005 8 1.74749 7.99068 1.78177 7.97178L4 6.74923L6.21813 7.97176C6.29711 8.01528 6.39278 8.00804 6.46495 7.95307C6.53713 7.8981 6.5733 7.80493 6.55822 7.71275L6.13452 5.12343L7.92921 3.28965C7.99309 3.22439 8.0161 3.12675 7.98851 3.03781Z" fill="#FFBA09"/> <path d="M19.9885 3.03781C19.9609 2.94885 19.8876 2.88402 19.7993 2.87059L17.3193 2.49279L16.2102 0.136951C16.1707 0.0530865 16.0892 0 16 0C15.9108 0 15.8293 0.0530865 15.7898 0.136951L14.6807 2.49279L12.2007 2.87059C12.1124 2.88402 12.039 2.94885 12.0115 3.03779C11.9839 3.12675 12.0069 3.22439 12.0708 3.28966L13.8653 5.12343L13.4417 7.71278C13.4266 7.80497 13.4628 7.8981 13.535 7.95309C13.5758 7.98418 13.6241 8 13.6727 8C13.7101 8 13.7475 7.99068 13.7818 7.97178L16 6.74923L18.2181 7.97176C18.2971 8.01528 18.3928 8.00804 18.465 7.95307C18.5371 7.8981 18.5733 7.80493 18.5582 7.71275L18.1345 5.12343L19.9292 3.28965C19.9931 3.22439 20.0161 3.12675 19.9885 3.03781Z" fill="#FFBA09"/> <path d="M31.9885 3.03781C31.9609 2.94885 31.8876 2.88402 31.7993 2.87059L29.3193 2.49279L28.2102 0.136951C28.1707 0.0530865 28.0892 0 28 0C27.9108 0 27.8293 0.0530865 27.7898 0.136951L26.6807 2.49279L24.2007 2.87059C24.1124 2.88402 24.039 2.94885 24.0115 3.03779C23.9839 3.12675 24.0069 3.22439 24.0708 3.28966L25.8653 5.12343L25.4417 7.71278C25.4266 7.80497 25.4628 7.8981 25.535 7.95309C25.5758 7.98418 25.6241 8 25.6727 8C25.7101 8 25.7475 7.99068 25.7818 7.97178L28 6.74923L30.2181 7.97176C30.2971 8.01528 30.3928 8.00804 30.465 7.95307C30.5371 7.8981 30.5733 7.80493 30.5582 7.71275L30.1345 5.12343L31.9292 3.28965C31.9931 3.22439 32.0161 3.12675 31.9885 3.03781Z" fill="#FFBA09"/> <path d="M43.9885 3.03781C43.9609 2.94885 43.8876 2.88402 43.7993 2.87059L41.3193 2.49279L40.2102 0.136951C40.1707 0.0530865 40.0892 0 40 0C39.9108 0 39.8293 0.0530865 39.7898 0.136951L38.6807 2.49279L36.2007 2.87059C36.1124 2.88402 36.039 2.94885 36.0115 3.03779C35.9839 3.12675 36.0069 3.22439 36.0708 3.28966L37.8653 5.12343L37.4417 7.71278C37.4266 7.80497 37.4628 7.8981 37.535 7.95309C37.5758 7.98418 37.6241 8 37.6727 8C37.7101 8 37.7475 7.99068 37.7818 7.97178L40 6.74923L42.2181 7.97176C42.2971 8.01528 42.3928 8.00804 42.465 7.95307C42.5371 7.8981 42.5733 7.80493 42.5582 7.71275L42.1345 5.12343L43.9292 3.28965C43.9931 3.22439 44.0161 3.12675 43.9885 3.03781Z" fill="#D1D5DB"/> <path d="M55.9885 3.03781C55.9609 2.94885 55.8876 2.88402 55.7993 2.87059L53.3193 2.49279L52.2102 0.136951C52.1707 0.0530865 52.0892 0 52 0C51.9108 0 51.8293 0.0530865 51.7898 0.136951L50.6807 2.49279L48.2007 2.87059C48.1124 2.88402 48.039 2.94885 48.0115 3.03779C47.9839 3.12675 48.0069 3.22439 48.0708 3.28966L49.8653 5.12343L49.4417 7.71278C49.4266 7.80497 49.4628 7.8981 49.535 7.95309C49.5758 7.98418 49.6241 8 49.6727 8C49.7101 8 49.7475 7.99068 49.7818 7.97178L52 6.74923L54.2181 7.97176C54.2971 8.01528 54.3928 8.00804 54.465 7.95307C54.5371 7.8981 54.5733 7.80493 54.5582 7.71275L54.1345 5.12343L55.9292 3.28965C55.9931 3.22439 56.0161 3.12675 55.9885 3.03781Z" fill="#D1D5DB"/> </svg>
+                        </span>
+                        <span class="inline-block text-xs font-semibold text-grey"> 19,981 ratings</span>
+                      </div>
+                    </div>
+                    <div class="w-5/12">
+                      <a href="javascript:void(0);" class="productCoupon">
+                        <p class="text-xs 2xl:text-sm font-semibold text-dark">GPHPJ63P44</p>
+                        <i class="icon-copy text-leafGreen text-xl"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <span class="border w-full block my-3"></span>
+                  <div class="flex items-center">
+                    <div class="flex items-center w-7/12">
+                      <div class="space-y-1">
+                        <div class="flex items-center space-x-1">
+                          <i class="icon-expirydate text-grey text-xs"></i>
+                          <span class="inline-block text-[10px] text-grey  whitespace-nowrap">Expiry Date</span>
+                        </div>
+                        <p class="text-xs font-semibold whitespace-nowrap">July 23, 2021</p>
+                      </div>
+                      <span class="inline-block mx-4 border border-gray-300 h-8"></span>
+                      <div class="space-y-1">
+                        <div class="flex items-center space-x-1">
+                          <i class="icon-discount text-grey text-xs"></i>
+                          <span class="inline-block text-[10px] text-grey  whitespace-nowrap">Offer Type</span>
+                        </div>
+                        <p class="text-xs font-semibold">Online</p>
+                      </div>
+                    </div>
+                    <div class="w-5/12">
+                      <p class="text-sm md:text-lg 2xl:text-xl text-leafGreen font-semibold pl-2 ml-auto whitespace-nowrap text-right">Upto 12% OFF</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-full 2xl:w-1/2 p-3" onclick="window.location='gift-brand-single-details.html'">
+              <div class="w-full bg-white rounded-xl p-1 sm:flex border">
+                <div class="singleProduct">
+                  <img src="../assest/images/product.png" class="w-full object-cover rounded-2xl" alt="product2"/>
+                </div>
+                <div class="w-full p-3">
+                  <div class="flex flex-wrap items-center justify-between">
+                    <div class="w-7/12">
+                      <div class="flex items-center space-x-3">
+                        <span class="brandLogo">
+                          <img src="../assest/images/sportShoos.png" class="w-full object-cover" alt="brandLogo"/>
+                        </span>
+                        <span class="brandName">Sport Shoes</span>
+                      </div>
+                      <div class="flex items-center flex-wrap space-x-2 sm:space-x-3 pt-1 sm:pt-2">
+                        <span class="inline-block">
+                          <svg width="56" height="8" viewBox="0 0 56 8" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M7.98851 3.03781C7.96095 2.94885 7.88762 2.88402 7.79934 2.87059L5.3193 2.49279L4.21017 0.136951C4.1707 0.0530865 4.08922 0 4.00001 0C3.91079 0 3.82933 0.0530865 3.78984 0.136951L2.68066 2.49279L0.200669 2.87059C0.112404 2.88402 0.0390446 2.94885 0.0114823 3.03779C-0.0160957 3.12675 0.00690416 3.22439 0.0707945 3.28966L1.86529 5.12343L1.44173 7.71278C1.42663 7.80497 1.46279 7.8981 1.53496 7.95309C1.57579 7.98418 1.62415 8 1.67274 8C1.71005 8 1.74749 7.99068 1.78177 7.97178L4 6.74923L6.21813 7.97176C6.29711 8.01528 6.39278 8.00804 6.46495 7.95307C6.53713 7.8981 6.5733 7.80493 6.55822 7.71275L6.13452 5.12343L7.92921 3.28965C7.99309 3.22439 8.0161 3.12675 7.98851 3.03781Z" fill="#FFBA09"/> <path d="M19.9885 3.03781C19.9609 2.94885 19.8876 2.88402 19.7993 2.87059L17.3193 2.49279L16.2102 0.136951C16.1707 0.0530865 16.0892 0 16 0C15.9108 0 15.8293 0.0530865 15.7898 0.136951L14.6807 2.49279L12.2007 2.87059C12.1124 2.88402 12.039 2.94885 12.0115 3.03779C11.9839 3.12675 12.0069 3.22439 12.0708 3.28966L13.8653 5.12343L13.4417 7.71278C13.4266 7.80497 13.4628 7.8981 13.535 7.95309C13.5758 7.98418 13.6241 8 13.6727 8C13.7101 8 13.7475 7.99068 13.7818 7.97178L16 6.74923L18.2181 7.97176C18.2971 8.01528 18.3928 8.00804 18.465 7.95307C18.5371 7.8981 18.5733 7.80493 18.5582 7.71275L18.1345 5.12343L19.9292 3.28965C19.9931 3.22439 20.0161 3.12675 19.9885 3.03781Z" fill="#FFBA09"/> <path d="M31.9885 3.03781C31.9609 2.94885 31.8876 2.88402 31.7993 2.87059L29.3193 2.49279L28.2102 0.136951C28.1707 0.0530865 28.0892 0 28 0C27.9108 0 27.8293 0.0530865 27.7898 0.136951L26.6807 2.49279L24.2007 2.87059C24.1124 2.88402 24.039 2.94885 24.0115 3.03779C23.9839 3.12675 24.0069 3.22439 24.0708 3.28966L25.8653 5.12343L25.4417 7.71278C25.4266 7.80497 25.4628 7.8981 25.535 7.95309C25.5758 7.98418 25.6241 8 25.6727 8C25.7101 8 25.7475 7.99068 25.7818 7.97178L28 6.74923L30.2181 7.97176C30.2971 8.01528 30.3928 8.00804 30.465 7.95307C30.5371 7.8981 30.5733 7.80493 30.5582 7.71275L30.1345 5.12343L31.9292 3.28965C31.9931 3.22439 32.0161 3.12675 31.9885 3.03781Z" fill="#FFBA09"/> <path d="M43.9885 3.03781C43.9609 2.94885 43.8876 2.88402 43.7993 2.87059L41.3193 2.49279L40.2102 0.136951C40.1707 0.0530865 40.0892 0 40 0C39.9108 0 39.8293 0.0530865 39.7898 0.136951L38.6807 2.49279L36.2007 2.87059C36.1124 2.88402 36.039 2.94885 36.0115 3.03779C35.9839 3.12675 36.0069 3.22439 36.0708 3.28966L37.8653 5.12343L37.4417 7.71278C37.4266 7.80497 37.4628 7.8981 37.535 7.95309C37.5758 7.98418 37.6241 8 37.6727 8C37.7101 8 37.7475 7.99068 37.7818 7.97178L40 6.74923L42.2181 7.97176C42.2971 8.01528 42.3928 8.00804 42.465 7.95307C42.5371 7.8981 42.5733 7.80493 42.5582 7.71275L42.1345 5.12343L43.9292 3.28965C43.9931 3.22439 44.0161 3.12675 43.9885 3.03781Z" fill="#D1D5DB"/> <path d="M55.9885 3.03781C55.9609 2.94885 55.8876 2.88402 55.7993 2.87059L53.3193 2.49279L52.2102 0.136951C52.1707 0.0530865 52.0892 0 52 0C51.9108 0 51.8293 0.0530865 51.7898 0.136951L50.6807 2.49279L48.2007 2.87059C48.1124 2.88402 48.039 2.94885 48.0115 3.03779C47.9839 3.12675 48.0069 3.22439 48.0708 3.28966L49.8653 5.12343L49.4417 7.71278C49.4266 7.80497 49.4628 7.8981 49.535 7.95309C49.5758 7.98418 49.6241 8 49.6727 8C49.7101 8 49.7475 7.99068 49.7818 7.97178L52 6.74923L54.2181 7.97176C54.2971 8.01528 54.3928 8.00804 54.465 7.95307C54.5371 7.8981 54.5733 7.80493 54.5582 7.71275L54.1345 5.12343L55.9292 3.28965C55.9931 3.22439 56.0161 3.12675 55.9885 3.03781Z" fill="#D1D5DB"/> </svg>
+                        </span>
+                        <span class="inline-block text-xs font-semibold text-grey"> 19,981 ratings</span>
+                      </div>
+                    </div>
+                    <div class="w-5/12">
+                      <a href="javascript:void(0);" class="productCoupon">
+                        <p class="text-xs 2xl:text-sm font-semibold text-dark">GPHPJ63P44</p>
+                        <i class="icon-copy text-leafGreen text-xl"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <span class="border w-full block my-3"></span>
+                  <div class="flex items-center">
+                    <div class="flex items-center w-7/12">
+                      <div class="space-y-1">
+                        <div class="flex items-center space-x-1">
+                          <i class="icon-expirydate text-grey text-xs"></i>
+                          <span class="inline-block text-[10px] text-grey  whitespace-nowrap">Expiry Date</span>
+                        </div>
+                        <p class="text-xs font-semibold whitespace-nowrap">July 23, 2021</p>
+                      </div>
+                      <span class="inline-block mx-4 border border-gray-300 h-8"></span>
+                      <div class="space-y-1">
+                        <div class="flex items-center space-x-1">
+                          <i class="icon-discount text-grey text-xs"></i>
+                          <span class="inline-block text-[10px] text-grey  whitespace-nowrap">Offer Type</span>
+                        </div>
+                        <p class="text-xs font-semibold">Online</p>
+                      </div>
+                    </div>
+                    <div class="w-5/12">
+                      <p class="text-sm md:text-lg 2xl:text-xl text-leafGreen font-semibold pl-2 ml-auto whitespace-nowrap text-right">Upto 12% OFF</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-full 2xl:w-1/2 p-3" onclick="window.location='gift-brand-single-details.html'">
+              <div class="w-full bg-white rounded-xl p-1 sm:flex border">
+                <div class="singleProduct">
+                  <img src="../assest/images/product.png" class="w-full object-cover rounded-2xl" alt="product2"/>
+                </div>
+                <div class="w-full p-3">
+                  <div class="flex flex-wrap items-center justify-between">
+                    <div class="w-7/12">
+                      <div class="flex items-center space-x-3">
+                        <span class="brandLogo">
+                          <img src="../assest/images/sportShoos.png" class="w-full object-cover" alt="brandLogo"/>
+                        </span>
+                        <span class="brandName">Sport Shoes</span>
+                      </div>
+                      <div class="flex items-center flex-wrap space-x-2 sm:space-x-3 pt-1 sm:pt-2">
+                        <span class="inline-block">
+                          <svg width="56" height="8" viewBox="0 0 56 8" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M7.98851 3.03781C7.96095 2.94885 7.88762 2.88402 7.79934 2.87059L5.3193 2.49279L4.21017 0.136951C4.1707 0.0530865 4.08922 0 4.00001 0C3.91079 0 3.82933 0.0530865 3.78984 0.136951L2.68066 2.49279L0.200669 2.87059C0.112404 2.88402 0.0390446 2.94885 0.0114823 3.03779C-0.0160957 3.12675 0.00690416 3.22439 0.0707945 3.28966L1.86529 5.12343L1.44173 7.71278C1.42663 7.80497 1.46279 7.8981 1.53496 7.95309C1.57579 7.98418 1.62415 8 1.67274 8C1.71005 8 1.74749 7.99068 1.78177 7.97178L4 6.74923L6.21813 7.97176C6.29711 8.01528 6.39278 8.00804 6.46495 7.95307C6.53713 7.8981 6.5733 7.80493 6.55822 7.71275L6.13452 5.12343L7.92921 3.28965C7.99309 3.22439 8.0161 3.12675 7.98851 3.03781Z" fill="#FFBA09"/> <path d="M19.9885 3.03781C19.9609 2.94885 19.8876 2.88402 19.7993 2.87059L17.3193 2.49279L16.2102 0.136951C16.1707 0.0530865 16.0892 0 16 0C15.9108 0 15.8293 0.0530865 15.7898 0.136951L14.6807 2.49279L12.2007 2.87059C12.1124 2.88402 12.039 2.94885 12.0115 3.03779C11.9839 3.12675 12.0069 3.22439 12.0708 3.28966L13.8653 5.12343L13.4417 7.71278C13.4266 7.80497 13.4628 7.8981 13.535 7.95309C13.5758 7.98418 13.6241 8 13.6727 8C13.7101 8 13.7475 7.99068 13.7818 7.97178L16 6.74923L18.2181 7.97176C18.2971 8.01528 18.3928 8.00804 18.465 7.95307C18.5371 7.8981 18.5733 7.80493 18.5582 7.71275L18.1345 5.12343L19.9292 3.28965C19.9931 3.22439 20.0161 3.12675 19.9885 3.03781Z" fill="#FFBA09"/> <path d="M31.9885 3.03781C31.9609 2.94885 31.8876 2.88402 31.7993 2.87059L29.3193 2.49279L28.2102 0.136951C28.1707 0.0530865 28.0892 0 28 0C27.9108 0 27.8293 0.0530865 27.7898 0.136951L26.6807 2.49279L24.2007 2.87059C24.1124 2.88402 24.039 2.94885 24.0115 3.03779C23.9839 3.12675 24.0069 3.22439 24.0708 3.28966L25.8653 5.12343L25.4417 7.71278C25.4266 7.80497 25.4628 7.8981 25.535 7.95309C25.5758 7.98418 25.6241 8 25.6727 8C25.7101 8 25.7475 7.99068 25.7818 7.97178L28 6.74923L30.2181 7.97176C30.2971 8.01528 30.3928 8.00804 30.465 7.95307C30.5371 7.8981 30.5733 7.80493 30.5582 7.71275L30.1345 5.12343L31.9292 3.28965C31.9931 3.22439 32.0161 3.12675 31.9885 3.03781Z" fill="#FFBA09"/> <path d="M43.9885 3.03781C43.9609 2.94885 43.8876 2.88402 43.7993 2.87059L41.3193 2.49279L40.2102 0.136951C40.1707 0.0530865 40.0892 0 40 0C39.9108 0 39.8293 0.0530865 39.7898 0.136951L38.6807 2.49279L36.2007 2.87059C36.1124 2.88402 36.039 2.94885 36.0115 3.03779C35.9839 3.12675 36.0069 3.22439 36.0708 3.28966L37.8653 5.12343L37.4417 7.71278C37.4266 7.80497 37.4628 7.8981 37.535 7.95309C37.5758 7.98418 37.6241 8 37.6727 8C37.7101 8 37.7475 7.99068 37.7818 7.97178L40 6.74923L42.2181 7.97176C42.2971 8.01528 42.3928 8.00804 42.465 7.95307C42.5371 7.8981 42.5733 7.80493 42.5582 7.71275L42.1345 5.12343L43.9292 3.28965C43.9931 3.22439 44.0161 3.12675 43.9885 3.03781Z" fill="#D1D5DB"/> <path d="M55.9885 3.03781C55.9609 2.94885 55.8876 2.88402 55.7993 2.87059L53.3193 2.49279L52.2102 0.136951C52.1707 0.0530865 52.0892 0 52 0C51.9108 0 51.8293 0.0530865 51.7898 0.136951L50.6807 2.49279L48.2007 2.87059C48.1124 2.88402 48.039 2.94885 48.0115 3.03779C47.9839 3.12675 48.0069 3.22439 48.0708 3.28966L49.8653 5.12343L49.4417 7.71278C49.4266 7.80497 49.4628 7.8981 49.535 7.95309C49.5758 7.98418 49.6241 8 49.6727 8C49.7101 8 49.7475 7.99068 49.7818 7.97178L52 6.74923L54.2181 7.97176C54.2971 8.01528 54.3928 8.00804 54.465 7.95307C54.5371 7.8981 54.5733 7.80493 54.5582 7.71275L54.1345 5.12343L55.9292 3.28965C55.9931 3.22439 56.0161 3.12675 55.9885 3.03781Z" fill="#D1D5DB"/> </svg>
+                        </span>
+                        <span class="inline-block text-xs font-semibold text-grey"> 19,981 ratings</span>
+                      </div>
+                    </div>
+                    <div class="w-5/12">
+                      <a href="javascript:void(0);" class="productCoupon">
+                        <p class="text-xs 2xl:text-sm font-semibold text-dark">GPHPJ63P44</p>
+                        <i class="icon-copy text-leafGreen text-xl"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <span class="border w-full block my-3"></span>
+                  <div class="flex items-center">
+                    <div class="flex items-center w-7/12">
+                      <div class="space-y-1">
+                        <div class="flex items-center space-x-1">
+                          <i class="icon-expirydate text-grey text-xs"></i>
+                          <span class="inline-block text-[10px] text-grey  whitespace-nowrap">Expiry Date</span>
+                        </div>
+                        <p class="text-xs font-semibold whitespace-nowrap">July 23, 2021</p>
+                      </div>
+                      <span class="inline-block mx-4 border border-gray-300 h-8"></span>
+                      <div class="space-y-1">
+                        <div class="flex items-center space-x-1">
+                          <i class="icon-discount text-grey text-xs"></i>
+                          <span class="inline-block text-[10px] text-grey  whitespace-nowrap">Offer Type</span>
+                        </div>
+                        <p class="text-xs font-semibold">Online</p>
+                      </div>
+                    </div>
+                    <div class="w-5/12">
+                      <p class="text-sm md:text-lg 2xl:text-xl text-leafGreen font-semibold pl-2 ml-auto whitespace-nowrap text-right">Upto 12% OFF</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-full 2xl:w-1/2 p-3" onclick="window.location='gift-brand-single-details.html'">
+              <div class="w-full bg-white rounded-xl p-1 sm:flex border">
+                <div class="singleProduct">
+                  <img src="../assest/images/product.png" class="w-full object-cover rounded-2xl" alt="product2"/>
+                </div>
+                <div class="w-full p-3">
+                  <div class="flex flex-wrap items-center justify-between">
+                    <div class="w-7/12">
+                      <div class="flex items-center space-x-3">
+                        <span class="brandLogo">
+                          <img src="../assest/images/sportShoos.png" class="w-full object-cover" alt="brandLogo"/>
+                        </span>
+                        <span class="brandName">Sport Shoes</span>
+                      </div>
+                      <div class="flex items-center flex-wrap space-x-2 sm:space-x-3 pt-1 sm:pt-2">
+                        <span class="inline-block">
+                          <svg width="56" height="8" viewBox="0 0 56 8" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M7.98851 3.03781C7.96095 2.94885 7.88762 2.88402 7.79934 2.87059L5.3193 2.49279L4.21017 0.136951C4.1707 0.0530865 4.08922 0 4.00001 0C3.91079 0 3.82933 0.0530865 3.78984 0.136951L2.68066 2.49279L0.200669 2.87059C0.112404 2.88402 0.0390446 2.94885 0.0114823 3.03779C-0.0160957 3.12675 0.00690416 3.22439 0.0707945 3.28966L1.86529 5.12343L1.44173 7.71278C1.42663 7.80497 1.46279 7.8981 1.53496 7.95309C1.57579 7.98418 1.62415 8 1.67274 8C1.71005 8 1.74749 7.99068 1.78177 7.97178L4 6.74923L6.21813 7.97176C6.29711 8.01528 6.39278 8.00804 6.46495 7.95307C6.53713 7.8981 6.5733 7.80493 6.55822 7.71275L6.13452 5.12343L7.92921 3.28965C7.99309 3.22439 8.0161 3.12675 7.98851 3.03781Z" fill="#FFBA09"/> <path d="M19.9885 3.03781C19.9609 2.94885 19.8876 2.88402 19.7993 2.87059L17.3193 2.49279L16.2102 0.136951C16.1707 0.0530865 16.0892 0 16 0C15.9108 0 15.8293 0.0530865 15.7898 0.136951L14.6807 2.49279L12.2007 2.87059C12.1124 2.88402 12.039 2.94885 12.0115 3.03779C11.9839 3.12675 12.0069 3.22439 12.0708 3.28966L13.8653 5.12343L13.4417 7.71278C13.4266 7.80497 13.4628 7.8981 13.535 7.95309C13.5758 7.98418 13.6241 8 13.6727 8C13.7101 8 13.7475 7.99068 13.7818 7.97178L16 6.74923L18.2181 7.97176C18.2971 8.01528 18.3928 8.00804 18.465 7.95307C18.5371 7.8981 18.5733 7.80493 18.5582 7.71275L18.1345 5.12343L19.9292 3.28965C19.9931 3.22439 20.0161 3.12675 19.9885 3.03781Z" fill="#FFBA09"/> <path d="M31.9885 3.03781C31.9609 2.94885 31.8876 2.88402 31.7993 2.87059L29.3193 2.49279L28.2102 0.136951C28.1707 0.0530865 28.0892 0 28 0C27.9108 0 27.8293 0.0530865 27.7898 0.136951L26.6807 2.49279L24.2007 2.87059C24.1124 2.88402 24.039 2.94885 24.0115 3.03779C23.9839 3.12675 24.0069 3.22439 24.0708 3.28966L25.8653 5.12343L25.4417 7.71278C25.4266 7.80497 25.4628 7.8981 25.535 7.95309C25.5758 7.98418 25.6241 8 25.6727 8C25.7101 8 25.7475 7.99068 25.7818 7.97178L28 6.74923L30.2181 7.97176C30.2971 8.01528 30.3928 8.00804 30.465 7.95307C30.5371 7.8981 30.5733 7.80493 30.5582 7.71275L30.1345 5.12343L31.9292 3.28965C31.9931 3.22439 32.0161 3.12675 31.9885 3.03781Z" fill="#FFBA09"/> <path d="M43.9885 3.03781C43.9609 2.94885 43.8876 2.88402 43.7993 2.87059L41.3193 2.49279L40.2102 0.136951C40.1707 0.0530865 40.0892 0 40 0C39.9108 0 39.8293 0.0530865 39.7898 0.136951L38.6807 2.49279L36.2007 2.87059C36.1124 2.88402 36.039 2.94885 36.0115 3.03779C35.9839 3.12675 36.0069 3.22439 36.0708 3.28966L37.8653 5.12343L37.4417 7.71278C37.4266 7.80497 37.4628 7.8981 37.535 7.95309C37.5758 7.98418 37.6241 8 37.6727 8C37.7101 8 37.7475 7.99068 37.7818 7.97178L40 6.74923L42.2181 7.97176C42.2971 8.01528 42.3928 8.00804 42.465 7.95307C42.5371 7.8981 42.5733 7.80493 42.5582 7.71275L42.1345 5.12343L43.9292 3.28965C43.9931 3.22439 44.0161 3.12675 43.9885 3.03781Z" fill="#D1D5DB"/> <path d="M55.9885 3.03781C55.9609 2.94885 55.8876 2.88402 55.7993 2.87059L53.3193 2.49279L52.2102 0.136951C52.1707 0.0530865 52.0892 0 52 0C51.9108 0 51.8293 0.0530865 51.7898 0.136951L50.6807 2.49279L48.2007 2.87059C48.1124 2.88402 48.039 2.94885 48.0115 3.03779C47.9839 3.12675 48.0069 3.22439 48.0708 3.28966L49.8653 5.12343L49.4417 7.71278C49.4266 7.80497 49.4628 7.8981 49.535 7.95309C49.5758 7.98418 49.6241 8 49.6727 8C49.7101 8 49.7475 7.99068 49.7818 7.97178L52 6.74923L54.2181 7.97176C54.2971 8.01528 54.3928 8.00804 54.465 7.95307C54.5371 7.8981 54.5733 7.80493 54.5582 7.71275L54.1345 5.12343L55.9292 3.28965C55.9931 3.22439 56.0161 3.12675 55.9885 3.03781Z" fill="#D1D5DB"/> </svg>
+                        </span>
+                        <span class="inline-block text-xs font-semibold text-grey"> 19,981 ratings</span>
+                      </div>
+                    </div>
+                    <div class="w-5/12">
+                      <a href="javascript:void(0);" class="productCoupon">
+                        <p class="text-xs 2xl:text-sm font-semibold text-dark">GPHPJ63P44</p>
+                        <i class="icon-copy text-leafGreen text-xl"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <span class="border w-full block my-3"></span>
+                  <div class="flex items-center">
+                    <div class="flex items-center w-7/12">
+                      <div class="space-y-1">
+                        <div class="flex items-center space-x-1">
+                          <i class="icon-expirydate text-grey text-xs"></i>
+                          <span class="inline-block text-[10px] text-grey  whitespace-nowrap">Expiry Date</span>
+                        </div>
+                        <p class="text-xs font-semibold whitespace-nowrap">July 23, 2021</p>
+                      </div>
+                      <span class="inline-block mx-4 border border-gray-300 h-8"></span>
+                      <div class="space-y-1">
+                        <div class="flex items-center space-x-1">
+                          <i class="icon-discount text-grey text-xs"></i>
+                          <span class="inline-block text-[10px] text-grey  whitespace-nowrap">Offer Type</span>
+                        </div>
+                        <p class="text-xs font-semibold">Online</p>
+                      </div>
+                    </div>
+                    <div class="w-5/12">
+                      <p class="text-sm md:text-lg 2xl:text-xl text-leafGreen font-semibold pl-2 ml-auto whitespace-nowrap text-right">Upto 12% OFF</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../assest/js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="../assest/js/script.js"></script>
+  </body>
+</html>
