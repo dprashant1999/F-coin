@@ -142,7 +142,7 @@ input[type=radio].bankholder:checked + .transactionBank .selact-bank span {
 
 /* FAQ */
 .accordionTab.active span{@apply rotate-180 anim;}
-.faqMain{@apply relative p-4 md:py-6 md:px-8 bg-white rounded-2xl text-davyGrey text-base md:text-lg;}
+.faqMain{@apply relative bg-white rounded-2xl text-davyGrey text-base md:text-lg;}
 .faqHad{@apply cursor-pointer flex items-center justify-between;}
 .faqDown{@apply overflow-hidden hidden;}
 .faqHad.active span{@apply rotate-180 anim;}
